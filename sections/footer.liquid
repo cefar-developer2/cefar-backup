@@ -1,0 +1,90 @@
+<div class="lg:flex-row lg:items-start flex flex-col items-center justify-between">
+  {%- if linklists[section.settings.menu_linklist].links.size > 0 -%}
+    <div class="nav-row pt-5 lg:order-1 lg:mt-0 lg:w-5/12 lg:text-left order-2 mt-8 text-center">
+      {%- include 'main-navigation' with section.settings.menu_linklist -%}
+
+      {%- if section.settings.show_social_icons -%}
+        <div class="lg:justify-start flex justify-center pt-5">
+          <a href="{{ settings.social_facebook_url }}" class="text-pink lg:ml-0 ml-5 mr-5 text-base"><i class="fab fa-facebook"></i></a>
+          <a href="{{ settings.social_instagram_url }}" class="text-pink mr-5 text-base"><i class="fab fa-instagram"></i></a>
+          <a href="{{ settings.social_twitter_url }}" class="text-pink mr-5 text-base"><i class="fab fa-tiktok"></i></a>
+          <a href="{{ settings.social_youtube_url }}" class="text-pink mr-5 text-base"><i class="fab fa-youtube"></i></a>
+        </div>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <div class="lower cf lg:order-2 lg:w-5/12 order-1 w-full">
+    {%- if section.settings.signup_show -%}
+      <div class="interact">
+        {%- include 'signup-form' -%}
+
+        <div class="footlogo" style="max-width: 350px; margin: 0px auto; padding: 10px 5px 10px 10px;">
+          <div class="footlogos" style="display: inline-block; margin: 5px;">
+            <img src="https://cdn.shopify.com/s/files/1/0618/8873/files/Amazon_Footer_v2.svg" loading="lazy" width="88" height="46"/>
+          </div>
+
+          <div class="footlogos" style="display: inline-block; margin: 5px;">
+            <img src="https://cdn.shopify.com/s/files/1/0618/8873/files/Google_Footer_v2.svg" loading="lazy" width="88" height="48"/>
+          </div>
+
+          <div class="footlogos" style="display: inline-block; margin: 5px;">
+            <img src="https://cdn.shopify.com/s/files/1/0618/8873/files/Influenster_Footer_v2.svg" loading="lazy" width="104" height="45"/>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+<div class="lg:flex lg:text-left items-end justify-between mt-6 text-center">
+  <div class="copyright lg:w-1/2 lg:mb-0 mb-6">
+    <span class="copy font-body text-xs tracking-normal">
+      &copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: '/' }} All rights reserved.
+    </span>
+  </div>
+
+  <div class="payment-methods lg:w-5/12 lg:pl-[66px] lg:justify-start flex flex-wrap justify-center">
+    <div class="payment-methods-images">
+      {%- for type in shop.enabled_payment_types -%}
+        <img class="mx-1 mt-2" src="{{ type | payment_type_img_url }}" alt="{{ type }}" loading="lazy" width="38" height="24" />
+      {%- endfor -%}
+
+      <img class="mx-1 mt-2" src="https://cdn.shopify.com/shopifycloud/web/assets/v1/da692be1019eb4c4.svg" alt="Klarna" loading="lazy" width="38" height="24" />
+
+      <span class="mx-1 mt-2 payment-methods-images__clearpay">
+        {%- render 'svg-clearpay' -%}
+      </span>
+    </div>
+  </div>
+</div>
+
+<p class="copy font-body opacity-60 lg:text-left pt-6 text-xs tracking-normal text-center">
+  Plump It!® is the trading name of D&A Cosmetics Limited, a private company limited by shares and registered in England and Wales with company number 09179106 and having its registered office at 14 To 15 Harelands Courtyard Offices Moor Road, Melsonby, Richmond, North Yorkshire, DL10 5NY.
+</p>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu_linklist",
+      "label": "Menu",
+      "default": "footer"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social_icons",
+      "label": "Show social icons",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "signup_show",
+      "label": "Show newsletter signup",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

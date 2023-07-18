@@ -1,0 +1,246 @@
+.plump-product-name {
+    font-weight: 700;
+    font-size: 17px;
+}
+.plump-sticky .plump-st-container{
+  bottom: 0;
+}
+
+.plump-sticky {
+  padding-bottom: 80px;
+}
+.plump-sticky .doubly-float, .plump-sticky #someone-purchased{
+  bottom: 80px!important;
+}
+
+.plump-select-container {
+    margin-right: 10px;
+}
+
+.plump-sticky #_GUARANTEE_SealSpan{
+ bottom: 65px!important; 
+  transition: all .3s ease-in-out;
+}
+.plump-product-cont {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.plump-st-disabled{
+  cursor:not-allowed;
+  opacity: .8!important;
+}
+
+.plump-st-container {
+    z-index: 999999999999999999;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: -70px;
+    background-color: #2E4463;
+    height: 65px;
+    transition: all .3s ease-in-out;
+    -webkit-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.7);
+}
+
+.plump-st-container__outer {
+    padding: 0 20px;
+    display: flex;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+     max-width: 1080px;
+    justify-content: center;
+
+}
+
+.plump-st-container__inner {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px;
+    align-items: center;
+    text-align: center;
+    margin-left: 0px;
+    height: 100%;
+    padding-top: 5px;
+}
+
+.plump-st-container__inner div {
+    display: flex;
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+a.plump-st-item__button {
+    background-color: #FF0065;
+    color: #FFF;
+    padding: 10px 10px !important;
+    display: block;
+    width: 250px;
+    text-decoration: none;
+    margin: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    font-size: 16px;
+    text-transform: uppercase;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
+}
+
+a.plump-st-item__button:hover {
+    background-color: #FF1572;
+ box-shadow: none;
+}
+
+
+.plump-st-select {
+    margin: 0px 10px!important;
+    flex-direction: column;
+}
+
+#st-select1,
+#st-select2,
+#st-select0 {
+    display: none;
+}
+
+.plump-st-select span {
+    text-align: left;
+        margin: 0px 0px 0px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFF;
+}
+.plump-st-select select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 2px 25px 2px 7px;
+    height: 20px;
+    background: url(https://cdn.shopify.com/s/files/1/0108/5675/9353/files/arrow-up-gray.png?v=1575566431);
+    background-size: 10px;
+    background-color: #fff!important;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    color: #3F3E42;
+    min-width: 120px;
+    font-weight: 700;
+    cursor: pointer;
+    height: 25px;
+    min-height: 25px;
+    font-size: 16px;
+    margin-bottom: 3px;
+    border-radius: 4px;
+  font-weight: 600;
+  font-family: 'Lato';
+}
+
+.plump-st-select select:hover {
+    opacity: .8;
+}
+
+@media screen and (max-width: 767px) {
+    .plump-product-price {
+        display: none;
+    }
+    .plump-st-select select:hover {
+        opacity: 1;
+    }
+    a.plump-st-item__button:hover {
+        background-color: #FF1572;
+    }
+    a.plump-st-item__button:active {
+            background-color: #FF1572;
+  box-shadow: none;
+    }
+    .plump-st-container {
+        position: fixed;
+        left: 0;
+        height: 65px;
+        bottom: -80px;
+        transition: all .3s ease-in-out;
+    }
+  .plump-st-container__inner {
+    padding: 0px 0px;
+    margin: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3px;
+}
+    a.plump-st-item__button {
+        padding: 10px 5px !important;
+        font-weight: 700;
+        display: block;
+        width: 100%;
+        margin-right: 5px;
+        text-decoration: none;
+        margin: auto;
+        margin-right: 0px;
+    }
+    .plump-st-item_column__button {
+        margin-left: 0px;
+        margin-top: 4px!important;
+        width: 100%;
+    }
+    .plump-st-container__outer {
+        display: block;
+        margin: auto;
+        height: 100%;
+      padding: 0 10px;
+    }
+    .plump-st-select {
+        flex-direction: column;
+        margin: 2px!important;
+        text-align: left;
+    }
+    .plump-st-select span {
+        text-align: left!important;
+        font-weight: 700;
+        font-size: 12px;
+    }
+   .plump-st-select select {
+  font-size: 16px;
+  width: 95px;
+  min-width: 60px;
+}
+    .plump-st-container__inner .plump-select-container {
+        width: fit-content;
+        justify-content: space-between;
+        margin-top: 0px;
+    }
+.plump-select-container {
+  margin-right: 10px;
+}
+  
+  .plump-product-name {
+    display: none;
+}
+  
+  
+}
+
+@media only screen and (device-width : 375px) and (device-height : 812px) {
+    .plump-st-container {
+ 
+    height: 80px;
+    }
+  .plump-sticky .doubly-float, .plump-sticky #someone-purchased{
+  bottom: 90px!important;
+}
+}
+
+@media only screen and (device-width : 414px) and (device-height : 896px) {
+     .plump-st-container {
+ 
+   	 height: 80px;
+    }
+  .plump-sticky .doubly-float, .plump-sticky #someone-purchased{
+  bottom: 90px!important;
+}
+}

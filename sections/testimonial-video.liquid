@@ -1,0 +1,27 @@
+{% if section.settings.video_path != '' %}
+    <div class="w-full">
+        <video src="{{ section.settings.video_path }}"></video>
+    </div>
+{% endif %}
+
+{% schema %}
+    {
+        "name": "Testimonial Video",
+        "settings": [
+            {
+                "type": "text",
+                "id": "video_path",
+                "label": "Video"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Testimonial Video",
+                "category": "Advanced layout",
+                "settings": {
+                    "video_path": "testimonial.mp3"
+                }
+            }
+        ]
+    }
+    {% endschema %}

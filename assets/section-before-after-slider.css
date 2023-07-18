@@ -1,0 +1,303 @@
+:root {
+  --swiper-pagination-color: rgba(var(--color-foreground), 0.75);
+  --swiper-pagination-bullet-inactive-color: rgba(var(--color-foreground), 0.75);
+}
+
+.before-after-slider .container-narrow {
+  max-width: 600px;
+}
+
+.before-after-slider .fullscreen {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.before-after-slider .fullscreen svg {
+  pointer-events: none;
+}
+
+/** Swiper styles **/
+.before-after-slider {
+  position: relative;
+}
+
+.before-after-slider .before-after-swiper {
+  user-select: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: 526px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+@media (min-width: 640px){
+  .before-after-slider .before-after-swiper {
+    height: 717px;
+  }
+}
+
+@media (min-width: 768px){
+  .before-after-slider .before-after-swiper {
+    height: 780px;
+  }
+}
+
+.before-after-slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  /* color: #fff; */
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  /* background-color: rgba(51, 51, 51, 1); */
+  border-radius: 0px;
+}
+
+.before-after-slider .swiper-slide-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.before-after-slider .swiper-slide-title {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  max-width: 75%;
+  /* color: rgba(255, 255, 255, 1); */
+}
+
+.before-after-slider .swiper-slide-text {
+  max-width: 640px;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: presicav, sans-serif;
+  /* color: rgba(255, 255, 255, 1); */
+}
+
+.before-after-slider .swiper-slide-title + .swiper-slide-text {
+  margin-top: 8px;
+}
+
+.before-after-slider .swiper-slide-image {
+  position: absolute;
+  object-fit: cover;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* .before-after-slider .swiper-slide-content svg {
+  width: 30px;
+  padding-bottom: 1rem;
+  color: rgba(255, 0, 102, 1);
+} */
+
+.before-after-slider .before-after-author {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.before-after-slider .before-after-navigation {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  column-gap: 10px;
+  padding-top: 0rem;
+  top: -175px;
+  z-index: 2;
+}
+
+@media (min-width: 640px) {
+  .before-after-slider .before-after-navigation {
+    top: -145px;
+  }
+}
+
+@media (min-width: 768px) {
+  .before-after-slider .before-after-navigation {
+    top: -145px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .before-after-slider .before-after-navigation {
+    top: -150px;
+  }
+}
+
+.before-after-slider .before-after-swiper-pagination {
+  position: relative;
+  text-align: center;
+  transition: .3s opacity;
+  transform: translate3d(0,0,0);
+  z-index: 10;
+  padding: 0 1rem;
+  /* padding-top: 0rem; */
+  bottom: 0;
+  width: auto;
+  font-family: presicav, sans-serif;
+}
+
+.before-after-slider .swiper-controls {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.before-after-slider .before-after-swiper-button-prev,
+.before-after-slider .before-after-swiper-button-next {
+  position: relative;
+  height: 20px;
+  top: 2px;
+  margin-top: 0;
+  left: auto;
+  right: auto;
+  display: block;
+  width: 20px;
+}
+
+.before-after-slider .before-after-swiper-button-prev:after {
+  font-size: inherit;
+  content: url("data:image/svg+xml,%3Csvg height='15' viewBox='0 0 19 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19 7.5L2 7.5M2 7.5L8.5 14M2 7.5L8.5 0.999999' stroke='%23ff0066' stroke-width='2'/%3E%3C/svg%3E");
+  height: 20px;
+}
+
+.before-after-slider .before-after-swiper-button-next:after {
+  font-size: inherit;
+  content: url("data:image/svg+xml,%3Csvg height='15' viewBox='0 0 19 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 7.5H17M17 7.5L10.5 1M17 7.5L10.5 14' stroke='%23ff0066' stroke-width='2'/%3E%3C/svg%3E");
+}
+
+/* Section heading */
+.before-after-slider .before-after-header {
+  padding-bottom: 2rem;
+}
+
+.before-after-slider .swiper-slide-title {
+  margin: 2rem 0 0 0;
+}
+
+.before-after-slider .swiper-slide-author {
+  opacity: 0.5;
+  padding: 0.5rem 0;
+}
+
+.before-after-slider .swiper-slide-rating {
+  display: flex;
+  column-gap: 3px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.before-after-slider .swiper-slide-rating svg {
+  padding-bottom: 0;
+  width: 20px;
+}
+
+.before-after-slider .icv__label {
+  background:rgba(255, 0, 102, 1);
+  font-family: presicav, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 12px;
+}
+
+.before-after-slider .icv__control-line {
+  background: #fff !important;
+  width: 4px !important;
+}
+
+/* The Modal (background) */
+.before-after-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.before-after-modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+.before-after-modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.before-after-modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .before-after-modal-content {
+    width: 100%;
+  }
+}

@@ -1,0 +1,262 @@
+{{ 'section-video-slider.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="video-slider {{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="container">
+    {%- if section.settings.custom_text_title != blank or section.settings.custom_text_body != blank -%}
+    <div class="video-header center">
+      {%- if section.settings.custom_text_title != blank -%}
+        <h2 class="video-title h1 font-title text-xl text-center text-black uppercase"> {{ section.settings.custom_text_title }} </h2>
+      {%- endif -%}
+      {%- if section.settings.custom_text_body != blank -%}
+      <div class="video-description rte text-center">{{ section.settings.custom_text_body }}</div>
+      {%- endif -%}
+    </div>
+    {%- endif -%}
+
+    <div class="video-swiper">
+      <div class="swiper-wrapper">
+        {%- for block in section.blocks -%}
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+              {% if block.settings.video != blank %}
+              <div class="content-row__video">
+                <video controls preload="metadata"{% if section.settings.autoplay_video %} autoplay{% endif %}>
+                  <source src="{{ block.settings.video }}#t=0.001" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              {% endif %}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <div class="video-navigation">
+      <div class="video-swiper-button-prev"></div>
+      <div class="video-swiper-pagination"></div>
+      <div class="video-swiper-button-next"></div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  var slides = {{ section.settings.slides_per_page }};
+  var slideGap = {{ section.settings.slide_gap }};
+  var swiperSpeed = {{ section.settings.speed }};
+  
+  var swiper = new Swiper(".video-swiper", {
+    observeParents: true,
+    observer: true,
+    loop: true,
+    grabCursor: true,
+    pagination: {
+      dynamicBullets: true,
+      clickable: true,
+      type: "fraction",
+      el: ".video-swiper-pagination",
+    },
+    navigation: {
+      prevEl: ".video-swiper-button-prev",
+      nextEl: ".video-swiper-button-next",
+    },
+    slidesPerView: 1,
+    breakpoints: {
+      // when window width is >= 320px
+      750: {
+        slidesPerView: slides,
+      },
+      // when window width is >= 480px
+      990: {
+        slidesPerView: slides,
+      }
+    },
+    watchSlidesProgress: true,
+    watchOverflow: true,
+    autoplay: {
+      delay: swiperSpeed,
+      disableOnInteraction: false
+    },
+    keyboard: { enabled: true },
+    spaceBetween: slideGap,
+  });
+</script>
+
+<script>
+  // Get all <video> elements.
+  const videos = document.querySelectorAll('video');
+
+  // Pause all <video> elements except for the one that started playing.
+  function pauseOtherVideos({ target }) {
+  for (const video of videos) {
+    if (video !== target) {
+      video.pause();
+    }
+  }
+  }
+
+  // Listen for the 'play' event on all the <video> elements.
+  for (const video of videos) {
+  video.addEventListener('play', pauseOtherVideos);
+  }
+</script>
+
+{% schema %}
+  {
+    "name": "Product Videos",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "select",
+        "id": "color_scheme",
+        "label": "Background Colour",
+        "options": [
+          {
+            "value": "bg-grey",
+            "label": "Grey"
+          },
+          {
+            "value": "bg-pink",
+            "label": "Pink"
+          },
+          {
+            "value": "bg-palepink",
+            "label": "Pale Pink"
+          },
+          {
+            "value": "bg-black text-white",
+            "label": "Black"
+          },
+          {
+            "value": "",
+            "label": "None"
+          }
+        ],
+        "default": "bg-grey"
+      },
+      {
+        "id": "custom_text_title",
+        "type": "text",
+        "label": "Section heading",
+        "default": "Title"
+      },
+      {
+        "id": "custom_text_body",
+        "type": "richtext",
+        "label": "Section description",
+        "default": "<p>Add your text here</p>"
+      },
+      {
+        "type": "header",
+        "content": "Slider settings"
+      },
+      {
+        "type": "range",
+        "id": "slides_per_page",
+        "min": 1,
+        "max": 4,
+        "step": 1,
+        "label": "Slides per page",
+        "default": 3
+      },
+      {
+        "type": "range",
+        "id": "slide_gap",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "Space between slides",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "speed",
+        "min": 0,
+        "max": 9000,
+        "step": 500,
+        "unit": "ms",
+        "label": "Transition Speed",
+        "default": 2500
+      },
+      {
+        "type": "header",
+        "content": "Section padding"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 52
+      }
+    ],
+    "blocks": [
+      {
+        "type": "video",
+        "name": "Video",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Video"
+          },
+          {
+            "type": "url",
+            "id": "video",
+            "label": "Add the video file URL here"
+          },
+          {
+            "type": "checkbox",
+            "id": "autoplay_video",
+            "label": "Autoplay video",
+            "default": true
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Product Videos",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "video"
+        },
+        {
+          "type": "video"
+        },
+        {
+          "type": "video"
+        }
+      ]
+    }]
+  }
+{% endschema %}

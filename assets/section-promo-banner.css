@@ -1,0 +1,90 @@
+#shopify-section-promo-banner {
+  width: 100%;
+  position: fixed;
+  z-index: 40;
+}
+
+/** Swiper styles **/
+:root {
+  --swiper-navigation-color: rgba(255, 255, 255, 1);
+}
+
+.promo-swiper {
+  user-select: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .promo-swiper .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.promo-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 0px;
+  color: rgba(29, 29, 27, 1);
+}
+
+.promo-swiper .swiper-slide.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgba(29, 29, 27, var(--tw-bg-opacity));
+  color: rgba(255, 255, 255, 1);
+}
+
+.promo-swiper .swiper-slide.bg-grey {
+  --tw-bg-opacity: 1;
+  background-color: rgba(250, 250, 250, var(--tw-bg-opacity));
+  color: rgba(29, 29, 27, 1);
+}
+
+.promo-swiper .swiper-slide.bg-pink {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 0, 102, var(--tw-bg-opacity));
+  color: rgba(255, 255, 255, 1);
+}
+
+.promo-swiper .swiper-slide.bg-palepink {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 236, 243, var(--tw-bg-opacity));
+  color: rgba(29, 29, 27, 1);
+}
+
+.promo-swiper .swiper-slide-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 4px 4px;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.promo-swiper .promo-banner-title {
+  font-family: roc-grotesk, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+.promo-swiper .swiper-button-prev:after,
+.promo-swiper .swiper-button-next:after {
+  font-size: 16px;
+}

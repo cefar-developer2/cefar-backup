@@ -1,0 +1,263 @@
+  {{ 'section-testimonials-slider.css' | asset_url | stylesheet_tag }}
+  
+  {%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+  
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+  
+  <div class="testimonials-slider {{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+    <div class="container">
+      {%- if section.settings.custom_text_title != blank or section.settings.custom_text_body != blank -%}
+      <div class="testimonial-header center">
+        {%- if section.settings.custom_text_title != blank -%}
+          <h2 class="testimonial-title h1 font-title text-xl text-center text-black uppercase"> {{ section.settings.custom_text_title }} </h2>
+        {%- endif -%}
+        {%- if section.settings.custom_text_body != blank -%}
+        <div class="testimonial-description rte text-center">{{ section.settings.custom_text_body }}</div>
+        {%- endif -%}
+      </div>
+      {%- endif -%}
+  
+      <div class="testimonial-swiper">
+        <div class="swiper-wrapper">
+          {%- for block in section.blocks -%}
+            <div class="swiper-slide">
+              <div class="swiper-slide-content">
+                {% render 'icon-quote' %}
+                {%- if block.settings.heading != blank -%}
+                  <div class="swiper-slide-title uppercase font-title font-black">{{ block.settings.heading | escape }}</div>
+                {%- endif -%}
+                {%- if block.settings.text != blank -%}
+                <div class="swiper-slide-text">
+                  {{ block.settings.text }}
+                </div>
+                {%- endif -%}
+                <div class="swiper-slide-rating">
+                  {% for i in (1..block.settings.rating) %}
+                    {% include 'icon-star-filled' %}
+                  {% endfor %}
+                  {% assign stars = 5 | minus: block.settings.rating %}
+                  {% for i in (1..stars) %}
+                    {% include 'icon-star-empty' %}
+                  {% endfor %}
+                </div>
+                {%- if block.settings.author != blank -%}
+                  <div class="swiper-slide-author font-title">{{ block.settings.author | escape }}</div>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+  
+      <div class="testimonial-navigation">
+        <div class="testimonial-swiper-button-prev"></div>
+        <div class="testimonial-swiper-pagination"></div>
+        <div class="testimonial-swiper-button-next"></div>
+      </div>
+
+    </div>
+  </div>
+    
+  <script>
+    var slides = {{ section.settings.slides_per_page }};
+    var slideGap = {{ section.settings.slide_gap }};
+    var swiperSpeed = {{ section.settings.speed }};
+    
+    var swiper = new Swiper(".testimonial-swiper", {
+      loop: true,
+      pagination: {
+        type: "fraction",
+        el: ".testimonial-swiper-pagination",
+      },
+      navigation: {
+        prevEl: ".testimonial-swiper-button-prev",
+        nextEl: ".testimonial-swiper-button-next",
+      },
+      slidesPerView: 1,
+      breakpoints: {
+        // when window width is >= 750px
+        750: {
+          slidesPerView: slides,
+        },
+        // when window width is >= 990px
+        990: {
+          slidesPerView: slides,
+        }
+      },
+      watchSlidesProgress: true,
+      autoplay: {
+        delay: swiperSpeed,
+        disableOnInteraction: false
+      },
+      keyboard: { enabled: true },
+      spaceBetween: slideGap,
+    });
+  </script>
+  
+  {% schema %}
+    {
+      "name": "Testimonial Slider",
+      "class": "section",
+      "tag": "section",
+      "settings": [
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "label": "Background Colour",
+          "options": [
+            {
+              "value": "bg-grey",
+              "label": "Grey"
+            },
+            {
+              "value": "bg-pink",
+              "label": "Pink"
+            },
+            {
+              "value": "bg-palepink",
+              "label": "Pale Pink"
+            },
+            {
+              "value": "bg-black",
+              "label": "Black"
+            },
+            {
+              "value": "",
+              "label": "None"
+            }
+          ],
+          "default": "bg-grey"
+        },
+        {
+          "id": "custom_text_title",
+          "type": "text",
+          "label": "Section heading",
+          "default": "Title"
+        },
+        {
+          "id": "custom_text_body",
+          "type": "richtext",
+          "label": "Section description",
+          "default": "<p>Add your text here</p>"
+        },
+        {
+          "type": "header",
+          "content": "Slider settings"
+        },
+        {
+          "type": "range",
+          "id": "slides_per_page",
+          "min": 1,
+          "max": 4,
+          "step": 1,
+          "label": "Slides per page",
+          "default": 3
+        },
+        {
+          "type": "range",
+          "id": "slide_gap",
+          "min": 0,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "label": "Space between slides",
+          "default": 20
+        },
+        {
+          "type": "range",
+          "id": "speed",
+          "min": 0,
+          "max": 9000,
+          "step": 500,
+          "unit": "ms",
+          "label": "Transition Speed",
+          "default": 2500
+        },
+        {
+          "type": "header",
+          "content": "Section padding"
+        },
+        {
+          "type": "range",
+          "id": "padding_top",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "Padding top",
+          "default": 40
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "Padding bottom",
+          "default": 52
+        }
+      ],
+      "blocks": [
+        {
+          "type": "testimonial",
+          "name": "Testimonial",
+          "settings": [
+            {
+              "type": "text",
+              "id": "heading",
+              "default": "Heading",
+              "label": "Heading"
+            },
+            {
+              "type": "richtext",
+              "id": "text",
+              "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+              "label": "Description"
+            },
+            {
+              "type": "range",
+              "id": "rating",
+              "min": 0,
+              "max": 5,
+              "step": 1,
+              "label": "Star Rating",
+              "default": 5
+            },
+            {
+              "type": "text",
+              "id": "author",
+              "default": "Author",
+              "label": "Author"
+            }
+          ]
+        }
+      ],
+      "presets": [{
+        "name": "Testimonial Slider",
+        "category": "Text",
+        "blocks": [
+          {
+            "type": "testimonial"
+          },
+          {
+            "type": "testimonial"
+          },
+          {
+            "type": "testimonial"
+          }
+        ]
+      }]
+    }
+  {% endschema %}
+  

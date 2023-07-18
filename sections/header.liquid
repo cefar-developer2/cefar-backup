@@ -1,0 +1,108 @@
+<header class="border-opacity-10 header fixed top-0 z-30 w-full pt-12 pb-4 bg-white border-b border-black">
+	<div class="header-wrapper container flex py-2">
+		<div class="lg:hidden js-toggle-mobile-menu flex items-center w-8">
+			<i class="fal fa-bars lg:text-xl text-lg"></i>
+		</div>
+		<div class="header-logo">
+			<a href="/">
+				<img class="lg:h-16 h-12 py-1" src="{{ 'new-logo-2.svg' | asset_url }}" alt="Plump It Logo">
+			</a>
+		</div>
+		<div class="header-icons lg:flex items-center justify-end hidden w-2/5">
+			<form action="/search">
+				<div class="lg:block group js-search focus-within:border-b hidden py-2 border-0 border-black outline-none">
+					<button class="outline-none">
+						<i class="fal fa-search hover:text-pink outline-none cursor-pointer"></i>
+					</button>
+					<input type="hidden" name="type" value="product">
+					<input type="text" name="q" class="group-focus-within:pl-3 font-body group-focus-within:w-52 w-0 text-xs transition-all duration-300 outline-none" placeholder="Search...">
+				</div>
+			</form>
+
+			<div class="cart-summary">
+				<a href="/cart" class="hover:text-pink pl-7 relative pr-6">
+					<i class="fal fa-shopping-bag"></i>
+					{% if cart.item_count > 0 %}
+						<div class="bg-pink right-5 absolute top-0 w-2 h-2 rounded-full"></div>
+					{% endif %}
+				</a>
+
+				<div class="block">
+					{% include 'currencies-switcher' %}
+				</div>
+			</div>
+		</div>
+		<div class="lg:hidden flex items-center justify-end w-8">
+			<a href="/cart" class="relative z-[100]">
+				<i class="fal fa-shopping-bag lg:text-xl text-lg"></i>
+				{% if cart.item_count > 0 %}
+					<div class="bg-pink -right-1 absolute top-0 w-2 h-2 rounded-full"></div>
+				{% endif %}
+			</a>
+		</div>
+	</div>
+	<div class="header-navigation-wrapper container flex mt-2">
+		<div class="header-navigation lg:flex justify-center hidden">
+		{% for link in section.settings.menu.links %}
+		<h5 class="header-navigation__link {% if link.active %}text-pink{% endif %}">
+			<a href="{{ link.url }}" class="hover:text-pink text-sm uppercase">{{ link.title }}</a>
+		</h5>
+		{% endfor %}
+	</div>
+	</div>
+</header><!-- /#pageheader -->
+
+<div class="page-spacer w-full"></div>
+
+<div class="mobile-navigation lg:hidden js-mobile-screen fixed top-0 z-40 hidden w-screen h-screen">
+	<div class="js-toggle-mobile-menu absolute w-full h-full bg-black opacity-50"></div>
+	<nav class="bg-pink relative z-10 w-4/5 h-full pl-6 overflow-y-scroll">
+
+		<div class="pt-6 mb-20">
+			<form action="/search" method="get">
+				<div class="relative flex items-center mr-16">
+					<input type="search" class="border-b-white bg-pink font-body w-full py-3 text-xs text-white placeholder-current border-b border-opacity-50 outline-none" name="q" placeholder="Search our store...">
+					<input type="hidden" name="type" value="product">
+					<button class="bg-pink border-none absolute right-0 text-white top-[12px]"><i class="fal fa-search text-sm"></i></button>
+				</div>
+			</form>
+		</div>
+
+		<ul class="space-y-4">
+			{% for link in section.settings.menu.links %}
+				<li>
+					<a href="{{ link.url }}" class="font-title text-xl text-center text-white uppercase">{{ link.title }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+
+		<div class="w-3/4 pt-6 mt-12 border-t border-white border-opacity-50">
+			<ul class="space-y-2">
+				<li><a class="font-body text-xs text-white" href="/pages/about">About Us</a></li>
+				<li><a class="font-body text-xs text-white" href="/pages/frequently-asked-questions">Frequently Asked Questions</a></li>
+				<li><a class="font-body text-xs text-white" href="/pages/privacy-policy">Privacy Policy</a></li>
+				<li><a class="font-body text-xs text-white" href="/pages/shipping-information-1">Shipping &amp; Returns</a></li>
+			</ul>
+		</div>
+
+	</nav>
+</div>
+
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu"
+    }
+    ],
+    "presets": [
+      {
+        "name": "Header",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}

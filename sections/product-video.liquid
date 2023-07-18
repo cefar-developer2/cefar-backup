@@ -1,0 +1,19 @@
+{% if product.metafields.global.video_title %}
+  <div class="md:container mb-6 mt-6 lg:mb-12 lg:mt-12 relative">
+    <h3 class="mb-7 font-title text-xl text-center uppercase">{{ product.metafields.global.video_title }}</h3>
+    <!-- <div class=" top-6 lg:top-56 opacity-30 text-pink font-title lg:text-3xl absolute w-full text-xl font-bold text-center uppercase">Video Area</div> -->
+    <video class="bg-palepink w-full" src="{{ product.handle | file_url }}.mp4"></video>
+  </div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Video Section",
+    "presets": [
+      {
+        "name": "Video Section",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}

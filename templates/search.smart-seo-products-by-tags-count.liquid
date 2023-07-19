@@ -1,7 +1,0 @@
-{%- layout none -%}
-
-{%- paginate search.results by 250 -%}
-{%- if search.performed -%}
-{"count": {{search.results | size}} }
-{%- endif -%}
-{%- endpaginate -%}

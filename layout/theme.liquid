@@ -1,248 +1,165 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+{%- liquid
+  assign rtl_langs = 'ar,arc,dv,fa,ha,he,khw,ks,ku,ps,ur,yi' | split: ','
+  assign current_lang = localization.language.iso_code | split: '-' | first
+  if rtl_langs contains current_lang
+    assign lang_dir = 'rtl'
+  else
+    assign lang_dir = 'ltr'
+  endif
+-%}
+<html lang="{{ request.locale.iso_code }}" dir="{{ lang_dir }}">
 <head>
-  <meta name="facebook-domain-verification" content="ujofxw49wkyo2m5l9oxe6crlwnu5p9" />
- <!-- Start VWO Async SmartCode -->
-<script type='text/javascript'>
-window._vwo_code = window._vwo_code || (function(){
-var account_id=518000,
-settings_tolerance=2000,
-library_tolerance=2500,
-use_existing_jquery=false,
-is_spa=1,
-hide_element='body',
-
-/* DO NOT EDIT BELOW THIS LINE */
-f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
-window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
-</script>
-<!-- End VWO Async SmartCode -->
-
- <script>
-  (function() {
-    var ta = document.createElement('script'); ta.type = 'text/javascript'; ta.async = true;
-    ta.src = 'https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid=BRURQ5EGGO0ITLU11TAG';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(ta, s);
-  })();
-</script>
-
-  <meta name="google-site-verification" content="1Vut5LrTudKE9O8iUQBtAJODytONudlzL2150ck9RDM" />
-  <meta name="msvalidate.01" content="FDD30A5A7AF81C6A2AD361235E2ED5F2" />
-
-  <!-- Symmetry 3.0.7 -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="theme-color" content="{{ settings.btn_col }}">
-  <meta name="google-site-verification" content="kZaerJMuR-_RRb2pLLnZbxku_UN35Rmfbk9ZHCFp_FI" />
-
-  <link rel="stylesheet" href="https://use.typekit.net/knh7eym.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-  {% if settings.favicon != blank and settings.favicon contains '.png' %}
-  <link rel="shortcut icon" href="{{ settings.favicon | img_url: 'master' }}" type="image/png" />
-  {% elsif settings.favicon != blank and settings.favicon contains '.ico' %}
-  <link rel="shortcut icon" href="{{ settings.favicon | img_url: 'master' }}" type="image/x-icon" />
-  {% endif %}
+  <!-- Symmetry 6.0.3 -->
 
   <title>
     {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
   </title>
-  {% if page_description %}
-  <meta name="description" content="{{ page_description | escape }}" />
-  {% endif %}
-  <link rel="canonical" href="{{ canonical_url }}" />
 
-  {% include 'opengraph-tags' %}
-  {% include 'twitter-card' %}
+  {% render 'head-tag' %}
 
-  {% include 'google-fonts-import' %}
+  {%- liquid
+    assign base_font = settings.type_base_font
+    assign base_font_bold = base_font | font_modify: 'weight', 'bolder'
+    assign base_font_medium = base_font | font_modify: 'weight', '500'
+    assign base_font_italic = base_font | font_modify: 'style', 'italic'
+    assign base_font_bold_italic = base_font_bold | font_modify: 'style', 'italic'
+    assign heading_font = settings.type_heading_font
+    assign logo_font = settings.type_logo_font
+    assign nav_font = settings.type_nav_font
+    assign nav_font_600 = nav_font | font_modify: 'weight', '600'
+  -%}
 
-  <!-- {{ 'styles.scss.css' | asset_url | stylesheet_tag }} -->
-  {{ 'app.css' | asset_url | stylesheet_tag }}
-  {{ 'custom.css' | asset_url | stylesheet_tag }}
+  <style>
+    {{ base_font | font_face: font_display: 'fallback' }}
+    {{ base_font_bold | font_face: font_display: 'fallback' }}
+    {{ base_font_medium | font_face: font_display: 'fallback' }}
+    {{ base_font_italic | font_face: font_display: 'fallback' }}
+    {{ base_font_bold_italic | font_face: font_display: 'fallback' }}
+    {{ heading_font | font_face: font_display: 'fallback' }}
+    {{ logo_font | font_face: font_display: 'fallback' }}
+    {{ nav_font | font_face: font_display: 'fallback' }}
+    {{ nav_font_600 | font_face: font_display: 'fallback' }}
+  </style>
 
-  {% if template contains 'customers' %}
-  {{ "shopify_common.js" | shopify_asset_url | script_tag }}
-  {{ "customer_area.js"  | shopify_asset_url | script_tag }}
-  {% endif %}
+  {% render 'social-meta-tags' %}
 
-  <script src="https://kit.fontawesome.com/34afb3897f.js" crossorigin="anonymous"></script>
+  {{ 'styles.css' | asset_url | stylesheet_tag: preload: true }}
 
-  {{ '//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js' | script_tag }}
-  {{ 'api.jquery.js' | shopify_asset_url | script_tag }}
-  {{ "app.js" | asset_url | script_tag }}
+  {%- if settings.custom_theme_css != blank -%}
+    {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
+  {%- endif -%}
 
-<script>
-  Shopify.money_format = {{ shop.money_format | json }};
-  window.theme = window.theme || {};
-  theme.money_format = {{ shop.money_format | json }};
-  theme.productData = {};
-  document.documentElement.className = document.documentElement.className.replace('no-js', '');
-</script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  {%- if settings.swatch_enabled and settings.swatch_value_list != blank -%}
+    <link rel="stylesheet" href="{{ 'swatches.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{{ 'swatches.css' | asset_url }}"></noscript>
+  {%- endif -%}
+
+  <script>
+    window.theme = window.theme || {};
+    theme.money_format_with_product_code_preference = {% if settings.product_currency_code_enabled %}{{ shop.money_with_currency_format | json }}{% else %}{{ shop.money_format | json }}{% endif %};
+    theme.money_format_with_cart_code_preference = {% if settings.cart_currency_code_enabled %}{{ shop.money_with_currency_format | json }}{% else %}{{ shop.money_format | json }}{% endif %};
+    theme.money_format = {{ shop.money_format | json }};
+    theme.strings = {
+      previous: {{ 'general.accessibility_labels.previous' | t | json }},
+      next: {{ 'general.accessibility_labels.next' | t | json }},
+      addressError: {{ 'map.errors.address_error' | t | json }},
+      addressNoResults: {{ 'map.errors.address_no_results' | t | json }},
+      addressQueryLimit: {{ 'map.errors.address_query_limit_html' | t | json }},
+      authError: {{ 'map.errors.auth_error' | t | json }},
+      icon_labels_left: {{ 'general.icon_labels.left' | t | escape | json }},
+      icon_labels_right: {{ 'general.icon_labels.right' | t | escape | json }},
+      icon_labels_down: {{ 'general.icon_labels.down' | t | escape | json }},
+      icon_labels_close: {{ 'general.icon_labels.close' | t | escape | json }},
+      icon_labels_plus: {{ 'general.icon_labels.plus' | t | escape | json }},
+      imageSlider: {{ 'general.slider.images' | t | json }},
+      cart_terms_confirmation: {{ 'cart.terms.confirmation' | t | json }},
+      cart_general_quantity_too_high: {{ 'cart.general.quantity_too_high' | t: quantity: '[QUANTITY]' | json }},
+      products_listing_from: {{ 'products.listing.from' | t | json }},
+      layout_live_search_see_all: {{ 'layout.live_search.see_all' | t | json }},
+      products_product_add_to_cart: {{ 'products.product.add_to_cart' | t | json }},
+      products_variant_no_stock: {{ 'products.variant.no_stock' | t | json }},
+      products_variant_non_existent: {{ 'products.variant.non_existent' | t | json }},
+      products_product_pick_a: {{ 'products.product.pick_a' | t | json }},
+      general_navigation_menu_toggle_aria_label: {{ 'general.navigation.menu_toggle_aria_label' | t | json }},
+      general_accessibility_labels_close: {{ 'general.accessibility_labels.close' | t | json }},
+      products_product_added_to_cart: {{ 'products.product.added_to_cart' | t | json }},
+      general_quick_search_pages: {{ 'general.quick_search.pages' | t | json }},
+      general_quick_search_no_results: {{ 'general.quick_search.no_results' | t | json }},
+      collections_general_see_all_subcollections: {{ 'collections.general.see_all_subcollections' | t | json }}
+    };
+    theme.routes = {
+      cart_url: '{{ routes.cart_url }}',
+      cart_add_url: '{{ routes.cart_add_url }}.js',
+      cart_update_url: '{{ routes.cart_update_url }}.js',
+      predictive_search_url: '{{ routes.predictive_search_url }}'
+    };
+    theme.settings = {
+      cart_type: {{ settings.cart_type | json }},
+      after_add_to_cart: {{ settings.after_add_to_cart | json }},
+      quickbuy_style: {{ settings.quickbuy_style | json }},
+      avoid_orphans: {{ settings.avoid_orphans | json }}
+    };
+    document.documentElement.classList.add('js');
+  </script>
+
+  <script src="{{ 'vendor.min.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
 
   {{ content_for_header }}
-
-  <!-- REAMAZE INTEGRATION START - DO NOT REMOVE -->
-{% include 'reamaze-config' %}
-{% include 'reamaze-sso' %}
-<!-- REAMAZE INTEGRATION END - DO NOT REMOVE -->
-
-<script type='text/javascript'>
-  (function(win, doc, sdk_url){
-  if(win.snaptr) return;
-  var tr=win.snaptr=function(){
-  tr.handleRequest? tr.handleRequest.apply(tr, arguments):tr.queue.push(arguments);
-};
-  tr.queue = [];
-  var s='script';
-  var new_script_section=doc.createElement(s);
-  new_script_section.async=!0;
-  new_script_section.src=sdk_url;
-  var insert_pos=doc.getElementsByTagName(s)[0];
-  insert_pos.parentNode.insertBefore(new_script_section, insert_pos);
-})(window, document, 'https://sc-static.net/scevent.min.js');
-
-  snaptr('init','da2868cc-aea7-4642-ae28-c4628b264c73',{
-  'user_email':'<USER-EMAIL>'
-})
-  snaptr('track','PAGE_VIEW')
-</script>
-<!-- {{ 'conv-cust-js.js' | asset_url | script_tag }}
-{{ 'conv-cust-css.scss.css' | asset_url | stylesheet_tag }} -->
-
-<script>
-  (function(root) {
-      var ta = document.createElement('script'); ta.type = 'text/javascript'; ta.async = true;
-      ta.src = 'https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid=BV2DJTAD4EIVEV2IOV7G';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ta, s);
-  })(window);
-</script>
-
-<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"25121939"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
-
-<!-- Hotjar Tracking Code for www.plump-it.com --> <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:1553065,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); </script>
-
-{% render 'limoniapps-discountninja-header' %}{%- if product -%}{%- assign discountninjaproduct = product -%}{%- endif -%}{%- if collection -%}{%- assign discountninjacollection = collection -%}{%- endif -%}
-
-{% render 'analyzify-product-datalayer.liquid' %}
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
 </head>
 
+<body class="template-{{ template | split: '.' | first | handle }}
+    {%- if template.suffix %} template-suffix-{{ template.suffix }}{% endif -%}
+    {%- if settings.swatch_enabled %} swatch-method-{{ settings.swatch_method }} swatch-style-{{ settings.swatch_style }}{% endif -%}
+    " data-cc-animate-timeout="0">
 
-<body class="template-{{ template | split: '.' | first }}"><!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFDL59V"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  {%- if settings.animations_enabled_desktop -%}
+    <script>
+      if ('IntersectionObserver' in window) {
+        document.body.classList.add("cc-animate-enabled");
+      }
+    </script>
+  {%- endif -%}
 
-  {% section 'promo-banner' %}
+  <a class="skip-link visually-hidden" href="#content">{{ 'general.accessibility_labels.skip_to_content' | t }}</a>
 
-	{% section 'header' %}
+  {% unless template.name == 'cart' or settings.cart_type == 'page' %}{% section 'cart-drawer' %}{% endunless %}
+  {% section 'announcement-bar' %}
+  {% section 'header' %}
+  {% section 'store-messages' %}
 
-    <div class="fixed js-cart-popup-cover bg-black transition-all duration-300 pointer-events-none bg-opacity-30 opacity-0 z-[200] left-0 top-0 w-full h-full overflow-hidden">
-      <div class="cart-popup text-center flex flex-col justify-between absolute transition-all duration-300 bg-white top-0 h-screen w-[288px] pt-8 lg:pt-16 left-[-300px]">
-        <div class="px-8">
-          <h2 class="text-lg uppercase mb-2">Added to Cart!</h2>
-          <hr>
-          <div class="js-cart-popup-items">
+  <main id="content" role="main">
+    <div class="container cf">
 
-          </div>
-          <a href="/cart" class="btn btn--pink mb-5">View Cart <span class="js-cart-count "></span></a>
-          <p><a href="#" class="js-close-cart-popup text-pink text-xs">Continue shopping</a></p>
-        </div>
-        <div class="pb-12 px-8 border-t border-opacity-10 border-black">
-            <h3 class="text-lg uppercase text-center mt-8 mb-4">You Might Like...</h3>
-            <div class="js-popup-carousel">
-                {% assign related_product_count = 0 %}
-                {% for product in collections['upsell-products'].products %}
-                {% unless cart_item_products contains product.handle or related_product_count > 3 %}
-                  {% assign related_product_count = related_product_count | plus: 1 %}
-                  <div class="flex flex-col items-center" data-product="{{ product.id }}">
-                    <img class="object-contain w-full h-full" src="{{ product.featured_image | img_url: '700x700' }}" alt="{{ product.title }}">
-                    <p class="mt-0 mb-1 text-xs leading-[18px] font-bold">{{ product.title }} </p>
-                  </div>
-                {% endunless %}
-              {% endfor %}
-            </div>
-        </div>
-      </div>
+      {{ content_for_layout }}
+
+    </div><!-- /.container -->
+  </main><!-- /#content -->
+
+  {%- if request.path != '/challenge' -%}
+    <div id="pagefooter">
+      {% section 'cross-page-promos' %}
+      {% section 'footer' %}
     </div>
 
-  	<div id="content">
-    	<div class="">
-      		{{ content_for_layout }}
-    	</div><!-- /.container -->
-  	</div><!-- /#content -->
+    {% section 'popup' %}
+  {%- endif -%}
 
-    <div class="border-opacity-10 border-t border-black">
-      <div id="pagefooter" class="lg:py-16 container pt-8 pb-12">
-        {% section 'cross-page-promos' %}
-
-        {% section 'footer' %}
-      </div><!-- /#pagefooter -->
-    </div>
-
-  	{{ 'vendor.js'  | asset_url | script_tag }}
-  	{{ 'theme.js'  | asset_url | script_tag }}
-    {{ 'image-gallery.js'  | asset_url | script_tag }}
-    {{ 'background-video.js'  | asset_url | script_tag }}
-
-  	{% include 'currencies' %}
-
-	{% include 'subscription-theme-footer' %}
-  <script>
-
-var _support = _support || { 'ui': {}, 'user': {} };
-
-_support['ui']['pushNotifications'] = false;
-
-</script>
-{% include 'limoniapps-discountninja-body' %}
-
-<!-- Klaviyo back in stock function -->
-<script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
-<script>
-    var klaviyo = klaviyo || [];
-    klaviyo.init({
-      account: "L9cDbQ",
-      platform: "shopify"
-    });
-    klaviyo.enable("backinstock",{
-    trigger: {
-      product_page_text: "Notify Me When Available",
-      product_page_class: "btn btn--pink",
-      product_page_text_align: "center",
-      product_page_margin: "0px",
-      alternate_anchor: 'addToCart',
-      replace_anchor: false
-    },
-    modal: {
-     headline: "{product_name}",
-     body_content: "Register to receive a notification when this item comes back in stock.",
-     email_field_label: "Email",
-     button_label: "Notify me when available",
-     subscription_success_label: "You're in! We'll let you know when it's back.",
-     footer_content: '',
-     drop_background_color: "#000",
-     background_color: "#fff",
-     text_color: "#222",
-     button_text_color: "#fff",
-     button_background_color: "rgb(255,0,102)",
-     close_button_color: "#ccc",
-     error_background_color: "#fcd6d7",
-     error_text_color: "#C72E2F",
-     success_background_color: "#d3efcd",
-     success_text_color: "#1B9500"
-    }
-  });
-</script>
- {% include 'smile-initializer' %}
-
+  {%- if settings.after_add_to_cart == 'notification' -%}
+    <template id="AddedNotification">
+      <added-notification class="added-notification added-notification--hidden">
+        <div class="added-notification__message-area">
+          <div class="added-notification__message-title"></div>
+          <div class="added-notification__message-text underline-child">{{ 'products.product.added_to_cart_with_link_html' | t: cart_url: routes.cart_url }}</div>
+        </div>
+        <div class="added-notification__button-area">
+          <button type="button" class="added-notification__close notabutton" aria-label="{{ 'general.accessibility_labels.close' | t | escape }}">
+            {%- render 'svg-x' -%}
+          </button>
+        </div>
+      </added-notification>
+    </template>
+  {%- endif -%}
 </body>
 </html>

@@ -1,56 +1,36 @@
-{% comment %}
-    Use this snippet to add a responsive image to page.
+{%- liquid
+  if aspect_ratio != blank
+    assign local_aspect_ratio = aspect_ratio
+  else
+    assign local_aspect_ratio = image.aspect_ratio
+  endif
 
-    Specify Shopify image you want to make responsive in the "with" parameter (see examples below).
+  assign local_cover = cover | default: false
 
-    You can use following variables to customize the image
-    * default_size: size of placeholder image until full image is loaded (default: '150x')
-    * class: additional classes to be applied to an image
-    * alt: alt text for the image
-    * props: additional properties for the <img /> tag (data-, styles, id, etc.)
+  if max_height
+    assign max_width = max_height | times: image.aspect_ratio | at_most: image.width | round
+  else
+    assign max_width = image.width
+  endif
 
-    Usage:
-    * Define variables inside the include tag (preferred):
-    {% include 'responsive-image' with product.image, class: 'product-image', alt: 'A simple product', default_size: '300x', props: 'data-id="1"' %}
+  assign min_aspect_ratio = min_aspect_ratio | default: 0
+  assign local_aspect_ratio = local_aspect_ratio | at_least: min_aspect_ratio
+-%}
 
-    * Define variables before including this snippet
-    {% assign class = "product-image" %}
-    {% assign alt = "A simple product" %}
-    {% assign default_size = '300x' %}
-    {% capture props %}
-        data-id="1"
-    {% endcapture %}
-    {% include 'responsive-image' with product.image %}
+<div class="rimage-outer-wrapper" {% unless local_cover or no_max_width %}style="max-width: {{ max_width }}px"{% endunless %}>
+  <div class="rimage-wrapper lazyload--placeholder" style="padding-top:{{ 1 | divided_by: local_aspect_ratio | times: 100 }}%"
+       {% if animate %}data-cc-animate="{% if animate_type %}{{ animate_type }}{% endif %}" {% if animate_delay %}data-cc-animate-delay="{{ animate_delay }}"{% endif %}{% endif %}>
+    {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+    <img class="rimage__image lazyload{% if manual_image_load %}--manual{% endif %} fade-in {% if local_cover %}cover{% endif %}"
+      data-src="{{ img_url }}"
+      data-widths="[180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+      data-aspectratio="{{ image.aspect_ratio }}"
+      data-sizes="auto"
+      alt="{{ image.alt | escape }}"
+      {% if local_cover %}data-parent-fit="cover" style="object-position: {{ image.presentation.focal_point }}"{% endif %}>
 
-{% endcomment %}
-
-{% if default_size == blank %}
-    {% assign default_size = '150x' %}
-{% endif %}
-
-{% assign responsive_img_url = responsive-image | img_url: '1000x1000' | replace: '_1000x1000.', '_{width}x.' %}
-{% assign src = responsive-image | img_url: default_size %}
-
-<noscript>
-    <img
-        class="{{ class }}"
-        src="{{ responsive-image | img_url: '1000x1000' }}"
-        data-sizes="auto"
-        {% if alt %}
-            alt="{{ alt | escape }}"
-        {% endif %}
-        {{ props }}
-    />
-</noscript>
-
-<img
-    class="lazyload {{ class }}"
-    src="{{ src }}"
-    data-src="{{ responsive_img_url }}"
-    data-sizes="auto"
-    data-aspectratio="{{ responsive-image.aspect_ratio }}"
-    {% if alt %}
-        alt="{{ alt | escape }}"
-    {% endif %}
-    {{ props }}
-/>
+    <noscript>
+      <img class="rimage__image" src="{{ image | img_url: '1024x1024' }}" alt="{{ image.alt | escape }}">
+    </noscript>
+  </div>
+</div>

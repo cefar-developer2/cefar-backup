@@ -1,19 +1,15 @@
 <div class="product-block collection-block">
   <div class="block-inner">
     <div class="product-link">
-
       <div class="image-cont">
-        {% capture placeholder_svg_name %}collection-{{ forloop.index }}{% endcapture %}
-        <div class="placeholder-image">{{ placeholder_svg_name | placeholder_svg_tag }}</div>
+        {% capture placeholder_svg_name %}collection-{{ forloop.index | modulo: 6 | plus: 1 }}{% endcapture %}
+        <div class="placeholder-image placeholder-image--shape-{{ settings.coll_grid_image_shape }}">{{ placeholder_svg_name | placeholder_svg_tag }}</div>
       </div>
-
       <div class="product-info">
-        <span class="productlabel general">
-          <span>
-            <span class="title">{{ 'onboarding.collection.collection_title' | t }}</span>
-            <span class="count">{{ 'collections.general.product_count' | t: count: 0 }}</span>
-          </span>
-        </span>
+        <div class="product-block__title">{{ 'onboarding.collection.collection_title' | t }}</div>
+        {% if settings.coll_grid_show_count and collection.all_products_count > 0 %}
+          <div class="small">{{ 'collections.general.product_count' | t: count: 0 }}</div>
+        {% endif %}
       </div>
     </div>
   </div>

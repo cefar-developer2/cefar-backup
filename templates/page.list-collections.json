@@ -1,0 +1,13 @@
+{
+    "sections": {
+      "main": {
+        "type":"page-list-collections-template",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main"
+
+    ]
+  }

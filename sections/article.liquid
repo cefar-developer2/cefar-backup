@@ -1,13 +1,10 @@
-{% section 'article-template' %}
-
-
 {% if blog.comments_enabled? %}
     {% paginate article.comments by 50 %}
         {% if article.comments != blank %}
         <div id="comments" class="container cf padded-row">
             <h4 class="align-centre">{{ 'blogs.comments.title' | t }}</h4>
-            
-            {% comment %} Loop through approved comments: {% endcomment %}        
+
+            {% comment %} Loop through approved comments: {% endcomment %}
             {% for comment in article.comments reversed %}
                 <div class="comment spaced-row {% if forloop.first %}first{% endif %}">
                   <div class="gravatar">
@@ -19,7 +16,7 @@
                   </div>
                 </div>
             {% endfor %}
-          
+
             {% comment %} Show a comment that was *just* submitted {% endcomment %}
             {% if comment and comment.created_at %}
                 <div class="comment spaced-row">
@@ -33,23 +30,23 @@
                 </div>
             {% endif %}
         </div> <!-- /#comments -->
-        
+
         <div class="container pagination-row">{% include 'pagination-control' %}</div>
         {% endif %}
     {% endpaginate %}
-    
+
     <div id="template" class="container cf form">
         {% form article %}
         <h4 id="add-comment-title">{{ 'blogs.comments.form_title' | t }}</h4>
-        
+
         {% if form.posted_successfully? %}
         <p>{{ 'blogs.comments.success' | t }}</p>
         {% endif %}
-        
+
         {% if blog.moderated? %}
         <p>{{ 'blogs.comments.moderated' | t }}</p>
         {% endif %}
-        
+
         {% if form.errors %}
             <ul class="errors">
             {% for field in form.errors %}
@@ -57,7 +54,7 @@
             {% endfor %}
             </ul>
         {% endif %}
-    
+
         <div class="large_form{% if form.errors contains 'author' %} has-error{% endif %}">
             <label for="comment_author">{{ 'blogs.comments.name' | t }}</label>
             <input type="text" id="comment_author" name="comment[author]" size="40" value="{{form.author}}" />
@@ -70,12 +67,25 @@
             <label for="comment_body">{{ 'blogs.comments.message' | t }}</label>
             <textarea id="comment_body" name="comment[body]" cols="40" rows="5">{{form.body}}</textarea>
         </div>
-        
+
         <div class="action_bottom">
             <input type="submit" value="{{ 'blogs.comments.post' | t }}" id="comment-submit" class="btn" />
         </div>
-      
+
         {% endform %}
     </div> <!-- /.form -->
 {% endif %}
-
+{% schema %}
+  {
+    "name": "article",
+    "settings": [
+	],
+	"presets": [
+	  {
+		"name": "article",
+        "category": "article",
+        "settings": {}
+	  }
+	]
+  }
+{% endschema %}

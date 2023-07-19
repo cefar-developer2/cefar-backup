@@ -1,0 +1,14 @@
+{
+    "sections": {
+      "main": {
+        "type":"earthly-page",
+        "settings": {
+        }
+      }
+
+    },
+    "order": [
+      "main"
+
+    ]
+  }

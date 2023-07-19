@@ -1,0 +1,13 @@
+{
+    "sections": {
+      "main": {
+        "type":"privacy",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main"
+
+    ]
+  }

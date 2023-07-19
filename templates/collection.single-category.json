@@ -1,0 +1,14 @@
+{
+    "sections": {
+      "main": {
+        "type":"collection-single-category",
+        "settings": {
+        }
+      }
+
+    },
+    "order": [
+      "main"
+
+    ]
+  }

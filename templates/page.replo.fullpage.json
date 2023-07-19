@@ -1,0 +1,13 @@
+{
+    "sections": {
+      "main": {
+        "type":"replo-fullpage",
+        "settings": {
+        }
+      }
+    },
+    "order": [
+      "main"
+
+    ]
+  }

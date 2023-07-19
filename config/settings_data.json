@@ -1089,7 +1089,7 @@
           "mobile_logo_img_width_int": 130,
           "logo_h1": true,
           "enable_sticky": true,
-          "enable_transparent": true,
+          "enable_transparent": false,
           "transparent_color": "#ffffff",
           "menu_linklist": "main-menu",
           "menu_linklist_mobile": "",

@@ -62,6 +62,7 @@
     },
     "1635927863703110df": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1635927863703110df-1": {
           "type": "heading",
@@ -232,14 +233,15 @@
     "16359285201c71bbb1": {
       "type": "background-video",
       "settings": {
+        "video_shopify": "shopify:\/\/files\/videos\/Website Banner Video -.mp4",
         "video_external": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "subheading": "Tell your story",
-        "title": "Background video",
+        "subheading": "",
+        "title": "",
         "heading_max_width": 800,
         "title_size": 84,
         "title_size_mobile": 42,
         "use_h1": false,
-        "text": "<p>Use a video to get a customer's attention<\/p>",
+        "text": "",
         "enlarge_text": true,
         "button_label_1": "",
         "button_url_1": "",

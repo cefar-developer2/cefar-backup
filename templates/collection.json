@@ -9,7 +9,7 @@
         "overlay_style": "shadow",
         "coll_desc_pos": "above",
         "coll_num_per_page_int": 24,
-        "grid": 3,
+        "grid": 2,
         "show_vendor": false,
         "show_total": true,
         "enable_filtering": true,

@@ -8,7 +8,7 @@
 <ul data-menu-handle="{{ recursive-navigation-helper }}"{{ listed_class }}>
 {% for link in linklists[recursive-navigation-helper].links %}
     <li{% if link.active %} class="active"{% endif %}>
-        <a href="{{ link.url }}">{{ link.title }}  0000</a>
+        <a href="{{ link.url }}">{{ link.title }}  #####</a>
         {% comment %} ADVANCED MODE - uses 'sub' prefix and namespacing: sub-clothes-large {% endcomment %}
         {% if false %}
             {% comment %} Remove 'main-menu' as we don't use that in our namespacing {% endcomment %}

@@ -851,7 +851,7 @@ v2.0 | 20110126
 License: none (public domain)
 (Tweaked for CleanCanvas theme)
 */
-html, body, div, span, applet, object, iframe,
+html, body, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -1968,7 +1968,7 @@ h6,
     font-size: 27px;
   }
 
-  
+
   h2,
 .h2-style {
         font-size: 25px;
@@ -2242,7 +2242,7 @@ svg.feather {
 
 .button,
 a.button,
-.btn,
+
 a.btn,
 button,
 input[type=submit],
@@ -7101,14 +7101,14 @@ input[type=text].main-search__input {
   font-size: 80%;
 }
 @media (min-width: 800px) {
-  #shopify-product-reviews .spr-reviews {
-    display: flex;
-    flex-wrap: wrap;
+    #shopify-product-reviews .spr-reviews {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #shopify-product-reviews .spr-reviews .spr-review {
+      width: 50%;
+    }
   }
-  #shopify-product-reviews .spr-reviews .spr-review {
-    width: 50%;
-  }
-}
 #shopify-product-reviews .spr-pagination {
   width: 100%;
   margin-top: 20px;
@@ -7594,11 +7594,11 @@ body {
   line-height: 1.6;
   color: #5c5c5c;
   background: #ffffff;
-  
-  
+
+
   background-repeat: repeat;
-  
-  
+
+
   overflow-y: scroll;
   /* Fonts on Macs look bad without these */
   -moz-osx-font-smoothing: grayscale;
@@ -8519,12 +8519,12 @@ ul.inline li {
   left: 7.5px;
   right: 7.5px;
   pointer-events: none;
-  
+
   justify-content: flex-start;
-  
-  
+
+
   align-items: flex-start;
-  
+
 }
 
 .product-label {
@@ -12033,11 +12033,11 @@ textarea {
   line-height: 1.3em;
   text-align: center;
   background: #ffffff;
-  
-  
+
+
   background-repeat: repeat;
-  
-  
+
+
 }
 .template-password .password-container {
   display: table;

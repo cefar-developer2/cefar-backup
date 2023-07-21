@@ -1,0 +1,52 @@
+
+<div class="section container clearfix">
+  <div class="description">
+
+    <!--Start tab labels-->
+
+    <!--Start tab content-->
+    <ul class="tabs-content">
+
+      <div class="dropdown border-opacity-10 border-t border-black">
+        <a href="#tab_descriptions" class="js-dropdown-link font-body hover:text-pink flex items-center justify-between px-4 py-8 text-sm uppercase">Description <i class="fal fa-plus"></i></a>
+        <div class="wysiwyg-content wysiwyg-content--small lg:pr-16 hidden pb-8 pl-4 pr-4" id="tab_descriptions">
+          {{ product.description }}
+        </div>
+      </div>
+
+      <div class="dropdown border-opacity-10 border-t border-black">
+        <a href="#tab_delivery" class="js-dropdown-link font-body hover:text-pink flex items-center justify-between px-4 py-8 text-sm uppercase">Delivery <i class="fal fa-plus"></i></a>
+        <div class="wysiwyg-content wysiwyg-content--small lg:pr-16 hidden pb-8 pl-4 pr-4" id="tab_delivery">
+          <p>
+            {{ section.settings.product_delivery_details }}
+          </p>
+        </div>
+      </div>
+
+      <div class="border-opacity-10 open border-t border-black">
+        <a class="font-body flex items-center justify-between px-4 py-8 text-sm uppercase">Verified Reviews <i class="fal fa-plus opacity-0"></i></a>
+        <div class="lg:pb-8 px-4 pb-[1px]" id="tab_reviews">
+          <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+        </div>
+      </div>
+    </ul>
+  </div>
+</div>
+
+{% unless isModal %}
+    <script>
+        $('ul.tabs >').attr('data-no-instant', true);
+
+        $('body').on('click', '.js-dropdown-link', function(e) {
+          e.preventDefault();
+          if(!$(this).parent().hasClass('open')) {
+            $('.dropdown.open').find('a i').toggleClass('fa-plus fa-minus');
+            $('.dropdown.open').find('div').toggleClass('hidden');
+            $('.dropdown.open').toggleClass('open');
+          }
+          $(this).parent().find('a i').toggleClass('fa-plus fa-minus');
+          $(this).parent().find('div').toggleClass('hidden');
+          $(this).parent().toggleClass('open');
+        });
+    </script>
+{% endunless%}

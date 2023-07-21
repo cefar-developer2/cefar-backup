@@ -1,0 +1,36 @@
+<div data-section-id="{{ section.id }}" data-section-type="covet-pics-feed">
+    {%- assign sectionHeading = section.settings.title -%}
+    {%- assign gallery_code = section.settings.gallery-code -%}
+    <section class="home-section border-opacity-10 border-t border-black content-area {% if sectionHeading != blank %}has-heading{% endif %}">
+        {% if sectionHeading != blank %}
+        <h2 class="font-title lg:pt-16 my-8 text-xl font-bold uppercase" style="text-align:center">{{ sectionHeading }}</h2>
+        {% endif %}
+        <div class="covet-pics-wrap lg:pb-[4.5rem] lg:container pb-12">
+            {{ gallery_code }}
+        </div>
+    </section>
+</div>
+{% schema %}
+{
+"name": "Covet.pics Gallery",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Instagram feed"
+},
+{
+"type": "textarea",
+"id": "gallery-code",
+"label": "Gallery Embed Code"
+}
+],
+"presets": [
+{
+"category": "Image",
+"name": "Covet.pics gallery"
+}
+]
+}
+{% endschema %}

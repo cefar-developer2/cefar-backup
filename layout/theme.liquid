@@ -45,6 +45,7 @@
   {% render 'social-meta-tags' %}
 
   {{ 'styles.css' | asset_url | stylesheet_tag: preload: true }}
+  {{ 'app.css' | asset_url | stylesheet_tag: preload: true }}
 
   {%- if settings.custom_theme_css != blank -%}
     {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
@@ -54,7 +55,14 @@
     <link rel="stylesheet" href="{{ 'swatches.css' | asset_url }}" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="{{ 'swatches.css' | asset_url }}"></noscript>
   {%- endif -%}
-
+   {% if settings.favicon != blank and settings.favicon contains '.png' %}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: 'master' }}" type="image/png" />
+     {% elsif settings.favicon != blank and settings.favicon contains '.ico' %}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: 'master' }}" type="image/x-icon" />
+  {% endif %}
+    <link rel="stylesheet" href="https://use.typekit.net/knh7eym.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script>
     window.theme = window.theme || {};
     theme.money_format_with_product_code_preference = {% if settings.product_currency_code_enabled %}{{ shop.money_with_currency_format | json }}{% else %}{{ shop.money_format | json }}{% endif %};
@@ -105,8 +113,12 @@
 
   <script src="{{ 'vendor.min.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
-
+  <script src="{{ 'app.js' | asset_url }}" defer="defer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+ <script src="https://kit.fontawesome.com/34afb3897f.js" crossorigin="anonymous"></script>
   {{ content_for_header }}
+  {{ '//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js' | script_tag }}
+  {{ 'api.jquery.js' | shopify_asset_url | script_tag }}
 </head>
 
 <body class="template-{{ template | split: '.' | first | handle }}

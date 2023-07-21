@@ -1,0 +1,22 @@
+<div class="description user-content bg-light pt-12 lg:pt-20 {% if settings.lightbox_imgs %}lightboximages{% endif %}">
+  {% include 'product-tabs' with product %}
+</div>
+
+{% schema %}
+  {
+    "name": "Product Tabs",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "product_delivery_details",
+        "label": "Product Delivery Details"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Tabs",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}

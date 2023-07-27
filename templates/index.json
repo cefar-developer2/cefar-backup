@@ -709,6 +709,71 @@
         "text_banner_button_title": "",
         "text_banner_button_url": "shopify:\/\/collections\/all"
       }
+    },
+    "0790b4a9-d746-41e9-a04e-b5b69d3ad5f1": {
+      "type": "scrolling-banner1",
+      "blocks": {
+        "template--15958787195055__0790b4a9-d746-41e9-a04e-b5b69d3ad5f1-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "TRANSFORMATIVE FORMULAS"
+          }
+        },
+        "33711954-a306-4aff-a319-3ca46330776d": {
+          "type": "text",
+          "settings": {
+            "text": "NO NEEDLES OR KNIVES"
+          }
+        },
+        "b12682f8-15ed-4d7c-87e1-69eb6292f6f9": {
+          "type": "text",
+          "settings": {
+            "text": "KEY ACTIVES & PEPTIDES"
+          }
+        },
+        "88fc0322-2f2b-4d68-83d9-5be74ea51b4b": {
+          "type": "text",
+          "settings": {
+            "text": "PROFESSIONAL GRADE"
+          }
+        },
+        "427c1d91-d0d4-409e-ba52-71989b29736b": {
+          "type": "text",
+          "settings": {
+            "text": "CRUELTY FREE & ALL SKIN"
+          }
+        },
+        "template--15958787195055__0790b4a9-d746-41e9-a04e-b5b69d3ad5f1-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kind-circle.webp"
+          }
+        },
+        "13f55a60-8ba4-49c4-a21c-9777fce8f435": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/all_skin_circle.png"
+          }
+        },
+        "92221b0f-9b7b-4547-892f-0be055585327": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/white_new_actives.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--15958787195055__0790b4a9-d746-41e9-a04e-b5b69d3ad5f1-text-1",
+        "33711954-a306-4aff-a319-3ca46330776d",
+        "b12682f8-15ed-4d7c-87e1-69eb6292f6f9",
+        "88fc0322-2f2b-4d68-83d9-5be74ea51b4b",
+        "427c1d91-d0d4-409e-ba52-71989b29736b",
+        "template--15958787195055__0790b4a9-d746-41e9-a04e-b5b69d3ad5f1-image-1",
+        "13f55a60-8ba4-49c4-a21c-9777fce8f435",
+        "92221b0f-9b7b-4547-892f-0be055585327"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -729,6 +794,7 @@
     "eb229639-deb5-4dac-8ae6-d32ebd608696",
     "29e6a0de-6b1b-4d10-ad05-588f773a2094",
     "a1b1a6f8-8acc-4c2f-a839-843006b238cc",
-    "a14e28a5-d83b-4d2b-9394-8b2fd3f516ea"
+    "a14e28a5-d83b-4d2b-9394-8b2fd3f516ea",
+    "0790b4a9-d746-41e9-a04e-b5b69d3ad5f1"
   ]
 }

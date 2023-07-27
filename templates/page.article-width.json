@@ -5,9 +5,15 @@
       "settings": {
         "full_width": false
       }
+    },
+    "page_article": {
+      "type": "article-width",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "page_article"
   ]
 }

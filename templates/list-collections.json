@@ -2,7 +2,6 @@
   "sections": {
     "main": {
       "type": "main-list-collections",
-      "disabled": true,
       "settings": {
         "title": "Our collections",
         "display_type": "all",

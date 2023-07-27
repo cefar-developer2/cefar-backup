@@ -179,6 +179,7 @@
     },
     "16359278676808bea5": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "collection": "",
@@ -193,6 +194,7 @@
     },
     "16359278867b92de38": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "image_width": 700,
         "subheading": "Subheading",
@@ -209,6 +211,7 @@
     },
     "16359279164ff7d3f3": {
       "type": "gallery",
+      "disabled": true,
       "blocks": {
         "16359279164ff7d3f3-0": {
           "type": "image",
@@ -279,6 +282,7 @@
     },
     "16359281184fd0d618": {
       "type": "testimonials",
+      "disabled": true,
       "blocks": {
         "16359281184fd0d618-0": {
           "type": "testimonial",
@@ -319,6 +323,7 @@
     },
     "16359285201c71bbb1": {
       "type": "background-video",
+      "disabled": true,
       "settings": {
         "video_external": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "subheading": "Tell your story",
@@ -342,6 +347,7 @@
     },
     "163592857728b8bdc2": {
       "type": "multi-column",
+      "disabled": true,
       "blocks": {
         "163592857728b8bdc2-0": {
           "type": "text_block",
@@ -391,6 +397,7 @@
     },
     "1635928580d75f81bf": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "1635928580d75f81bf-0": {
           "type": "title",
@@ -520,6 +527,80 @@
         "font": "heading",
         "space": 50
       }
+    },
+    "eb229639-deb5-4dac-8ae6-d32ebd608696": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-title-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-price-1": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-vendor-1": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-divider-1": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "show_single": false,
+            "select_first_variant": true,
+            "variant_style": "listed",
+            "disable_unavailable_variants": true,
+            "show_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": true
+          }
+        },
+        "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-description-1": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-title-1",
+        "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-price-1",
+        "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-vendor-1",
+        "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-divider-1",
+        "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-variant_picker-1",
+        "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-buy_buttons-1",
+        "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-description-1"
+      ],
+      "settings": {
+        "product": "",
+        "inventory_transfers_enable": true,
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "enable_var_img_grouping": false,
+        "var_img_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
     }
   },
   "order": [
@@ -536,6 +617,7 @@
     "1635928580d75f81bf",
     "1635928697c562053a",
     "163592870141219e2f",
-    "e270b21f-bc49-4329-9c8d-531277fc2a51"
+    "e270b21f-bc49-4329-9c8d-531277fc2a51",
+    "eb229639-deb5-4dac-8ae6-d32ebd608696"
   ]
 }

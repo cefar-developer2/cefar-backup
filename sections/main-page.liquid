@@ -1,27 +1,8 @@
-{% unless section.settings.full_width %}<div class="article">{% endunless %}
-  <div class="container cf" data-cc-animate>
-    <div class="page-header cf">
-      <h1 class="majortitle">{{ page.title }}</h1>
-    </div>
-    <div class="rte">
-      {{ page.content }}
+<div class="lg:pt-28 bg-light lg:pb-28 pt-12 pb-16">
+  <div class="max-w-[736px] px-8 lg:px-0 mx-auto">
+    <h1 class="text-pink px-14 text-2xl text-center uppercase">{{ page.title }}</h1>
+    <div class="lg:mt-10 flex flex-col items-center mt-8 text-left">
+      <div class="wysiwyg-content wysiwyg-content--small">{{ page.content }}</div>
     </div>
   </div>
-{% unless section.settings.full_width %}</div>{% endunless %}
-
-
-{% schema %}
-  {
-    "name": "Page",
-    "class": "page-section-spacing",
-    "settings": [
-      {
-        "type": "checkbox",
-        "id": "full_width",
-        "label": "Full width",
-        "default": false
-      }
-    ]
-  }
-{% endschema %}
-
+</div>

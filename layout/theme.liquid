@@ -46,6 +46,8 @@
 
   {{ 'styles.css' | asset_url | stylesheet_tag: preload: true }}
   {{ 'app.css' | asset_url | stylesheet_tag: preload: true }}
+  {{ 'section-before-after-slider.css' | asset_url | stylesheet_tag: preload: true }}
+  {{ 'section-testimonials-slider.css' | asset_url | stylesheet_tag: preload: true }}
 
   {%- if settings.custom_theme_css != blank -%}
     {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
@@ -119,6 +121,9 @@
   {{ content_for_header }}
   {{ '//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js' | script_tag }}
   {{ 'api.jquery.js' | shopify_asset_url | script_tag }}
+  <script src="{{ 'before-after.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'background-video.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'image-gallery.js' | asset_url }}" defer="defer"></script>
 </head>
 
 <body class="template-{{ template | split: '.' | first | handle }}

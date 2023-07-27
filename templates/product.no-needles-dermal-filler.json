@@ -191,12 +191,22 @@
             "rating": 5,
             "author": "Claire, Birmingham"
           }
+        },
+        "a09a7047-7538-4677-8911-e338d3ae32c0": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "Pitted scars are made smoother",
+            "text": "<p>\"I applied it to deep pitted scarring on my cheeks and temples and it improved the appearance of the scars.\"<\/p>",
+            "rating": 5,
+            "author": "Lola C, UK"
+          }
         }
       },
       "block_order": [
         "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-1",
         "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-2",
-        "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-3"
+        "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-3",
+        "a09a7047-7538-4677-8911-e338d3ae32c0"
       ],
       "settings": {
         "color_scheme": "bg-grey",

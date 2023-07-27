@@ -1,12 +1,12 @@
 {
-    "sections": {
-      "main": {
-        "type": "faq-page",
-        "settings": {
-        }
+  "sections": {
+    "main": {
+      "type": "faq-page",
+      "settings": {
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

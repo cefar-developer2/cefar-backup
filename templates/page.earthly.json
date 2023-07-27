@@ -1,12 +1,12 @@
 {
-    "sections": {
-      "main": {
-        "type": "earthly-page",
-        "settings": {
-        }
+  "sections": {
+    "main": {
+      "type": "earthly-page",
+      "settings": {
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

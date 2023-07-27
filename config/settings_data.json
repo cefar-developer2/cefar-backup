@@ -1085,26 +1085,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo": "{{ shop.brand.logo }}",
-          "logo_img_width_int": 155,
-          "mobile_logo_img_width_int": 130,
-          "logo_h1": true,
-          "enable_sticky": true,
-          "enable_transparent": false,
-          "transparent_color": "#ffffff",
-          "menu_linklist": "main-menu-v2",
-          "menu_linklist_mobile": "",
-          "menu_layout": "inline-menu-left",
-          "nav_featured_link": "Sale",
-          "enable_mobile_promo_carousel": true,
-          "enable_nav_mob_products": false,
-          "nav_mob_products_title": "Best Sellers",
-          "nav_mob_products_collection": "",
-          "enable_search": true,
-          "search_suggestions_title": "",
-          "search_suggestions_menu": "",
-          "icon_strategy": "icons_only",
-          "cart_icon": "bag"
+          "menu": "main-menu-v2"
         }
       },
       "store-messages": {
@@ -1175,7 +1156,6 @@
               "title": "Talk about your store",
               "text": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.<\/p>",
               "image_width": 150,
-              "show_social_icons": true,
               "soc_icons_large": false
             }
           },
@@ -1183,6 +1163,7 @@
             "type": "menu",
             "settings": {
               "title": "",
+              "show_social_icons": true,
               "menu": "footer"
             }
           },
@@ -1206,7 +1187,8 @@
           "lower_menu": "footer",
           "show_payment_icons": true,
           "show_country_selector": true,
-          "show_language_selector": true
+          "show_language_selector": true,
+          "bottomDes": "Newsletter"
         }
       },
       "popup": {

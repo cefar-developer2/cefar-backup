@@ -1,12 +1,12 @@
 {
-    "sections": {
-      "main": {
-        "type": "engage-reviews",
-        "settings": {
-        }
+  "sections": {
+    "main": {
+      "type": "engage-reviews",
+      "settings": {
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

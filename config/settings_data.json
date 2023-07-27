@@ -1170,6 +1170,7 @@
         "blocks": {
           "1601374680247": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "title": "Talk about your store",
               "text": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.<\/p>",
@@ -1181,7 +1182,7 @@
           "1601374650582": {
             "type": "menu",
             "settings": {
-              "title": "Quick links",
+              "title": "",
               "menu": "footer"
             }
           },
@@ -1202,7 +1203,7 @@
           "1601374580731"
         ],
         "settings": {
-          "lower_menu": "",
+          "lower_menu": "footer",
           "show_payment_icons": true,
           "show_country_selector": true,
           "show_language_selector": true

@@ -98,9 +98,11 @@
         "template--15958804758703__3e32a17b-34f9-4cec-b384-829aca3a4e17-block-3": {
           "type": "block",
           "settings": {
-            "heading": "Heading",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "author": "Author"
+            "heading": "Under Eye and Tear Trough",
+            "text": "<p>Fills tear troughs and fine lines<\/p>",
+            "author": "",
+            "before_image": "shopify:\/\/shop_images\/13_28ca70f5-0036-49e3-8a36-40c5976730ea.png",
+            "after_image": "shopify:\/\/shop_images\/14.png"
           }
         }
       },

@@ -33,6 +33,7 @@
         },
         "template--15954076729519__7ba7594a-c67f-4f91-8ceb-4ed81df47fae-slide-3": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "title": "Slide Title",
             "button_text": "Button Label",
@@ -148,6 +149,7 @@
     },
     "1635927863703110df": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1635927863703110df-1": {
           "type": "heading",

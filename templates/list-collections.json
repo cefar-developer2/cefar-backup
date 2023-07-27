@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-list-collections",
+      "disabled": true,
       "settings": {
         "title": "Our collections",
         "display_type": "all",
@@ -11,6 +12,8 @@
     "collection": {
       "type": "list-collections-template",
       "settings": {
+        "title": "Our collections",
+        "overlay_mode": "m"
       }
     }
   },

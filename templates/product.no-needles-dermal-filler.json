@@ -71,12 +71,104 @@
       "type": "product-recommendations",
       "settings": {
       }
+    },
+    "3e32a17b-34f9-4cec-b384-829aca3a4e17": {
+      "type": "before-after",
+      "blocks": {
+        "template--15958804758703__3e32a17b-34f9-4cec-b384-829aca3a4e17-block-1": {
+          "type": "block",
+          "settings": {
+            "heading": "Crow's Feet & Under Eye",
+            "text": "<p>Fills fine lines and bags under the eye<\/p>",
+            "author": "",
+            "before_image": "shopify:\/\/shop_images\/3_e0b54bc6-30b1-40f5-878e-efa93e0226a5.png",
+            "after_image": "shopify:\/\/shop_images\/4_8c5fd897-0f9a-40ef-ac2c-34ed20625cce.png"
+          }
+        },
+        "template--15958804758703__3e32a17b-34f9-4cec-b384-829aca3a4e17-block-2": {
+          "type": "block",
+          "settings": {
+            "heading": "Frown Lines & Forehead Furrows",
+            "text": "<p>Fills forehead lines and frown lines in between brows<\/p>",
+            "author": "",
+            "before_image": "shopify:\/\/shop_images\/5_253a7e93-d4ca-46f6-876a-c767edae2219.png",
+            "after_image": "shopify:\/\/shop_images\/6_22382832-dbe0-4e5a-83e8-a965ed270ef9.png"
+          }
+        },
+        "template--15958804758703__3e32a17b-34f9-4cec-b384-829aca3a4e17-block-3": {
+          "type": "block",
+          "settings": {
+            "heading": "Under Eye and Tear Trough",
+            "text": "<p>Fills tear troughs and fine lines<\/p>",
+            "author": "",
+            "before_image": "shopify:\/\/shop_images\/13_28ca70f5-0036-49e3-8a36-40c5976730ea.png",
+            "after_image": "shopify:\/\/shop_images\/14.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--15958804758703__3e32a17b-34f9-4cec-b384-829aca3a4e17-block-1",
+        "template--15958804758703__3e32a17b-34f9-4cec-b384-829aca3a4e17-block-2",
+        "template--15958804758703__3e32a17b-34f9-4cec-b384-829aca3a4e17-block-3"
+      ],
+      "settings": {
+        "custom_text_title": "BEFORE & AFTERS",
+        "custom_text_body": "<p>Slide to see skin concerns disppear!<\/p>",
+        "slides_per_page": 1,
+        "slide_gap": 20,
+        "speed": 1000,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "25b21c12-e55c-4d87-a824-ae713545a673": {
+      "type": "product-videos",
+      "blocks": {
+        "template--15958804758703__25b21c12-e55c-4d87-a824-ae713545a673-video-1": {
+          "type": "video",
+          "settings": {
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/b85421cc242e4403a0217f3a674c5637.mp4",
+            "autoplay_video": false
+          }
+        },
+        "template--15958804758703__25b21c12-e55c-4d87-a824-ae713545a673-video-2": {
+          "type": "video",
+          "settings": {
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/4876e9bf98bf4b24bf87a2e3186b0498.mp4",
+            "autoplay_video": false
+          }
+        },
+        "template--15958804758703__25b21c12-e55c-4d87-a824-ae713545a673-video-3": {
+          "type": "video",
+          "settings": {
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/44db55c74be3430599c0df8c96a2d4d8.mp4",
+            "autoplay_video": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15958804758703__25b21c12-e55c-4d87-a824-ae713545a673-video-1",
+        "template--15958804758703__25b21c12-e55c-4d87-a824-ae713545a673-video-2",
+        "template--15958804758703__25b21c12-e55c-4d87-a824-ae713545a673-video-3"
+      ],
+      "settings": {
+        "color_scheme": "bg-grey",
+        "custom_text_title": "TUTORIALS",
+        "custom_text_body": "<p>How to use it! Follow these instructions to get the perfect results.<\/p>",
+        "slides_per_page": 3,
+        "slide_gap": 20,
+        "speed": 2500,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "information",
     "1400d02b-9a98-4e53-b5fe-cd0041e94bb4",
-    "9944fde8-b707-45c4-9bc1-3b395b141f7b"
+    "9944fde8-b707-45c4-9bc1-3b395b141f7b",
+    "3e32a17b-34f9-4cec-b384-829aca3a4e17",
+    "25b21c12-e55c-4d87-a824-ae713545a673"
   ]
 }

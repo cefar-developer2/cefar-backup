@@ -683,6 +683,32 @@
       "settings": {
         "title": "Featured Products"
       }
+    },
+    "a1b1a6f8-8acc-4c2f-a839-843006b238cc": {
+      "type": "hosted-image",
+      "settings": {
+        "video_file": "As Seen On - Desktop -.MP4",
+        "mobile_video_file": "As Seen on - MOBILE- (1).MP4",
+        "link": "",
+        "image_path": "\/\/placehold.it\/1200x600",
+        "text_banner": false,
+        "text_banner_title": "",
+        "text_banner_button_title": "",
+        "text_banner_button_url": ""
+      }
+    },
+    "a14e28a5-d83b-4d2b-9394-8b2fd3f516ea": {
+      "type": "hosted-image",
+      "settings": {
+        "video_file": "Website Banner Video -.mp4",
+        "mobile_video_file": "TRANSFORMATIVE NO NEEDLES BEAUTY - WEBSITE BANNER MOBILE VIDEO-.mp4",
+        "link": "shopify:\/\/collections\/all",
+        "image_path": "http:\/\/plump-it.s3.amazonaws.com\/shopify\/Pouts-of-plumpit.gif",
+        "text_banner": false,
+        "text_banner_title": "",
+        "text_banner_button_title": "",
+        "text_banner_button_url": "shopify:\/\/collections\/all"
+      }
     }
   },
   "order": [
@@ -701,6 +727,8 @@
     "163592870141219e2f",
     "e270b21f-bc49-4329-9c8d-531277fc2a51",
     "eb229639-deb5-4dac-8ae6-d32ebd608696",
-    "29e6a0de-6b1b-4d10-ad05-588f773a2094"
+    "29e6a0de-6b1b-4d10-ad05-588f773a2094",
+    "a1b1a6f8-8acc-4c2f-a839-843006b238cc",
+    "a14e28a5-d83b-4d2b-9394-8b2fd3f516ea"
   ]
 }

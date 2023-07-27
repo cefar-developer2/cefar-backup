@@ -1,6 +1,6 @@
 <div data-section-type="footer">
   {% if section.blocks != blank %}
-    <div class="container container--no-max section-footer__row-container">
+    <div class="container section-footer__row-container">
       <div class="section-footer__row section-footer__row--blocks" data-num-blocks="{{ section.blocks.size }}">
         {% for block in section.blocks %}
           {% case block.type %}
@@ -13,7 +13,7 @@
             <div class="section-footer__row__col section-footer__menu-block" role="navigation" aria-label="{{ 'layout.footer.navigation_aria_label' | t | escape }}" {{ block.shopify_attributes }}>
               {% if block.settings.title != blank %}
                 {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
-                <div class="section-footer__title heading-font h6-style{% if title_word_count < 4 %} no-wrap{% endif %}">
+                <div class="aaa section-footer__title heading-font h6-style{% if title_word_count < 4 %} no-wrap{% endif %}">
                   {{- block.settings.title | escape -}}
                 </div>
               {% endif %}
@@ -29,13 +29,21 @@
                   {% endfor %}
                 </ul>
               {% endif %}
+              {% if block.settings.show_social_icons != blank %}
+                <div class="section-footer__newsletter-block__social">
+                  {% capture icon_size %}{% if block.settings.soc_icons_large %}x46{% else %}x30{% endif %}{% endcapture %}
+                  {% capture container_class %}{% if block.settings.soc_icons_large %}social-links--large{% else %}{% endif %}{% endcapture %}
+                  {% render 'social-icons', icon_setting: settings.social_custom_icon_footer, icon_size: icon_size, container_class: container_class %}
+                </div>
+              {% endif %}
+
             </div>
 
           {% when 'text' %}
             <div class="section-footer__row__col section-footer__text-block {% if block.settings.text != blank %}section-footer__text-block--with-text{% endif %}" {{ block.shopify_attributes }}>
               {% if block.settings.title != blank %}
                 {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
-                <div class="section-footer__title heading-font h6-style{% if title_word_count < 4 %} no-wrap{% endif %}">
+                <div class=" section-footer__title heading-font h6-style{% if title_word_count < 4 %} no-wrap{% endif %}">
                   {{- block.settings.title | escape -}}
                 </div>
               {% endif %}
@@ -70,7 +78,7 @@
             <div class="section-footer__row__col section-footer__newsletter-block" {{ block.shopify_attributes }}>
               {% if block.settings.title != blank %}
                 {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
-                <div class="section-footer__title heading-font h6-style{% if title_word_count < 4 %} no-wrap{% endif %}">
+                <div class="footer-form__label ">
                   {{- block.settings.title | escape -}}
                 </div>
               {% endif %}
@@ -111,14 +119,26 @@
                   {% endif %}
                 {% endform %}
               </div>
+              <div class="footlogo" style=" max-width: 350px; margin: 0px auto; padding: 10px 5px 10px 10px;">
+                  <div class="footlogos" style="display: inline-block; margin: 5px;">
+                    <img src="https://cdn.shopify.com/s/files/1/0618/8873/files/Amazon_Footer_v2.svg" loading="lazy" width="88" height="46">
+                  </div>
 
-              {% if block.settings.show_social_icons != blank %}
+                  <div class="footlogos" style="display: inline-block; margin: 5px;">
+                    <img src="https://cdn.shopify.com/s/files/1/0618/8873/files/Google_Footer_v2.svg" loading="lazy" width="88" height="48">
+                  </div>
+
+                  <div class="footlogos" style="display: inline-block; margin: 5px;">
+                    <img src="https://cdn.shopify.com/s/files/1/0618/8873/files/Influenster_Footer_v2.svg" loading="lazy" width="104" height="45">
+                  </div>
+              </div>
+<!--               {% if block.settings.show_social_icons != blank %}
                 <div class="section-footer__newsletter-block__social">
                   {% capture icon_size %}{% if block.settings.soc_icons_large %}x46{% else %}x30{% endif %}{% endcapture %}
                   {% capture container_class %}{% if block.settings.soc_icons_large %}social-links--large{% else %}{% endif %}{% endcapture %}
                   {% render 'social-icons', icon_setting: settings.social_custom_icon_footer, icon_size: icon_size, container_class: container_class %}
                 </div>
-              {% endif %}
+              {% endif %} -->
             </div>
 
           {% endcase %}
@@ -130,7 +150,7 @@
   {%- assign showing_localization = false -%}
   {%- if section.settings.show_language_selector and localization.available_languages.size > 1 -%}{%- assign showing_localization = true -%}{%- endif -%}
   {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}{%- assign showing_localization = true -%}{%- endif -%}
-  <div class="container container--no-max section-footer__row-container {% if showing_localization %}section-footer__row-container--with-localization{% endif %}">
+  <div class="container  section-footer__row-container {% if showing_localization %}section-footer__row-container--with-localization{% endif %}">
     <div class="section-footer__row section-footer__row-lower">
       <div class="section-footer__row__col">
         {% if section.settings.show_payment_icons %}
@@ -141,19 +161,7 @@
           </div>
 
         {% endif %}
-        {% if section.settings.lower_menu != blank %}
-          <div class="section-footer__lower-menu" role="navigation">
-            <ul class="section-footer__lower-menu__list" aria-label="{{ 'layout.footer.navigation_aria_label' | t | escape }}">
-              {% for link in linklists[section.settings.lower_menu].links %}
-                <li>
-                  <a href="{{ link.url }}">
-                    {{- link.title -}}
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-        {% endif %}
+
       </div>
       <div class="section-footer__row__col">
         {% if section.settings.show_language_selector or section.settings.show_country_selector %}
@@ -168,9 +176,14 @@
           {{ powered_by_link }}
 
         </div>
-      </div>
+
     </div>
   </div>
+  <div class ="copydis">
+          <p>
+           Plump It!® is the trading name of D&A Cosmetics Limited, a private company limited by shares and registered in England and Wales with company number 09179106 and having its registered office at 14 To 15 Harelands Courtyard Offices Moor Road, Melsonby, Richmond, North Yorkshire, DL10 5NY.
+          </p>
+      </div>
 </div>
 
 
@@ -222,7 +235,13 @@
         "id": "show_language_selector",
         "label": "Enable language selector",
         "default": true
-      }
+      },
+          {
+            "type": "text",
+            "id": "bottomDes",
+            "label": "Description",
+            "default": "Newsletter"
+          }
     ],
     "blocks": [
       {
@@ -237,6 +256,12 @@
             "id": "title",
             "label": "Heading",
             "default": "Quick links"
+          },
+              {
+            "type": "checkbox",
+            "id": "show_social_icons",
+            "label": "Show social media links",
+            "default": true
           },
           {
             "type": "link_list",
@@ -278,12 +303,7 @@
             "label": "Footer image width",
             "default": 100
           },
-          {
-            "type": "checkbox",
-            "id": "show_social_icons",
-            "label": "Show social media links",
-            "default": true
-          },
+
           {
             "type": "checkbox",
             "id": "soc_icons_large",

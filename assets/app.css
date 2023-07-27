@@ -581,7 +581,10 @@ a {
  * supplement a partial reset that is already applied by
  * normalize.css.
  */
-
+ form.flex.justify-center.js-add-to-cart button{
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+ }
 button,
 input,
 optgroup,
@@ -1620,16 +1623,18 @@ input[type=text], input[type=search] {
 .btn{
   display: flex;
   height: 3rem;
+  color:#000000!important;
   align-items: center;
   justify-content: center;
+  background: transparent!important;
   border-radius: 0px;
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgba(29, 29, 27, var(--tw-border-opacity));
+  border-color: rgba(29, 29, 27, var(--tw-border-opacity))!important;
   padding-left: 1rem;
   padding-right: 1rem;
   font-family: roc-grotesk, sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.875rem!important;
   line-height: 1.625rem;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -3062,7 +3067,8 @@ label.rc_label__deliver_every {
 
 /* Page Spacer */
 .page-spacer {
-  height: 113px;
+  /* height: 113px; */
+  height:75px;
 }
 
 @media (min-width: 1024px){
@@ -3357,3 +3363,118 @@ a.navigation__link {
     padding-top: 0.8rem ;
     padding-bottom: 0.3rem;
 }
+/* footer start */
+button.btn.btn--primary.signup-form__button{
+    padding: 10px 25px;
+}
+.footlogo {
+  display: flex;
+}
+.signup-form .contact-form{
+display:flex;
+}
+.contact-form p{
+margin-bottom:0;
+}
+.section-footer__row-container{
+border-top:0;
+}
+@media (min-width: 768px){
+.section-footer__newsletter-block {
+    flex: unset;
+}
+}
+@media (max-width: 768px){
+.section-footer__row__col.section-footer__menu-block {
+  order: 2;
+}
+.section-footer__row__col.section-footer__newsletter-block {
+  order: 1;
+}
+.section-footer__row__col.section-footer__newsletter-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ul.section-footer__menu-block__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-footer__newsletter-block__social {
+  display: flex;
+  justify-content: center;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+}
+.copydis {
+  padding-bottom: 20px;
+}
+.section-footer__text p{
+margin-bottom: 0.5rem!important;
+  text-align: left!important;
+  font-family: roc-grotesk,sans-serif!important;
+  font-size: 1.125rem!important;
+  line-height: 1.875rem!important;
+  font-weight: 700!important;
+  --tw-text-opacity: 1 !important;
+  color: rgba(255,0,102,var(--tw-text-opacity))!important;
+  padding: 0 11px;}
+  .section-footer__menu-block__menu a.no-wrap{
+  font-family: roc-grotesk,sans-serif;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(255,0,102,var(--tw-text-opacity))!important;
+}
+.social-links  .social-links__list li a svg{
+    --tw-text-opacity: 1;
+  color: rgba(255,0,102,var(--tw-text-opacity));
+}
+span.copy ,.copyright a {
+  letter-spacing: 0em;
+  font-size: .75rem;
+  line-height: 1.5rem;
+  font-family: roc-grotesk,sans-serif;
+  color: #000!important;
+}
+.copydis p {
+  font-weight: 400;
+  padding-top: 1.5rem;
+
+  font-family: roc-grotesk,sans-serif;
+  font-size: .75rem;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  opacity: .6;
+}
+.section-footer__row--blocks{
+padding-bottom:0;
+}
+.section-footer__row--blocks .section-footer__row__col:not(:last-child) {
+  margin-bottom: 0px;
+}
+.section-footer__row-lower {
+padding-bottom:0;
+}
+@media (max-width: 768px){
+copydis p {
+ text-align: center;
+}
+}
+.section-footer__row__col.section-footer__newsletter-block{
+  width: 40%;
+}
+.section-footer__payment-icons{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 330px;
+}
+div#pagefooter {
+    background: transparent!important;
+}
+/* footer end */

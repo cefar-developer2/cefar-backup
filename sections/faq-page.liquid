@@ -1,0 +1,113 @@
+<div class="lg:pt-28 lg:pb-28 pt-12 pb-16">
+    <h1 class="text-pink px-14 text-2xl text-center uppercase">Frequently Asked Questions</h1>
+    <div class="lg:mt-10 flex flex-col items-center mt-8 text-center">
+        <p class="lg:px-0 lg:mb-0 max-w-3xl px-8 mx-auto text-base">Here you’ll find the answers to our most Frequently Asked Questions. If you can’t find the answer to your enquiry here; please contact us using the details at the bottom of the page.</p>
+    </div>
+</div>
+
+<div class="bg-light lg:pt-20 pt-12 pb-16">
+    <div class="lg:flex container">
+        <div class="lg:w-1/2 lg:pr-24 lg:pb-0 pb-6">
+<!--             <div class="js-faq-category  group relative flex items-center justify-between w-full h-20 px-6 mb-8 text-white transition duration-300 bg-black border border-black cursor-pointer" data-type="product_information">
+                <p class="text-lg font-bold">Product Information</p>
+                <i class="fal fa-arrow-right"></i>
+                <i class="fal fa-arrow-right group-hover:opacity-100 right-6 absolute transition-opacity duration-300 opacity-0"></i>
+            </div> -->
+            <div class="js-faq-category active group relative flex items-center justify-between w-full h-20 px-6 mb-8 text-white transition duration-300 bg-black border border-black cursor-pointer" data-type="shipping_and_returns">
+                <p class="text-lg font-bold">Shipping & Returns</p>
+                <i class="fal fa-chevron-right"></i>
+                <i class="fal fa-arrow-right group-hover:opacity-100 right-6 absolute transition-opacity duration-300 opacity-0"></i>
+            </div>
+            <div class="js-faq-category hover:border-pink group hover:text-pink relative flex items-center justify-between w-full h-20 px-6 mb-8 transition duration-300 border border-black cursor-pointer" data-type="contact_details">
+                <p class="text-lg font-bold">Contact Details</p>
+                <i class="fal fa-chevron-right"></i>
+                <i class="fal fa-arrow-right group-hover:opacity-100 right-6 absolute transition-opacity duration-300 opacity-0"></i>
+            </div>
+        </div>
+
+        <div class="border-opacity-10 lg:w-1/2 border-t border-black">
+            {% for block in section.blocks %}
+                <div class="border-opacity-10 js-faq-container border-b border-black {% if block.settings.category != 'shipping_and_returns' %}hidden{% endif %}" data-type="{{ block.settings.category }}">
+                    <div class="js-faq hover:text-pink flex items-center justify-between h-20 px-4 transition duration-300 cursor-pointer">
+                        <p class="text-sm uppercase">{{ block.settings.question }}</p>
+                        <i class="fal fa-plus"></i>
+                    </div>
+                    <div class="js-answer lg:pr-16 hidden pt-2 pb-6 pl-4 pr-4">
+                        <p class="wysiwyg-content text-xs">
+                            {{ block.settings.answer | newline_to_br }}
+                        </p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="lg:pb-7 relative pt-8 pb-20 text-white bg-black">
+    <h2 class="lg:mb-10 px-4 mb-6 text-xl text-center text-white uppercase">Find Us On Social Media</h2>
+    <div class="lg:divide js-wide-row-carousel lg:divide-x divide-opacity-50 container flex justify-between divide-white">
+        <a target="_blank" href="https://en-gb.facebook.com/theplumpitrevolution/" class="hover:text-pink flex-1 text-center transition duration-300">
+            <i class="fab fa-facebook"></i>
+            <h4 class="mb-1 text-lg font-bold">Facebook</h4>
+            <p class="text-base opacity-50">/ThePlumpItRevolution</p>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/plumpit/?hl=en" class="hover:text-pink flex-1 text-center transition duration-300">
+            <i class="fab fa-instagram"></i>
+            <h4 class="mb-1 text-lg font-bold">Instagram</h4>
+            <p class="text-base opacity-50">@plumpit</p>
+        </a>
+        <a target="_blank" href="https://www.tiktok.com/@plumpit?" class="hover:text-pink flex-1 text-center transition duration-300">
+            <i class="fab fa-tiktok"></i>
+            <h4 class="mb-1 text-lg font-bold">TikTok</h4>
+            <p class="text-base opacity-50">@plumpit</p>
+        </a>
+        <a target="_blank" href="https://www.youtube.com/channel/UC672mFgdqMfTxYxsFJOxyhQ" class="hover:text-pink flex-1 text-center transition duration-300">
+            <i class="fab fa-youtube"></i>
+            <h4 class="mb-1 text-lg font-bold">YouTube</h4>
+            <p class="text-base opacity-50">Plump It!</p>
+        </a>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "FAQ Page",
+    "blocks": [
+        {
+            "name": "FAQ",
+            "type": "faq",
+            "settings": [
+                {
+                    "id": "question",
+                    "type": "text",
+                    "label": "Question"
+                },
+                {
+                    "type": "html",
+                    "id": "answer",
+                    "label": "Answer"
+                },
+                {
+                    "type": "select",
+                    "id": "category",
+                    "label": "Category",
+                    "options": [
+                        {
+                            "value": "product_information",
+                            "label": "Product Information"
+                        },
+                        {
+                            "value": "shipping_and_returns",
+                            "label": "Shipping & Returns"
+                        },
+                        {
+                            "value": "contact_details",
+                            "label": "Contact Details"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

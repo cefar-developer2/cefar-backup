@@ -5,9 +5,15 @@
       "settings": {
         "full_width": false
       }
+    },
+    "pages": {
+      "type": "about-page",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "pages"
   ]
 }

@@ -61,6 +61,11 @@
         "product_delivery_details": "All orders are dispatched same day when an order is placed before 12pm GMT.\n\nShipping costs are displayed at the final stage of the checkout process in GBP, however you will be billed in your local currency.\n\nIn some cases when products are shipped outside of the European zones is is possible that they can be held up by customs. This will add to the shipping time for the product. \n\nShipping costs will vary depending on destination.\n\nIf any import Tax is applied to your delivery this is charged by your country of residence and will be your sole responsibility to pay. \n\nAll 'standard' options do not provide a tracking number. All 'priority' options are tracked and \nmay require a signature on delivery."
       }
     },
+    "ddea6166-5b4b-474f-a3b5-194e64b13f19": {
+      "type": "product-images",
+      "settings": {
+      }
+    },
     "1400d02b-9a98-4e53-b5fe-cd0041e94bb4": {
       "type": "product-tabs",
       "settings": {
@@ -76,6 +81,7 @@
   "order": [
     "main",
     "information",
+    "ddea6166-5b4b-474f-a3b5-194e64b13f19",
     "1400d02b-9a98-4e53-b5fe-cd0041e94bb4",
     "9944fde8-b707-45c4-9bc1-3b395b141f7b"
   ]

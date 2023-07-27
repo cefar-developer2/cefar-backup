@@ -161,6 +161,53 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "c3d51c5d-2752-4b14-94a5-e929f07e8f2d": {
+      "type": "testimonial-slider",
+      "blocks": {
+        "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "Heading",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "rating": 5,
+            "author": "Author"
+          }
+        },
+        "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "Heading",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "rating": 5,
+            "author": "Author"
+          }
+        },
+        "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "Heading",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "rating": 5,
+            "author": "Author"
+          }
+        }
+      },
+      "block_order": [
+        "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-1",
+        "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-2",
+        "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-3"
+      ],
+      "settings": {
+        "color_scheme": "bg-grey",
+        "custom_text_title": "CUSTOMER REVIEWS",
+        "custom_text_body": "<p>We love hearing what you think!<\/p>",
+        "slides_per_page": 2,
+        "slide_gap": 20,
+        "speed": 2500,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
     }
   },
   "order": [
@@ -169,6 +216,7 @@
     "1400d02b-9a98-4e53-b5fe-cd0041e94bb4",
     "9944fde8-b707-45c4-9bc1-3b395b141f7b",
     "3e32a17b-34f9-4cec-b384-829aca3a4e17",
-    "25b21c12-e55c-4d87-a824-ae713545a673"
+    "25b21c12-e55c-4d87-a824-ae713545a673",
+    "c3d51c5d-2752-4b14-94a5-e929f07e8f2d"
   ]
 }

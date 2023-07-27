@@ -3,10 +3,6 @@
     "type":"list-collections-template",
     "settings": {
 
-
     }
-  },
-  "order": [
-    "main","collection"
-  ]
 }
+},"order":["main" ,"collection"]}

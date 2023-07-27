@@ -3342,7 +3342,7 @@ a.navigation__link {
     position: relative;
     top: -2px;
 }
-
+/* CSS for header */
 .announcement-bar__middle .announcement .announcement__text{
     font-family: roc-grotesk,sans-serif;
     font-size: 1rem;

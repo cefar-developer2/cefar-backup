@@ -774,6 +774,72 @@
       ],
       "settings": {
       }
+    },
+    "5b0be02c-d7de-42f4-903b-2ed989626f27": {
+      "type": "Featured-Products",
+      "blocks": {
+        "template--15958787195055__5b0be02c-d7de-42f4-903b-2ed989626f27-product-1": {
+          "type": "product",
+          "settings": {
+            "product": "volumising-x-hyaluronic-bundle"
+          }
+        },
+        "template--15958787195055__5b0be02c-d7de-42f4-903b-2ed989626f27-product-2": {
+          "type": "product",
+          "settings": {
+            "product": "hyaluronic-acid-hydration-bundle"
+          }
+        },
+        "template--15958787195055__5b0be02c-d7de-42f4-903b-2ed989626f27-product-3": {
+          "type": "product",
+          "settings": {
+            "product": "volumising-lip-plumper-twin"
+          }
+        },
+        "d35feb53-8276-4f83-a926-f9d56746b315": {
+          "type": "product",
+          "settings": {
+            "product": "hyaluronic-lip-plumper-twin-pack"
+          }
+        },
+        "60ca578a-546b-4960-8eff-56c590dbb2ef": {
+          "type": "product",
+          "settings": {
+            "product": "collagen-z-skincare-kit"
+          }
+        },
+        "d4593f10-200f-43a0-865b-3710e2324975": {
+          "type": "product",
+          "settings": {
+            "product": "ultimate-bestsellers-bundle"
+          }
+        },
+        "4e8e8e8a-41d1-435a-88dd-252bdfc63ee2": {
+          "type": "product",
+          "settings": {
+            "product": "volumising-lip-plumper-twin"
+          }
+        },
+        "34dccabd-6650-4b6f-92a3-ae59c0a94bef": {
+          "type": "product",
+          "settings": {
+            "product": "plump-it-volumising-lip-plumper-year-pack"
+          }
+        }
+      },
+      "block_order": [
+        "template--15958787195055__5b0be02c-d7de-42f4-903b-2ed989626f27-product-1",
+        "template--15958787195055__5b0be02c-d7de-42f4-903b-2ed989626f27-product-2",
+        "template--15958787195055__5b0be02c-d7de-42f4-903b-2ed989626f27-product-3",
+        "d35feb53-8276-4f83-a926-f9d56746b315",
+        "60ca578a-546b-4960-8eff-56c590dbb2ef",
+        "d4593f10-200f-43a0-865b-3710e2324975",
+        "4e8e8e8a-41d1-435a-88dd-252bdfc63ee2",
+        "34dccabd-6650-4b6f-92a3-ae59c0a94bef"
+      ],
+      "settings": {
+        "title": "Featured Products"
+      }
     }
   },
   "order": [
@@ -795,6 +861,7 @@
     "29e6a0de-6b1b-4d10-ad05-588f773a2094",
     "a1b1a6f8-8acc-4c2f-a839-843006b238cc",
     "a14e28a5-d83b-4d2b-9394-8b2fd3f516ea",
-    "0790b4a9-d746-41e9-a04e-b5b69d3ad5f1"
+    "0790b4a9-d746-41e9-a04e-b5b69d3ad5f1",
+    "5b0be02c-d7de-42f4-903b-2ed989626f27"
   ]
 }

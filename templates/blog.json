@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-blog",
+      "disabled": true,
       "settings": {
         "show_page_title": true,
         "layout": "columns",
@@ -18,6 +19,9 @@
     "blog": {
       "type": "blog-template",
       "settings": {
+        "show_date": true,
+        "show_author": true,
+        "show_article_tags": true
       }
     }
   },

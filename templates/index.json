@@ -501,6 +501,7 @@
     },
     "e270b21f-bc49-4329-9c8d-531277fc2a51": {
       "type": "scrolling-banner",
+      "disabled": true,
       "blocks": {
         "template--15954076729519__e270b21f-bc49-4329-9c8d-531277fc2a51-text-1": {
           "type": "text",
@@ -530,6 +531,7 @@
     },
     "eb229639-deb5-4dac-8ae6-d32ebd608696": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-title-1": {
           "type": "title",
@@ -601,6 +603,86 @@
         "enable_var_img_grouping": false,
         "var_img_grouping_option": "Color,Colour,Couleur,Farbe"
       }
+    },
+    "29e6a0de-6b1b-4d10-ad05-588f773a2094": {
+      "type": "Featured-Products",
+      "blocks": {
+        "template--15958787195055__29e6a0de-6b1b-4d10-ad05-588f773a2094-product-2": {
+          "type": "product",
+          "settings": {
+            "product": "lip-boosting-trio"
+          }
+        },
+        "template--15958787195055__29e6a0de-6b1b-4d10-ad05-588f773a2094-product-1": {
+          "type": "product",
+          "settings": {
+            "product": "no-needles-dermal-filler-15-pods"
+          }
+        },
+        "template--15958787195055__29e6a0de-6b1b-4d10-ad05-588f773a2094-product-3": {
+          "type": "product",
+          "settings": {
+            "product": "volumising-x-hyaluronic-bundle"
+          }
+        },
+        "73445857-f97c-4a37-8a70-7e31ebca91a0": {
+          "type": "product",
+          "settings": {
+            "product": "plump-it-volumising-lip-plumper"
+          }
+        },
+        "e747c2b4-efe0-43d1-a967-4378b34d8cdf": {
+          "type": "product",
+          "settings": {
+            "product": "ultimate-bestsellers-bundle"
+          }
+        },
+        "4e412250-82d6-4613-bf94-f8dd1a227e03": {
+          "type": "product",
+          "settings": {
+            "product": "daily-lip-fix"
+          }
+        },
+        "712b25d0-dccd-4de0-960f-cb2ca8b53785": {
+          "type": "product",
+          "settings": {
+            "product": "collagen-z-skincare-kit"
+          }
+        },
+        "8b911e96-ea9e-4c60-8be1-c4529252a190": {
+          "type": "product",
+          "settings": {
+            "product": "volumising-lip-plumper-twin"
+          }
+        },
+        "bd5b0c6a-4b56-4d54-9c5d-526f4887d539": {
+          "type": "product",
+          "settings": {
+            "product": "hyaluronic-lip-plumper"
+          }
+        },
+        "8f9078a7-a43e-44bd-864a-fa2510c0d247": {
+          "type": "product",
+          "settings": {
+            "product": "collagen-z-overnight"
+          }
+        }
+      },
+      "block_order": [
+        "template--15958787195055__29e6a0de-6b1b-4d10-ad05-588f773a2094-product-2",
+        "template--15958787195055__29e6a0de-6b1b-4d10-ad05-588f773a2094-product-1",
+        "template--15958787195055__29e6a0de-6b1b-4d10-ad05-588f773a2094-product-3",
+        "73445857-f97c-4a37-8a70-7e31ebca91a0",
+        "e747c2b4-efe0-43d1-a967-4378b34d8cdf",
+        "4e412250-82d6-4613-bf94-f8dd1a227e03",
+        "712b25d0-dccd-4de0-960f-cb2ca8b53785",
+        "8b911e96-ea9e-4c60-8be1-c4529252a190",
+        "bd5b0c6a-4b56-4d54-9c5d-526f4887d539",
+        "8f9078a7-a43e-44bd-864a-fa2510c0d247"
+      ],
+      "settings": {
+        "title": "Featured Products"
+      }
     }
   },
   "order": [
@@ -618,6 +700,7 @@
     "1635928697c562053a",
     "163592870141219e2f",
     "e270b21f-bc49-4329-9c8d-531277fc2a51",
-    "eb229639-deb5-4dac-8ae6-d32ebd608696"
+    "eb229639-deb5-4dac-8ae6-d32ebd608696",
+    "29e6a0de-6b1b-4d10-ad05-588f773a2094"
   ]
 }

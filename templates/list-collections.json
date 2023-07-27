@@ -2,6 +2,7 @@
 },"collection":{
     "type":"list-collections-template",
     "settings": {
+
     }
 }
 },"order":["main" ,"collection"]}

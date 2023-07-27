@@ -840,6 +840,13 @@
       "settings": {
         "title": "Featured Products"
       }
+    },
+    "05fed07b-f303-4901-a00b-240d506fc0d3": {
+      "type": "covet-pics",
+      "settings": {
+        "title": "FOLLOW @plumpit",
+        "gallery-code": "<covet-pics-widget gallery-embed-id=\"192195\"><\/covet-pics-widget>"
+      }
     }
   },
   "order": [
@@ -862,6 +869,7 @@
     "a1b1a6f8-8acc-4c2f-a839-843006b238cc",
     "a14e28a5-d83b-4d2b-9394-8b2fd3f516ea",
     "0790b4a9-d746-41e9-a04e-b5b69d3ad5f1",
-    "5b0be02c-d7de-42f4-903b-2ed989626f27"
+    "5b0be02c-d7de-42f4-903b-2ed989626f27",
+    "05fed07b-f303-4901-a00b-240d506fc0d3"
   ]
 }

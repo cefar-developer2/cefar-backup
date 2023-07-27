@@ -112,13 +112,13 @@
         "template--15958804758703__3e32a17b-34f9-4cec-b384-829aca3a4e17-block-3"
       ],
       "settings": {
-        "custom_text_title": "Title",
-        "custom_text_body": "<p>Add your text here<\/p>",
-        "slides_per_page": 3,
+        "custom_text_title": "BEFORE & AFTERS",
+        "custom_text_body": "<p>Slide to see skin concerns disppear!<\/p>",
+        "slides_per_page": 1,
         "slide_gap": 20,
-        "speed": 2500,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "speed": 1000,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },

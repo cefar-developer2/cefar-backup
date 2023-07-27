@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="{{ 'section-image-gallery.css' | asset_url }}">
+
+{% capture image_split %}
+  {% if product.metafields.global.image_split %}
+    {{ product.metafields.global.image_split }}
+  {% else %}
+    100
+  {% endif %}
+{% endcapture %}
+
+{% assign image_split = image_split | plus: 0 %}
+
+<div id="section-product-images" class="container lg:mt-12 mt-6 lg:mb-24 mb-12">
+  {% if image_split %}
+    {% if product.metafields.global.image_grid_title %}
+      <h3 class="font-title mb-8 text-xl text-center uppercase">{{ product.metafields.global.image_grid_title }}</h3>
+    {% endif %}
+
+    <div class="image-gallery__grid">
+      {% assign desktop_image_max = image_split | plus: 5 %}
+      {% for image in product.images %}
+        {% if forloop.index > image_split %}
+          <div class="image-gallery__grid-item">
+            <img
+              id="{{ forloop.index }}"
+              class="image-gallery-item {% if forloop.index > desktop_image_max %}lg:hidden{% endif %}"
+              src="{% if image contains '.gif' %}{{ image | img_url: 'master' }}{% else %}{{ image | img_url: '700x700', crop: 'center' }}{% endif %}"
+              alt="{{ product.title | escape }}"
+              loading="lazy"
+              width="{{ image.width }}"
+              height="{{ image.height }}"
+            >
+
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+<!-- The Modal -->
+<div id="modal" class="gallery-modal">
+  <span class="close">&times;</span>
+  <img class="gallery-modal-content">
+</div>
+
+{% schema %}
+  {
+    "name": "Image Section",
+    "presets": [
+      {
+        "name": "Image Section",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}

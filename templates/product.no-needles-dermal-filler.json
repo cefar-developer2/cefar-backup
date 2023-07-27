@@ -61,17 +61,6 @@
         "product_delivery_details": "All orders are dispatched same day when an order is placed before 12pm GMT.\n\nShipping costs are displayed at the final stage of the checkout process in GBP, however you will be billed in your local currency.\n\nIn some cases when products are shipped outside of the European zones is is possible that they can be held up by customs. This will add to the shipping time for the product. \n\nShipping costs will vary depending on destination.\n\nIf any import Tax is applied to your delivery this is charged by your country of residence and will be your sole responsibility to pay. \n\nAll 'standard' options do not provide a tracking number. All 'priority' options are tracked and \nmay require a signature on delivery."
       }
     },
-    "1400d02b-9a98-4e53-b5fe-cd0041e94bb4": {
-      "type": "product-tabs",
-      "settings": {
-        "product_delivery_details": "All orders are dispatched same day when an order is placed before 12pm GMT.\n\nShipping costs are displayed at the final stage of the checkout process in GBP, however you will be billed in your local currency.\n\nIn some cases when products are shipped outside of the European zones is is possible that they can be held up by customs. This will add to the shipping time for the product. \n\nShipping costs will vary depending on destination.\n\nIf any import Tax is applied to your delivery this is charged by your country of residence and will be your sole responsibility to pay. \n\nAll 'standard' options do not provide a tracking number. All 'priority' options are tracked and \nmay require a signature on delivery."
-      }
-    },
-    "9944fde8-b707-45c4-9bc1-3b395b141f7b": {
-      "type": "product-recommendations",
-      "settings": {
-      }
-    },
     "3e32a17b-34f9-4cec-b384-829aca3a4e17": {
       "type": "before-after",
       "blocks": {
@@ -161,14 +150,83 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "c3d51c5d-2752-4b14-94a5-e929f07e8f2d": {
+      "type": "testimonial-slider",
+      "blocks": {
+        "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "Crow's feet vanished!",
+            "text": "<p>\"The results are absolutely amazing. Eye bags, dark circles and  crow’s feet are pretty much banished!\"<\/p>",
+            "rating": 5,
+            "author": "Bridie, Leeds"
+          }
+        },
+        "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "So easy to use",
+            "text": "<p>\"My under eye feel tighter and smoother after only a few minutes. I was surprised by how little product is needed.\"<\/p>",
+            "rating": 5,
+            "author": "Elizabeth, UK"
+          }
+        },
+        "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "Under eye bags disappeared!",
+            "text": "<p>\"I was skeptical about this as I have tried many things for my under eye bags, however I was amazed at the difference!\"<\/p>",
+            "rating": 5,
+            "author": "Claire, Birmingham"
+          }
+        },
+        "a09a7047-7538-4677-8911-e338d3ae32c0": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "Pitted scars are made smoother",
+            "text": "<p>\"I applied it to deep pitted scarring on my cheeks and temples and it improved the appearance of the scars.\"<\/p>",
+            "rating": 5,
+            "author": "Lola C, UK"
+          }
+        }
+      },
+      "block_order": [
+        "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-1",
+        "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-2",
+        "template--15958804758703__c3d51c5d-2752-4b14-94a5-e929f07e8f2d-testimonial-3",
+        "a09a7047-7538-4677-8911-e338d3ae32c0"
+      ],
+      "settings": {
+        "color_scheme": "bg-grey",
+        "custom_text_title": "CUSTOMER REVIEWS",
+        "custom_text_body": "<p>We love hearing what you think!<\/p>",
+        "slides_per_page": 2,
+        "slide_gap": 20,
+        "speed": 2500,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "1400d02b-9a98-4e53-b5fe-cd0041e94bb4": {
+      "type": "product-tabs",
+      "settings": {
+        "product_delivery_details": "All orders are dispatched same day when an order is placed before 12pm GMT.\n\nShipping costs are displayed at the final stage of the checkout process in GBP, however you will be billed in your local currency.\n\nIn some cases when products are shipped outside of the European zones is is possible that they can be held up by customs. This will add to the shipping time for the product. \n\nShipping costs will vary depending on destination.\n\nIf any import Tax is applied to your delivery this is charged by your country of residence and will be your sole responsibility to pay. \n\nAll 'standard' options do not provide a tracking number. All 'priority' options are tracked and \nmay require a signature on delivery."
+      }
+    },
+    "9944fde8-b707-45c4-9bc1-3b395b141f7b": {
+      "type": "product-recommendations",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "information",
-    "1400d02b-9a98-4e53-b5fe-cd0041e94bb4",
-    "9944fde8-b707-45c4-9bc1-3b395b141f7b",
     "3e32a17b-34f9-4cec-b384-829aca3a4e17",
-    "25b21c12-e55c-4d87-a824-ae713545a673"
+    "25b21c12-e55c-4d87-a824-ae713545a673",
+    "c3d51c5d-2752-4b14-94a5-e929f07e8f2d",
+    "1400d02b-9a98-4e53-b5fe-cd0041e94bb4",
+    "9944fde8-b707-45c4-9bc1-3b395b141f7b"
   ]
 }

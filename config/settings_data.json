@@ -1090,7 +1090,7 @@
       "header": {
         "type": "header",
         "custom_css": [
-          ".bg-pink .space-y-4 li{list-style-type: none;}"
+          ".bg-pink li {list-style-type: none;}"
         ],
         "settings": {
           "menu": "main-menu-v2"

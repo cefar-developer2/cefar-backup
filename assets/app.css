@@ -3525,6 +3525,7 @@ div#pagefooter {
         font-family: roc-grotesk,sans-serif;
         border-radius: 6px;
     }
-    .cart-table.w-full tr{    vertical-align: top;
+    .cart-table.w-full tr{
+        vertical-align: top;
     }
     .wysiwyg-content--small p,.wysiwyg-content--small li {color: #000000;}

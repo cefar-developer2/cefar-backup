@@ -40,13 +40,14 @@
             </div>
 
           {% when 'text' %}
+           {% if block.settings.title != blank %}
             <div class="section-footer__row__col section-footer__text-block {% if block.settings.text != blank %}section-footer__text-block--with-text{% endif %}" {{ block.shopify_attributes }}>
-              {% if block.settings.title != blank %}
+
                 {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
                 <div class=" section-footer__title heading-font h6-style{% if title_word_count < 4 %} no-wrap{% endif %}">
                   {{- block.settings.title | escape -}}
                 </div>
-              {% endif %}
+
 
               {% if block.settings.text != blank %}
                 <div class="section-footer__text">
@@ -73,7 +74,7 @@
                 </div>
               {% endif %}
             </div>
-
+            {% endif %}
           {% when 'newsletter' %}
             <div class="section-footer__row__col section-footer__newsletter-block" {{ block.shopify_attributes }}>
               {% if block.settings.title != blank %}
@@ -90,34 +91,10 @@
               {% endif %}
 
               <div class="signup-form">
-                {% form 'customer', id: 'footer_newsletter_signup' %}
-                  {% if form.posted_successfully? %}
-                    <div class="section-footer__newsletter-block__message signup-form__response signup-form__response--success">
-                      <div class="heading-font h6-style">{{ 'layout.signup.post_success' | t }}</div>
-                    </div>
-                  {% else %}
-                    {% if form.errors %}
-                      {% for field in form.errors %}
-                        <p class="section-footer__newsletter-block__message--error signup-form__response signup-form__response--error">
-                          {{ field | capitalize }} - {{ form.errors.messages[field] }}
-                        </p>
-                      {% endfor %}
-                    {% endif %}
-                    <input type="hidden" name="contact[tags]" value="prospect,newsletter"/>
-                    <p>
-                      <input type="email"
-                        placeholder="{{ 'layout.signup.placeholder' | t }}"
-                        class="signup-form__email"
-                        value=""
-                        name="contact[email]"
-                        aria-label="{{ 'layout.signup.input_label' | t | escape }}"
-                        required />
-                    </p>
-                    <button class="btn btn--{{ block.settings.button_style }} signup-form__button" type="submit">
-                      {{- 'layout.signup.submit' | t -}}
-                    </button>
-                  {% endif %}
-                {% endform %}
+                <div class="footer-form">
+                    <div class="footer-form__label">GET 10% OFF WITH OUR NEWSLETTER SIGN UP!</div>
+                    <div class="klaviyo-form-Jg54ig"></div>
+                </div>
               </div>
               <div class="footlogo" style=" max-width: 350px; margin: 0px auto; padding: 10px 5px 10px 10px;">
                   <div class="footlogos" style="display: inline-block; margin: 5px;">

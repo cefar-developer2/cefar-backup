@@ -3503,3 +3503,26 @@ div#pagefooter {
  .testimonials-slider .swiper-slide,.testimonials-slider .swiper-slide-text,.testimonials-slider .swiper-slide-title{
     color:#000;
     }
+    .bg-palepink .btn.btn--pink{
+        width: 14rem;
+        display: flex;
+        height: 3rem;
+        font-weight: 700;
+        font-size: .875rem;
+        font-family: roc-grotesk,sans-serif;
+        border-radius: 6px;
+    }
+    .section-footer__menu-block__menu li  a{
+        --tw-text-opacity: 1;
+        color: rgba(255,0,102,var(--tw-text-opacity))!important;
+    }
+    a.btn.btn--pink.w-56 {
+        width: 14rem;
+        display: flex;
+        height: 3rem;
+        font-weight: 700;
+        font-size: .875rem;
+        font-family: roc-grotesk,sans-serif;
+        border-radius: 6px;
+    }
+    .wysiwyg-content--small p,.wysiwyg-content--small li {color: #000000;}

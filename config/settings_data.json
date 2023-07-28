@@ -1178,8 +1178,8 @@
           "1601374580731": {
             "type": "newsletter",
             "settings": {
-              "title": "Newsletter",
-              "text": "<p>Sign up for exclusive offers, original stories, events and more.<\/p>",
+              "title": "",
+              "text": "",
               "button_style": "primary",
               "show_social_icons": true,
               "soc_icons_large": false

@@ -12,7 +12,7 @@
     "collection": {
       "type": "list-collections-template",
       "custom_css": [
-        ".container .btn.flex-shrink-0 {padding-top:unset;}"
+        ".container .btn.flex-shrink-0{padding-top: unset;}"
       ],
       "settings": {
         "title": "Our collections",

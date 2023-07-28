@@ -3516,7 +3516,7 @@ div#pagefooter {
         --tw-text-opacity: 1;
         color: rgba(255,0,102,var(--tw-text-opacity))!important;
     }
-    a.btn.btn--pink.w-56 {
+    a.btn.btn--pink.w-56,a.btn.btn--pink.w-auto.mx-auto.text-center {
         width: 14rem;
         display: flex;
         height: 3rem;
@@ -3524,5 +3524,7 @@ div#pagefooter {
         font-size: .875rem;
         font-family: roc-grotesk,sans-serif;
         border-radius: 6px;
+    }
+    .cart-table.w-full{    vertical-align: top;
     }
     .wysiwyg-content--small p,.wysiwyg-content--small li {color: #000000;}

@@ -1041,6 +1041,11 @@
     "filter_swatch_layout": "no-label",
     "prod_thumb_show_options": true,
     "prod_thumb_options_names": "",
+    "social_twitter_url": "",
+    "social_facebook_url": "https:\/\/www.facebook.com\/theplumpitrevolution\/",
+    "social_instagram_url": "https:\/\/www.instagram.com\/plumpit\/",
+    "social_youtube_url": "https:\/\/www.youtube.com\/channel\/UCe19i2Y_u6qye1A6njGqatw",
+    "social_tiktok_url": "https:\/\/www.tiktok.com\/@plumpit?",
     "search_type": "product",
     "enable_live_search": true,
     "live_search_show_vendor": false,
@@ -1176,12 +1181,22 @@
               "show_social_icons": true,
               "soc_icons_large": false
             }
+          },
+          "d7bbd444-9f66-4eba-a394-1eff9cadc203": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "",
+              "image_width": 100,
+              "soc_icons_large": true
+            }
           }
         },
         "block_order": [
           "1601374680247",
           "1601374650582",
-          "1601374580731"
+          "1601374580731",
+          "d7bbd444-9f66-4eba-a394-1eff9cadc203"
         ],
         "settings": {
           "lower_menu": "footer",

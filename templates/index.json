@@ -144,6 +144,9 @@
         "template--15954076729519__5f6354b5-10b9-452e-b921-0a85caebe2cf-block-2",
         "template--15954076729519__5f6354b5-10b9-452e-b921-0a85caebe2cf-block-3"
       ],
+      "custom_css": [
+        ".slick-dots button {margin-top: 25px; background: #fff;}"
+      ],
       "settings": {
       }
     },
@@ -681,7 +684,7 @@
         "8f9078a7-a43e-44bd-864a-fa2510c0d247"
       ],
       "settings": {
-        "title": "Featured Products"
+        "title": "Trending Products"
       }
     },
     "a1b1a6f8-8acc-4c2f-a839-843006b238cc": {
@@ -838,7 +841,7 @@
         "34dccabd-6650-4b6f-92a3-ae59c0a94bef"
       ],
       "settings": {
-        "title": "Featured Products"
+        "title": "Bundles"
       }
     },
     "05fed07b-f303-4901-a00b-240d506fc0d3": {

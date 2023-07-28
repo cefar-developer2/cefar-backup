@@ -1,18 +1,18 @@
-{"sections":{
+{
+  "sections": {
     "main": {
-        "type":"article-template",
-            "settings":{
-
-            }
-        },
-         "article":
-                {"type":"article",
-                "settings":{
-
-                }
-            }
-
-
+      "type": "article-template",
+      "settings": {
+      }
     },
-
-    "order":["main","article"]}
+    "article": {
+      "type": "article",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "article"
+  ]
+}

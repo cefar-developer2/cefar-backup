@@ -122,15 +122,6 @@
         "header": {
           "type": "header",
           "settings": {
-            "logo": "{{ shop.brand.logo }}",
-            "logo_img_width_int": 155,
-            "mobile_logo_img_width_int": 130,
-            "enable_sticky": true,
-            "enable_transparent": true,
-            "transparent_color": "#ffffff",
-            "menu_layout": "inline-menu-left",
-            "icon_strategy": "icons_only",
-            "cart_icon": "bag"
           }
         },
         "store-messages": {
@@ -192,7 +183,6 @@
               "type": "text",
               "settings": {
                 "image_width": 150,
-                "show_social_icons": true,
                 "soc_icons_large": false
               }
             },
@@ -341,11 +331,6 @@
         "header": {
           "type": "header",
           "settings": {
-            "logo": "{{ shop.brand.logo }}",
-            "logo_img_width_int": 150,
-            "enable_sticky": true,
-            "transparent_color": "#ffffff",
-            "menu_layout": "inline-menu-left"
           }
         },
         "store-messages": {
@@ -440,7 +425,6 @@
               "type": "text",
               "settings": {
                 "image_width": 150,
-                "show_social_icons": true,
                 "soc_icons_large": false
               }
             },
@@ -567,12 +551,6 @@
         "header": {
           "type": "header",
           "settings": {
-            "logo": "{{ shop.brand.logo }}",
-            "logo_img_width_int": 125,
-            "mobile_logo_img_width_int": 100,
-            "enable_sticky": true,
-            "transparent_color": "#ffffff",
-            "menu_layout": "underneath"
           }
         },
         "cross-page-promos": {
@@ -628,7 +606,6 @@
               "type": "text",
               "settings": {
                 "image_width": 55,
-                "show_social_icons": true,
                 "soc_icons_large": true
               }
             },
@@ -814,11 +791,6 @@
         "header": {
           "type": "header",
           "settings": {
-            "logo": "{{ shop.brand.logo }}",
-            "logo_img_width_int": 75,
-            "enable_sticky": true,
-            "transparent_color": "#ffffff",
-            "menu_layout": "inline-menu-center"
           }
         },
         "store-messages": {
@@ -913,7 +885,6 @@
               "type": "text",
               "settings": {
                 "image_width": 75,
-                "show_social_icons": true,
                 "soc_icons_large": false
               }
             },
@@ -1178,8 +1149,8 @@
           "1601374580731": {
             "type": "newsletter",
             "settings": {
-              "title": "Newsletter",
-              "text": "<p>Sign up for exclusive offers, original stories, events and more.<\/p>",
+              "title": "",
+              "text": "",
               "button_style": "primary",
               "show_social_icons": true,
               "soc_icons_large": false
@@ -1261,6 +1232,14 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   }
 }

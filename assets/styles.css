@@ -12258,7 +12258,9 @@ textarea {
   padding-top: 60px;
   padding-bottom: 40px;
 }
-
+.cc-animate-enabled .shopify-section{
+    overflow: inherit!important;
+}
 /*************    ---                   ---                   ---   *************/
 /*************    |     ENTER YOUR CUSTOM CODE BELOW HERE       |   *************/
 /*************    ---                   ---                   ---   *************/

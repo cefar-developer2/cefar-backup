@@ -301,3 +301,9 @@
       width: 100%;
     }
   }
+  .before-after-slider .swiper-slide-title{
+      color:#1D1D1B;
+  }
+  .swiper-slide-text p{
+      color:#000;
+  }

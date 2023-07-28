@@ -11,6 +11,9 @@
     },
     "collection": {
       "type": "list-collections-template",
+      "custom_css": [
+        ".container .btn.flex-shrink-0{list-style-type: none;}"
+      ],
       "settings": {
         "title": "Our collections",
         "overlay_mode": "m"

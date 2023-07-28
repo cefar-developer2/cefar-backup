@@ -3473,8 +3473,18 @@ copydis p {
     display: flex;
     flex-wrap: wrap;
     max-width: 330px;
+    justify-content: center;
 }
 div#pagefooter {
     background: transparent!important;
 }
 /* footer end */
+.image-gallery__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+}
+.announcement__text p{
+    font-size: 14px;
+}

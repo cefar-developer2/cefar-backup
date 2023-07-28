@@ -144,6 +144,9 @@
         "template--15954076729519__5f6354b5-10b9-452e-b921-0a85caebe2cf-block-2",
         "template--15954076729519__5f6354b5-10b9-452e-b921-0a85caebe2cf-block-3"
       ],
+      "custom_css": [
+        ".slick-dots button {margin-top: 25px; background:}"
+      ],
       "settings": {
       }
     },

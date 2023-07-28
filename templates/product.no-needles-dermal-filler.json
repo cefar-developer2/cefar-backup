@@ -151,6 +151,11 @@
         "padding_bottom": 52
       }
     },
+    "7a48d5c4-7aca-429b-88e5-770be9b70c8b": {
+      "type": "product-images",
+      "settings": {
+      }
+    },
     "c3d51c5d-2752-4b14-94a5-e929f07e8f2d": {
       "type": "testimonial-slider",
       "blocks": {
@@ -225,6 +230,7 @@
     "information",
     "3e32a17b-34f9-4cec-b384-829aca3a4e17",
     "25b21c12-e55c-4d87-a824-ae713545a673",
+    "7a48d5c4-7aca-429b-88e5-770be9b70c8b",
     "c3d51c5d-2752-4b14-94a5-e929f07e8f2d",
     "1400d02b-9a98-4e53-b5fe-cd0041e94bb4",
     "9944fde8-b707-45c4-9bc1-3b395b141f7b"

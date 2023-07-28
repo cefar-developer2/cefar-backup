@@ -3528,4 +3528,17 @@ div#pagefooter {
     .cart-table.w-full tr{
         vertical-align: top;
     }
+    #cartform .btn--pink-outline{
+        height: 3rem;
+        display: flex;
+        height: 3rem;
+        font-weight: 700;
+        font-size: .875rem;
+        font-family: roc-grotesk,sans-serif;
+        border-radius: 6px;
+        --tw-border-opacity: 1;
+        border-color: rgba(255,0,102,var(--tw-border-opacity)) !important;
+        --tw-text-opacity: 1;
+        color: rgba(255,0,102,var(--tw-text-opacity)) !important;
+    }
     .wysiwyg-content--small p,.wysiwyg-content--small li {color: #000000;}

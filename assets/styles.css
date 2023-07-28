@@ -12261,6 +12261,9 @@ textarea {
 .cc-animate-enabled .shopify-section{
     overflow: inherit!important;
 }
+.cart-table.w-full tr{
+    vertical-align: top!important;
+}
 /*************    ---                   ---                   ---   *************/
 /*************    |     ENTER YOUR CUSTOM CODE BELOW HERE       |   *************/
 /*************    ---                   ---                   ---   *************/

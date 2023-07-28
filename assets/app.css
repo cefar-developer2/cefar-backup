@@ -3529,9 +3529,7 @@ div#pagefooter {
     .wysiwyg-content--small p,.wysiwyg-content--small li{
         color: #000000;
     }
-    .cart-table.w-full tr{
-        vertical-align: top;
-    }
+
     #cartform .btn--pink-outline{
         height: 3rem;
         display: flex;

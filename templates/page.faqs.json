@@ -74,6 +74,14 @@
             "answer": "If you find your email address, telephone number or any other contact details are incorrect, please email us at <a href=\"mailto:support@plump-it.com\">support@plump-it.com<\/a> and we will amend the information for you.",
             "category": "shipping_and_returns"
           }
+        },
+        "8c916209-bc9a-42ba-816e-b1827211a3ff": {
+          "type": "faq",
+          "settings": {
+            "question": "I HAVE RECEIVED THE WRONG PRODUCT(S), WHAT SHOULD I DO?",
+            "answer": "This is extremely rare! These errors do not occur often, but when they do, we are always happy to help!\n\nWe will rectify the situation and send out the correct item for you. Just pop us an email with your name &amp; order number at <a href=\"mailto:support@plump-it.com\">support@plump-it.com<\/a> and we will get this sorted for you as soon as possible.",
+            "category": "shipping_and_returns"
+          }
         }
       },
       "block_order": [
@@ -85,7 +93,8 @@
         "4fcf2fdd-2b54-4c29-9edb-492358663c3d",
         "e79a9b61-2bf6-451b-bc19-f4f6a9243191",
         "d873ac43-52c9-44a1-8a3d-3276783c11cf",
-        "865ce4db-db49-4e74-a44e-66f3bc75df29"
+        "865ce4db-db49-4e74-a44e-66f3bc75df29",
+        "8c916209-bc9a-42ba-816e-b1827211a3ff"
       ],
       "settings": {
       }

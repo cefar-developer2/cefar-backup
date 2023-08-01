@@ -1,12 +1,33 @@
 {
-    "sections": {
-      "main": {
-        "type": "collection-all-products-template",
-        "settings": {
-        }
+  "sections": {
+    "main": {
+      "type": "collection-all-products-template",
+      "settings": {
+        "coll_desc_pos": "below",
+        "coll_show_sort": true,
+        "coll_show_feat": false,
+        "coll_show_tags": true,
+        "button_filter1": "All",
+        "button_filter_link1": "shopify:\/\/collections\/all",
+        "button_filter2": "Lip Care",
+        "button_filter_link2": "shopify:\/\/collections\/lip-care",
+        "button_filter3": "Lip Plumping",
+        "button_filter_link3": "shopify:\/\/collections\/lip-plumping",
+        "button_filter4": "Bundles",
+        "button_filter_link4": "shopify:\/\/collections\/bundles",
+        "show_tagfilt_custom1": false,
+        "tagfilt_custom1_name": "",
+        "tagfilt_custom1_tags": "",
+        "show_tagfilt_custom2": false,
+        "tagfilt_custom2_name": "",
+        "tagfilt_custom2_tags": "",
+        "coll_num_per_page": "16",
+        "coll_gridstream_mode": "grid",
+        "coll_gridstream_toggle": false
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

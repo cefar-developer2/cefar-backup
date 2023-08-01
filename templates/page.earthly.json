@@ -2,6 +2,37 @@
   "sections": {
     "main": {
       "type": "earthly-page",
+      "blocks": {
+        "5dc7706e-05ed-4173-99ec-421282578590": {
+          "type": "content_row",
+          "settings": {
+            "title": "You plump it! We plant it!",
+            "content": "<b>Our partnership with Earthly has taken off!<\/b> For every Plump It! purchased, a mangrove tree will be planted in Madagascar. Each tree planted removes 308 kg of CO2 from the atmosphere over its 25 year lifespan.\n\nThe Earthly Madagascar project, started in 2007. The project has already planted over 300 million trees and created over 3 million workdays for locals.",
+            "image": "shopify:\/\/shop_images\/Earthly_site_logo.png"
+          }
+        },
+        "615439d0-a0a2-4afa-8977-d0e0afae60be": {
+          "type": "content_row",
+          "settings": {
+            "title": "What's our progress so far?",
+            "content": "Our on-going pledge to become more sustainable and do our part to help the planet is now well underway. To date we have planted enough trees to remove 41.5 tonnes of carbon from the atmosphere. That's a 18,680 square km area supported.",
+            "image": "shopify:\/\/shop_images\/Earthly_Update_-_Feb_2023_-_Square.gif"
+          }
+        },
+        "908983d4-a255-48e7-9fdd-040cf14b3569": {
+          "type": "content_row",
+          "settings": {
+            "title": "The future with earthly",
+            "content": "To date, Earthly have planted over 334 million trees across 8 countries. They have created 3.3 million days of work for local communities. By 2025 they aim to plant 500 million trees each year.\n\nWe will be keeping you updated on our journey with Earthly and how your purchases are helping to reduce CO2 in the atmosphere as we become more sustainable and climate positive.",
+            "image": "shopify:\/\/shop_images\/white_plumper_w_leaves.gif"
+          }
+        }
+      },
+      "block_order": [
+        "5dc7706e-05ed-4173-99ec-421282578590",
+        "615439d0-a0a2-4afa-8977-d0e0afae60be",
+        "908983d4-a255-48e7-9fdd-040cf14b3569"
+      ],
       "settings": {
       }
     }

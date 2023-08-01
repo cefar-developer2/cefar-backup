@@ -3562,3 +3562,20 @@ div#pagefooter {
         transform: translate(0, 0px);
         border:none !important;
     }
+    header.border-opacity-10.header.fixed.top-0.z-30.w-full.pt-12.pb-4.bg-white.border-b.border-black {
+        border-bottom: 1px solid;
+    }
+    a.hover\:text-pink.flex-1.text-center.transition.duration-300:first-child {
+        border-left: none;
+
+    }
+    a.hover\:text-pink.flex-1.text-center.transition.duration-300 {
+        border-left: 1px solid rgb(142 142 141);
+
+    }
+    @media (max-width: 420px){
+        #section-id-announcement-bar .container{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }

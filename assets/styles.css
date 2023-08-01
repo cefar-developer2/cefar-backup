@@ -5140,7 +5140,7 @@ input[type=text].main-search__input {
 
 @media (min-width: 768px) {
   .section-footer__newsletter-block {
-    flex: 0 1 350px;
+    flex: 0 1 450px;
   }
 }
 .section-footer__newsletter-block .signup-form {

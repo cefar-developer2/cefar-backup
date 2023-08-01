@@ -3519,6 +3519,9 @@ div#pagefooter {
     .section-footer__menu-block__menu li  a{
         --tw-text-opacity: 1;
         color: rgba(255,0,102,var(--tw-text-opacity))!important;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        font-family: roc-grotesk,sans-serif;
     }
     a.btn.btn--pink.w-56,a.btn.btn--pink.w-auto.mx-auto.text-center {
         width: 14rem;
@@ -3578,4 +3581,21 @@ div#pagefooter {
             padding-left: 0;
             padding-right: 0;
         }
+    }
+    .swiper-pagination-bullet{
+        background: var(--swiper-pagination-bullet-inactive-color,#fff)!important;
+    }
+    section.home-section.border-opacity-10.border-t.border-black.content-area.has-heading,
+    .home-section.border-opacity-10.border-t.border-black.content-area.has-heading{
+        border-top: 1px solid;
+    }
+    button.outline-none:hover {
+        background: none;
+    }
+    .section-footer__menu-block__menu li{
+        margin-bottom: 0;
+    }
+    .payment-methods-images__clearpay svg {
+        width: auto;
+        height: auto;
     }

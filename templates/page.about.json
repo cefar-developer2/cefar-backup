@@ -42,6 +42,19 @@
     },
     "pages": {
       "type": "about-page",
+      "blocks": {
+        "e3a9ebc1-6b24-4827-845f-6c2ac14213f7": {
+          "type": "content_row",
+          "settings": {
+            "title": "leading the charge for natural beauty",
+            "content": "We believe that real beauty can be achieved without the need for needles, knives, and other invasive procedures. \n\nWe also know that many of us want to enhance our natural features. That’s why we have created a range of transformative formulations that harness and accentuate your natural beauty in a safe and effective way.",
+            "image": "shopify:\/\/shop_images\/influencer_result_4_396a3487-5a31-4251-8e75-fabd9f6fc52a.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "e3a9ebc1-6b24-4827-845f-6c2ac14213f7"
+      ],
       "settings": {
       }
     }

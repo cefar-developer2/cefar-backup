@@ -1,0 +1,80 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid rgb(255, 51, 131);
+    width: 350px; /* Could be more or less, depending on screen size */
+    position: relative;
+  }
+
+  @media (max-width: 768px) {
+    .modal-content {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15%;
+      margin-top:40%;
+    }
+  }
+  @media (max-width: 323px) {
+    .modal-content {
+      width: 280px;
+    }
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-button {
+    width: 100%;
+  }
+
+  #upsellModal .modal-content,
+  #bcgcfModal .modal-content {
+    margin-top: 5%;
+  }
+
+  /* Upsell Modal */
+  .upsell-image {
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+
+  .upsell-decline {
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 100%;
+    font-family: roc-grotesk,sans-serif;
+    font-size: .75rem;
+    line-height: 1.625rem;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }

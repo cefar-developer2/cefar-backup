@@ -54,6 +54,11 @@
         "video_title": ""
       }
     },
+    "bd89fa80-72af-4a49-b3f4-fef352f5098c": {
+      "type": "product-images",
+      "settings": {
+      }
+    },
     "information": {
       "type": "product-tabs",
       "disabled": true,
@@ -75,6 +80,7 @@
   },
   "order": [
     "main",
+    "bd89fa80-72af-4a49-b3f4-fef352f5098c",
     "information",
     "1400d02b-9a98-4e53-b5fe-cd0041e94bb4",
     "9944fde8-b707-45c4-9bc1-3b395b141f7b"

@@ -3599,3 +3599,15 @@ div#pagefooter {
         width: auto;
         height: auto;
     }
+    .input-wrapper.md\:px-7.flex.items-center.justify-center.h-12.px-4.border.border-black{
+       border: 1px solid;
+    }
+    .dropdown.border-opacity-10.border-t.border-black {
+        border-top: 1px solid;
+    }
+    #shopify-product-reviews .spr-header{
+        padding:0 !important;
+    }
+    div#reviews_7035822801071 ,#shopify-product-reviews .spr-pagination {
+        border-top: none !important;
+    }

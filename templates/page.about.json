@@ -8,6 +8,7 @@
     },
     "d9b75459-f67e-48c3-a1fa-c0edc40bfbda": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/influencer_result_4_396a3487-5a31-4251-8e75-fabd9f6fc52a.jpg",
         "image_width": 700,
@@ -25,6 +26,7 @@
     },
     "a3c7c8da-987a-43a9-a2a5-10f85339d79a": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/switch_out_1.gif",
         "image_width": 700,
@@ -50,10 +52,19 @@
             "content": "We believe that real beauty can be achieved without the need for needles, knives, and other invasive procedures. \n\nWe also know that many of us want to enhance our natural features. That’s why we have created a range of transformative formulations that harness and accentuate your natural beauty in a safe and effective way.",
             "image": "shopify:\/\/shop_images\/influencer_result_4_396a3487-5a31-4251-8e75-fabd9f6fc52a.jpg"
           }
+        },
+        "79b0034b-d807-4d79-8589-21ce987dbadb": {
+          "type": "content_row",
+          "settings": {
+            "title": "We believe in...",
+            "content": "<b>Formulas for everyone<\/b> – Our formulas are created with everyone in mind. We consider; all ages, skin tones, skin types and ensure our products are affordable and accessible to everyone. \n\n<b>Active ingredients, backed by science<\/b> – Each product contains active ingredients at the right concentrations to create positive and noticeable change. All our formulas are underpinned by clinical research. \n\n<b>Being kind<\/b> - All of our products are free of nasties such as parabens and sulphates. We are also passionate about our furry friends, so you can be sure we have never tested our products on animals. Most of our formulas are vegan and all are suitable for vegetarians.",
+            "image": "shopify:\/\/shop_images\/switch_out_1.gif"
+          }
         }
       },
       "block_order": [
-        "e3a9ebc1-6b24-4827-845f-6c2ac14213f7"
+        "e3a9ebc1-6b24-4827-845f-6c2ac14213f7",
+        "79b0034b-d807-4d79-8589-21ce987dbadb"
       ],
       "settings": {
       }

@@ -3628,3 +3628,6 @@ div#pagefooter {
     flex: 0 1 450px;
 }
 }
+.section-footer__payment-icons{
+  max-width:385px;
+}

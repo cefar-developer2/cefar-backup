@@ -3631,3 +3631,7 @@ div#pagefooter {
 .section-footer__payment-icons{
   max-width:380px;
 }
+.flex-1.text-center:nth-child(2) {
+    border-left: 1px solid;
+    border-right: 1px solid;
+}

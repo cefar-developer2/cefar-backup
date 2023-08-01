@@ -3620,3 +3620,6 @@ div#pagefooter {
 .md\:border.border-t.border-b.border-black.md\:mx-0.border-opacity-10.p-8.pb-11.lg\:mr-16.mt-10.lg\:mt-20 {
     border: 1px solid;
 }
+.cart-table.w-full td {
+    vertical-align: bottom!important;
+}

@@ -10,10 +10,82 @@
             "answer": "Yes, we do ship worldwide! All our shipping costs vary depending on country of residence. Please refer to the shipping page for further details. You can find out more about our shipping information on our product pages.",
             "category": "shipping_and_returns"
           }
+        },
+        "4a96b4cc-8443-4485-b580-7c613bd31943": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I buy Plump It! in stores?",
+            "answer": "Afraid not! We like to keep our products exclusive and this means we do not sell our products in stores. The Plump It! range is only available to purchase online.",
+            "category": "shipping_and_returns"
+          }
+        },
+        "1d1bf539-01ef-48bc-934a-99e2ddf28218": {
+          "type": "faq",
+          "settings": {
+            "question": "Do I have to sign for the delivery?",
+            "answer": "With Standard Shipping no, Plump It! does not require a signature - the size of the packaging means it can just be posted through your letterbox. No waiting around for parcel deliveries - Woohoo!\n\nHowever, if you select Priority Shipping (or Next Day Delivery in the UK), a signature will be required - please ensure someone is available at the address provided to avoid delays and returns!",
+            "category": "shipping_and_returns"
+          }
+        },
+        "080fc37e-ff22-4488-bbd8-f22f076a8618": {
+          "type": "faq",
+          "settings": {
+            "question": "Do I get a tracking number for my delivery?",
+            "answer": "With Standard Shipping no, we send these packages using Royal Mail First Class Post - this delivery method does not generate a tracking number and usually takes 1-2 working days (does not include weekends).\n \nIf you choose Priority Shipping a tracking code will be generated and sent to the email address you used to make the purchase - this is usually delivered within 1-3 working days (not including weekends). \n \nWith Next Day Delivery (in the UK), the order is usually delivered the Next Working day by 1pm (Monday-Friday). This also generates a tracking number - you should receive this via the email address you used to make the order.\n \nIf you do not automatically receive your tracking information within 48 hours (Monday-Friday) please email us at <a href=\"mailto:support@plump-it.com\">support@plump-it.com<\/a>.\nIf you make your order on a Friday (after 12pm UK time) &amp; you do not receive your tracking information by Tuesday, please email us at <a href=\"mailto:support@plump-it.com\">support@plump-it.com<\/a>.",
+            "category": "shipping_and_returns"
+          }
+        },
+        "a65e37e1-93c2-4448-930e-9f276593efcf": {
+          "type": "faq",
+          "settings": {
+            "question": "I haven't received my tracking information, why?",
+            "answer": "We only send out a confirmation of dispatch once the order has been dispatched. If you made your order after 12pm (UK time) Monday - Friday, your order will be dispatched the next working day.\n\nIf you made your order over the weekend, it will be dispatched the next working day, usually bank holiday, please note, your order will not be dispatched until the next working day, you’ll then receive your tracking information.\n\nIf you made your order on a weekday before 12pm &amp; you still do not have your tracking information or a confirmation of dispatch, please email <a href=\"mailto:support@plump-it.com\">support@plump-it.com<\/a> and we will look into it for you.",
+            "category": "shipping_and_returns"
+          }
+        },
+        "4fcf2fdd-2b54-4c29-9edb-492358663c3d": {
+          "type": "faq",
+          "settings": {
+            "question": "My delivery is taking longer than stated, why?",
+            "answer": "We are based in the UK &amp; occasionally, when we deliver outside of the European zones, our deliveries can be subject to customs checks. This means the package might be held by your local customs for a period of time (usually 3 - 5 days). If this is the case, we will chase the order and send out another product to you once the product is 10 days overdue.\n\nPlease allow for the full 10 days to pass before contacting us &amp; we will try our best to help you.\n\nIn some cases, orders can be held by customs for a much longer period of time - this is out of our control.\n\nPlease also note that there will be no shipping on UK national &amp; bank holidays.",
+            "category": "shipping_and_returns"
+          }
+        },
+        "e79a9b61-2bf6-451b-bc19-f4f6a9243191": {
+          "type": "faq",
+          "settings": {
+            "question": "THE TRACKING PAGE STATES MY ORDER WAS DELIVERED BUT I HAVE NOT GOT IT, WHAT DO I DO?",
+            "answer": "In the rare occurrence that the tracking page states your order was delivered &amp; you have no received it, we recommend you speak directly with the courier company to ensure your item was not left at a neighbouring property.",
+            "category": "shipping_and_returns"
+          }
+        },
+        "d873ac43-52c9-44a1-8a3d-3276783c11cf": {
+          "type": "faq",
+          "settings": {
+            "question": "WHAT DO I DO IF I NOTICE MY ADDRESS IS INCOMPLETE?",
+            "answer": "If you find your shipping details are incomplete or incorrect, please contact us as soon as you can with the correct information. Failure to do so can significantly delay your delivery.\n\nPlease try to inform us within 15 minutes of making your order as our turn-around time for dispatch is within this time frame on weekdays before 2pm.\nAlso, if you do not let us know and the item is returned to us, we cannot be held responsible delivery delays due to missing information or misinformation.\nPlease email us at <a href=\"mailto:support@plump-it.com\">support@plump-it.com<\/a> and we will do our best to help you.",
+            "category": "shipping_and_returns"
+          }
+        },
+        "865ce4db-db49-4e74-a44e-66f3bc75df29": {
+          "type": "faq",
+          "settings": {
+            "question": "MY EMAIL ADDRESS IS WRONG, WHAT SHOULD I DO?",
+            "answer": "If you find your email address, telephone number or any other contact details are incorrect, please email us at <a href=\"mailto:support@plump-it.com\">support@plump-it.com<\/a> and we will amend the information for you.",
+            "category": "shipping_and_returns"
+          }
         }
       },
       "block_order": [
-        "bdd0a4d2-60dd-40ab-9240-138c66f11f42"
+        "bdd0a4d2-60dd-40ab-9240-138c66f11f42",
+        "4a96b4cc-8443-4485-b580-7c613bd31943",
+        "1d1bf539-01ef-48bc-934a-99e2ddf28218",
+        "080fc37e-ff22-4488-bbd8-f22f076a8618",
+        "a65e37e1-93c2-4448-930e-9f276593efcf",
+        "4fcf2fdd-2b54-4c29-9edb-492358663c3d",
+        "e79a9b61-2bf6-451b-bc19-f4f6a9243191",
+        "d873ac43-52c9-44a1-8a3d-3276783c11cf",
+        "865ce4db-db49-4e74-a44e-66f3bc75df29"
       ],
       "settings": {
       }

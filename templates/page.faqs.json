@@ -2,6 +2,19 @@
   "sections": {
     "main": {
       "type": "faq-page",
+      "blocks": {
+        "bdd0a4d2-60dd-40ab-9240-138c66f11f42": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you ship worldwide?",
+            "answer": "Yes, we do ship worldwide! All our shipping costs vary depending on country of residence. Please refer to the shipping page for further details. You can find out more about our shipping information on our product pages.",
+            "category": "shipping_and_returns"
+          }
+        }
+      },
+      "block_order": [
+        "bdd0a4d2-60dd-40ab-9240-138c66f11f42"
+      ],
       "settings": {
       }
     }

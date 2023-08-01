@@ -2978,7 +2978,7 @@ label.rc_label__deliver_every {
     --tw-bg-opacity: 1;
     background-color: rgba(255, 0, 102, var(--tw-bg-opacity));
     --tw-text-opacity: 1;
-    color: rgba(255, 255, 255, var(--tw-text-opacity));
+    color: rgba(255, 255, 255, var(--tw-text-opacity))!important;
   }
   .lg\:btn--white-outline{
     --tw-border-opacity: 1;
@@ -3548,7 +3548,7 @@ div#pagefooter {
         --tw-border-opacity: 1;
         border-color: rgba(255,0,102,var(--tw-border-opacity)) !important;
         --tw-text-opacity: 1;
-        color: rgba(255,0,102,var(--tw-text-opacity)) ;
+        color: rgba(255,0,102,var(--tw-text-opacity))!important ;
     }
     .text-base ,p.text-sm.uppercase, p.wysiwyg-content.text-xs, a.font-body.mb-6 ,
     ,.cursor-pointer span{
@@ -3610,4 +3610,10 @@ div#pagefooter {
     }
     div#reviews_7035822801071 ,#shopify-product-reviews .spr-pagination {
         border-top: none !important;
+    }
+    .additional-checkout-buttons .shopify-cleanslate {
+        display: none;
+    }
+    #cartform .btn--pink-outline:hover{
+        color:#fff !important;
     }

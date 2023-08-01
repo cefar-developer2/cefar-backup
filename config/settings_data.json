@@ -930,7 +930,7 @@
     "use_fullwidth_layout": false,
     "font_col_base": "#000000",
     "font_col_link": "#c16452",
-    "font_col_heads": "#171717",
+    "font_col_heads": "#000000",
     "font_col_shoptitle": "#171717",
     "font_col_sale": "#e53d3d",
     "btn_col": "#5c5c5c",

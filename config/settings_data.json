@@ -1187,7 +1187,7 @@
       "popup": {
         "type": "popup",
         "settings": {
-          "mode": "enabled",
+          "mode": "disabled",
           "popup_delay_seconds": 6,
           "popup_dismiss_for_days": 2,
           "position": "center",

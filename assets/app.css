@@ -3647,3 +3647,12 @@ div#pagefooter {
 a.btn.btn--black ,a.btn.btn--white{
   font-weight:bold !important;
 }
+.copydis p{
+    color: #000 !important;
+}
+ @media (max-width: 1023px) {
+   .flex-1.text-center:nth-child(2) {
+    border-left: none;
+    border-right: none;
+}
+ }

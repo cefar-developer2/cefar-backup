@@ -3644,3 +3644,6 @@ div#pagefooter {
 .copydis p{
     color: #000 !important;
 }
+a.btn.btn--black ,a.btn.btn--white{
+  font-weight:bold !important;
+}

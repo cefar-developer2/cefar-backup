@@ -3735,6 +3735,7 @@
           }).html('<div class="loading-spinner loading-spinner--in-btn"></div>');
 
           //Add to cart
+          console.log("CALLL");
           var formData = new FormData($form[0]);
           formData.append('sections', 'cart-drawer');
           $.post(shopifyAjaxAddURL, new URLSearchParams(formData).toString(), theme.addedToCartHandler.bind($form), 'json').fail(function (data) {

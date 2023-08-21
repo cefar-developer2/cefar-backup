@@ -3635,3 +3635,7 @@ div#pagefooter {
     border-left: 1px solid;
     border-right: 1px solid;
 }
+.product-form .quantity-submit-row .input-wrapper{
+      padding-left: 1rem;
+
+}

@@ -3714,6 +3714,7 @@
     $formContainer.find('form.product-purchase-form').each(function () {
       var $form = $(this);
       $form.on('submit', function (evt) {
+        console.log("SUBMOIITTT");
         // Validate
         if (!theme.validateProductForm($formContainer)) {
           return false;

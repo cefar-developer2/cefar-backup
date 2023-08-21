@@ -3669,3 +3669,6 @@ a.btn.btn--black ,a.btn.btn--white{
 .template-collection.modal{
   display:block;
 }
+.template-cart  .cart-table  td{
+  border-top:none; 
+}

@@ -1023,7 +1023,7 @@
     "live_search_show_price": true,
     "live_search_search_meta": false,
     "favicon": "shopify:\/\/shop_images\/PI-New_Favicon_32x32-01.png",
-    "cart_type": "page",
+    "cart_type": "drawer",
     "after_add_to_cart": "drawer",
     "show_free_shipping_bar": true,
     "free_shipping_bar_col_under": "#171717",

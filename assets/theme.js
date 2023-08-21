@@ -3687,7 +3687,6 @@
         // add events to internal links
         this.querySelector('.added-notification__close').addEventListener('click', this.dismiss.bind(this));
         if (theme.settings.cart_type === 'drawer') {
-          console.log("dd");
           var cartLinks = this.querySelectorAll('.added-notification__message-text a[href$="/cart"]');
           cartLinks.forEach((el) => {
             el.addEventListener('click', (evt) => {

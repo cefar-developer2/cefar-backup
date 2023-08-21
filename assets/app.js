@@ -258,7 +258,7 @@
           $('.js-popup-carousel').slick('slickUnfilter');
           $('.js-popup-carousel').slick('slickFilter', function (index, slide) {
             console.log(index + 'index');
-            
+            console.log(slide + 'slide');
             return !data.items.map(function (prod) {
               return prod.product_id;
             }).includes($(slide).data('product'));

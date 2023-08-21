@@ -3676,5 +3676,5 @@ li.form-line:not(.form-line-column) .form-input-wide[data-layout=half]{
   width:100% !important;
 }
 .form-line{
-  padding:0 10px !important;
+  padding:0 10px;
 }

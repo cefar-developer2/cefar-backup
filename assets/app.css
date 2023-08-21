@@ -3657,3 +3657,8 @@ a.btn.btn--black ,a.btn.btn--white{
   align-items: center;
 }
  }
+.collection-listing  .js-add-to-cart  .btn{
+
+    padding: 10px;
+    font-size: .70rem!important;
+}

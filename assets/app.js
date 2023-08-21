@@ -253,6 +253,7 @@
       });
 
       function displayCartPopup() {
+        console.log("he");
         $.get('/cart.js', function (data) {
           $('.js-cart-count').text('(' + data.items.length + ')');
           $('.js-popup-carousel').slick('slickUnfilter');

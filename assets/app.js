@@ -200,7 +200,10 @@
         });
       }
 
-      $('.js-faq-category').on('click', function () {
+      $('.js-faq-category').on('click', function (e) {
+        e.preventDefault()
+
+        
         if ($(this).hasClass('active')) {
           return false;
         }

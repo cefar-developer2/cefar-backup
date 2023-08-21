@@ -3637,5 +3637,7 @@ div#pagefooter {
 }
 .product-form .quantity-submit-row .input-wrapper{
       padding-left: 1rem;
-
+}
+#add_to_cart_button{
+      padding: 0;
 }

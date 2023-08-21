@@ -219,39 +219,39 @@
         $(this).parent().find('.js-answer').toggleClass('hidden');
         $(this).find('i').toggleClass('fa-plus fa-minus');
       });
-      // $('.js-add-to-cart').on('submit', function (e) {
+      $('.js-add-to-cart').on('submit', function (e) {
         
-      //   e.preventDefault(); // var image = $(this).closest('.flex.flex-col').find('img').attr('src');
+        e.preventDefault(); // var image = $(this).closest('.flex.flex-col').find('img').attr('src');
 
-      //   console.log("adding to cart");
-      //   var quantity = 1;
+        console.log("adding to cart");
+        var quantity = 1;
 
-      //   if ($(this).find('input[name=quantity]').length) {
-      //     quantity = $(this).find('input[name=quantity]').val();
-      //   }
+        if ($(this).find('input[name=quantity]').length) {
+          quantity = $(this).find('input[name=quantity]').val();
+        }
 
-      //   let id = null;
-      //   const thisInput = this.querySelector('input[name=id]');
-      //   const thisSelect = this.querySelector('select[name=id]');
+        let id = null;
+        const thisInput = this.querySelector('input[name=id]');
+        const thisSelect = this.querySelector('select[name=id]');
 
-      //   if (thisInput) {
-      //     id = thisInput.value;
-      //   } else {
-      //     id = thisSelect.value;
-      //   }
+        if (thisInput) {
+          id = thisInput.value;
+        } else {
+          id = thisSelect.value;
+        }
 
-      //   $.post('/cart/add.js', {
-      //     items: [{
-      //       id: id,
-      //       quantity: quantity
-      //     }]
-      //   }, function (response) {
-      //     $('.js-cart-popup-items').empty();
-      //     $('.js-cart-popup-items').append('<div class=""><img class="w-full" src="' + response.items[0].featured_image.url + '"><p class="mt-0 mb-1 text-base font-bold mb-8">' + response.items[0].product_title + '</p></div>');
-      //     displayCartPopup();
-      //   }, 'json');
-      //   return false;
-      // });
+        $.post('/cart/add.js', {
+          items: [{
+            id: id,
+            quantity: quantity
+          }]
+        }, function (response) {
+          $('.js-cart-popup-items').empty();
+          $('.js-cart-popup-items').append('<div class=""><img class="w-full" src="' + response.items[0].featured_image.url + '"><p class="mt-0 mb-1 text-base font-bold mb-8">' + response.items[0].product_title + '</p></div>');
+          displayCartPopup();
+        }, 'json');
+        return false;
+      });
 
       function displayCartPopup() {
         $.get('/cart.js', function (data) {

@@ -3672,3 +3672,6 @@ a.btn.btn--black ,a.btn.btn--white{
 .template-cart  .cart-table  td{
   border-top:none; 
 }
+li.form-line:not(.form-line-column) .form-input-wide[data-layout=half]{
+  width:100% !important;
+}

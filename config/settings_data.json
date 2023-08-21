@@ -1200,7 +1200,7 @@
       "cart-drawer": {
         "type": "cart-drawer",
         "settings": {
-          "enable_cart_notes": true,
+          "enable_cart_notes": false,
           "show_tax_and_shipping": true,
           "enable_direct_cart": true,
           "cart_terms_page": "",

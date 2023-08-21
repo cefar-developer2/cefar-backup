@@ -3656,12 +3656,16 @@ a.btn.btn--black ,a.btn.btn--white{
   justify-content: center;
   align-items: center;
 }
+   .section-footer__row.section-footer__row--blocks{
+  display: flex;
+    align-items: center;
+    justify-content: center;}
  }
 .collection-listing  .js-add-to-cart  .btn{
 
     padding: 10px;
     font-size: .70rem!important;
 }
-.template-collection.modal{
+/* .template-collection.modal{
   display:block;
-}
+} */

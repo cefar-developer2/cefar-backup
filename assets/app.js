@@ -201,7 +201,8 @@
       }
 
       $('.js-faq-category').on('click', function (e) {
-        e.preventDefault()
+        e.preventDefault();
+        return false;
 
         
         if ($(this).hasClass('active')) {

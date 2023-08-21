@@ -254,6 +254,7 @@
 
       function displayCartPopup() {
         $.get('/cart.js', function (data) {
+          console.log(data);
           $('.js-cart-count').text('(' + data.items.length + ')');
           $('.js-popup-carousel').slick('slickUnfilter');
           $('.js-popup-carousel').slick('slickFilter', function (index, slide) {

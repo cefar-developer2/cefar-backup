@@ -149,6 +149,38 @@
   {% section 'header' %}
   {% section 'store-messages' %}
 
+
+
+    <div class="fixed js-cart-popup-cover bg-black transition-all duration-300 pointer-events-none bg-opacity-30 opacity-0 z-[200] left-0 top-0 w-full h-full overflow-hidden">
+      <div class="cart-popup text-center flex flex-col justify-between absolute transition-all duration-300 bg-white top-0 h-screen w-[288px] pt-8 lg:pt-16 left-[-300px]">
+        <div class="px-8">
+          <h2 class="text-lg uppercase mb-2">Added to Cart!</h2>
+          <hr>
+          <div class="js-cart-popup-items">
+
+          </div>
+          <a href="/cart" class="btn btn--pink mb-5">View Cart <span class="js-cart-count "></span></a>
+          <p><a href="#" class="js-close-cart-popup text-pink text-xs">Continue shopping</a></p>
+        </div>
+        <div class="pb-12 px-8 border-t border-opacity-10 border-black">
+            <h3 class="text-lg uppercase text-center mt-8 mb-4">You Might Like...</h3>
+            <div class="js-popup-carousel">
+                {% assign related_product_count = 0 %}
+                {% for product in collections['upsell-products'].products %}
+                {% unless cart_item_products contains product.handle or related_product_count > 3 %}
+                  {% assign related_product_count = related_product_count | plus: 1 %}
+                  <div class="flex flex-col items-center" data-product="{{ product.id }}">
+                    <img class="object-contain w-full h-full" src="{{ product.featured_image | img_url: '700x700' }}" alt="{{ product.title }}">
+                    <p class="mt-0 mb-1 text-xs leading-[18px] font-bold">{{ product.title }} </p>
+                  </div>
+                {% endunless %}
+              {% endfor %}
+            </div>
+        </div>
+      </div>
+    </div>
+  
+
   <main id="content" role="main">
     <div class="container cf">
 

@@ -1320,6 +1320,13 @@ video {
   /* padding-left: 1rem; */
   padding-right: 1rem;
 }
+.filters-modal__wrapper.py-8{
+  padding-top: 0rem;
+}
+.filters-modal__wrapper.py-10{
+  padding-top: 0rem;
+}
+
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;

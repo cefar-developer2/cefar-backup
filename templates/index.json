@@ -776,7 +776,7 @@
         "92221b0f-9b7b-4547-892f-0be055585327"
       ],
       "custom_css": [
-        ".bg-black .px-4{padding-left:4px;}"
+        ".bg-black .px-4 {padding-left: 1rem;}"
       ],
       "settings": {
       }

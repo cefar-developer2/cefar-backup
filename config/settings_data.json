@@ -1027,6 +1027,8 @@
     "after_add_to_cart": "drawer",
     "show_free_shipping_bar": true,
     "free_shipping_bar_col_under": "#171717",
+    "checkout_logo_image": "shopify:\/\/shop_images\/new-logo-2.svg",
+    "checkout_logo_position": "center",
     "checkout_accent_color": "#ff0065",
     "checkout_button_color": "#ff0065",
     "checkout_error_color": "#ff6d6d",

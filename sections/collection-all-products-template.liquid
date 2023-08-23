@@ -34,14 +34,14 @@
                     <span class="filters-modal__close" @click="closeModal()">&times;</span>
 
                     <h2 class="lg:hidden uppercase pb-4 border-b border-black border-opacity-10">Filters</h2>
-                    <div class="hidden lg:flex flex-col py-10 border-b border-black border-opacity-10">
+                    <!-- <div class="hidden lg:flex flex-col py-10 border-b border-black border-opacity-10">
                         <a href="{{ section.settings.button_filter_link1 }}" class="font-body mb-6 {% if collection.url == section.settings.button_filter_link1 %}text-pink font-bold{% endif %}">{{ section.settings.button_filter1 }}</a>
                         <a href="{{ section.settings.button_filter_link2 }}" class="font-body mb-6 {% if collection.url == section.settings.button_filter_link2 %}text-pink font-bold{% endif %}">{{ section.settings.button_filter2 }}</a>
                         <a href="{{ section.settings.button_filter_link3 }}" class="font-body mb-6 {% if collection.url == section.settings.button_filter_link3 %}text-pink font-bold{% endif %}">{{ section.settings.button_filter3 }}</a>
                         {% if section.settings.button_filter4 != blank %}
                             <a href="{{ section.settings.button_filter_link4 }}" class="font-body {% if collection.url == section.settings.button_filter_link4 %}text-pink font-bold{% endif %}">{{ section.settings.button_filter4 }}</a>
                         {% endif %}
-                    </div>
+                    </div> -->
                     <div class="hidden lg:flex justify-center flex-col py-10 border-b border-black border-opacity-10">
                         <div class="relative flex items-center">
                             <select name="sort_method" v-model="activeSortMethod" class="uppercase w-full font-body border border-black px-5 py-4 select-no-arrow" style="-webkit-appearance: none;" id="">

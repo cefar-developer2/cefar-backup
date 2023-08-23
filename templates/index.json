@@ -56,7 +56,6 @@
     },
     "16359276425da8ce46": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "16359276425da8ce46-0": {
           "type": "image",
@@ -101,6 +100,7 @@
         "16359276425da8ce46-0",
         "16359276425da8ce46-1"
       ],
+      "disabled": true,
       "settings": {
         "height": "fixed",
         "height_desktop": 600,
@@ -152,7 +152,6 @@
     },
     "1635927863703110df": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "1635927863703110df-1": {
           "type": "heading",
@@ -173,6 +172,7 @@
         "1635927863703110df-1",
         "1635927863703110df-2"
       ],
+      "disabled": true,
       "settings": {
         "height": "medium",
         "text_alignment": "center",
@@ -214,7 +214,6 @@
     },
     "16359279164ff7d3f3": {
       "type": "gallery",
-      "disabled": true,
       "blocks": {
         "16359279164ff7d3f3-0": {
           "type": "image",
@@ -267,6 +266,7 @@
         "16359279164ff7d3f3-2",
         "474c4491-283d-4680-a37b-7b5a444e7e62"
       ],
+      "disabled": true,
       "settings": {
         "grid": 2,
         "height": "fixed",
@@ -285,7 +285,6 @@
     },
     "16359281184fd0d618": {
       "type": "testimonials",
-      "disabled": true,
       "blocks": {
         "16359281184fd0d618-0": {
           "type": "testimonial",
@@ -312,6 +311,7 @@
         "16359281184fd0d618-0",
         "16359281184fd0d618-1"
       ],
+      "disabled": true,
       "settings": {
         "title": "From the people",
         "layout": "image-right",
@@ -350,7 +350,6 @@
     },
     "163592857728b8bdc2": {
       "type": "multi-column",
-      "disabled": true,
       "blocks": {
         "163592857728b8bdc2-0": {
           "type": "text_block",
@@ -391,6 +390,7 @@
         "163592857728b8bdc2-1",
         "163592857728b8bdc2-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "Multi-column",
         "text_alignment": "center",
@@ -400,7 +400,6 @@
     },
     "1635928580d75f81bf": {
       "type": "featured-product",
-      "disabled": true,
       "blocks": {
         "1635928580d75f81bf-0": {
           "type": "title",
@@ -462,6 +461,7 @@
         "1635928580d75f81bf-5",
         "1635928580d75f81bf-6"
       ],
+      "disabled": true,
       "settings": {
         "product": "",
         "inventory_transfers_enable": true,
@@ -504,7 +504,6 @@
     },
     "e270b21f-bc49-4329-9c8d-531277fc2a51": {
       "type": "scrolling-banner",
-      "disabled": true,
       "blocks": {
         "template--15954076729519__e270b21f-bc49-4329-9c8d-531277fc2a51-text-1": {
           "type": "text",
@@ -521,6 +520,7 @@
       "block_order": [
         "template--15954076729519__e270b21f-bc49-4329-9c8d-531277fc2a51-text-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "use_alt_bg": false,
@@ -534,7 +534,6 @@
     },
     "eb229639-deb5-4dac-8ae6-d32ebd608696": {
       "type": "featured-product",
-      "disabled": true,
       "blocks": {
         "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-title-1": {
           "type": "title",
@@ -596,6 +595,7 @@
         "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-buy_buttons-1",
         "template--15955300712623__eb229639-deb5-4dac-8ae6-d32ebd608696-description-1"
       ],
+      "disabled": true,
       "settings": {
         "product": "no-needles-dermal-filler-15-pods",
         "inventory_transfers_enable": true,
@@ -774,6 +774,9 @@
         "template--15958787195055__0790b4a9-d746-41e9-a04e-b5b69d3ad5f1-image-1",
         "13f55a60-8ba4-49c4-a21c-9777fce8f435",
         "92221b0f-9b7b-4547-892f-0be055585327"
+      ],
+      "custom_css": [
+        ".bg-black .px-4{padding-left:4px;}"
       ],
       "settings": {
       }

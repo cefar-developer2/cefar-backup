@@ -1029,7 +1029,7 @@
     "free_shipping_bar_col_under": "#171717",
     "checkout_logo_image": "shopify:\/\/shop_images\/new-logo-2.svg",
     "checkout_logo_position": "center",
-    "checkout_logo_size": "small",
+    "checkout_logo_size": "medium",
     "checkout_accent_color": "#ff0065",
     "checkout_button_color": "#ff0065",
     "checkout_error_color": "#ff6d6d",

@@ -9,8 +9,8 @@
             "title": "DISCOVER THE NO NEEDLES BEAUTY RANGE",
             "button_text": "shop the alternatives",
             "button_link": "shopify:\/\/collections\/sale",
-            "desktop_image": "shopify:\/\/shop_images\/Products_with_swatches_-_Brand_Slogan_-_Website_-_Desktop.png",
-            "mobile_image": "shopify:\/\/shop_images\/Products_with_swatches_-_Brand_Slogan_-_Website_-_Mobile.png",
+            "desktop_image": "shopify:\/\/shop_images\/Bank_Hol_-_25_OFF.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Bank_Hol_-_25_OFF_-_MOBILE_1.jpg",
             "hero_background": "bg-palepink",
             "hero_opacity": 80,
             "heading_color": "text-black",
@@ -19,6 +19,7 @@
         },
         "template--15954076729519__7ba7594a-c67f-4f91-8ceb-4ed81df47fae-slide-2": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "title": "100% would use instead of lip filler*",
             "button_text": "SHOP THE KIT",

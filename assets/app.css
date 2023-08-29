@@ -3686,3 +3686,6 @@ li.form-line:not(.form-line-column) .form-input-wide[data-layout=half]{
 .form-line{
   padding:0 10px !important;
 }
+#collection-page .border-b{
+border-top: 1px solid;
+}

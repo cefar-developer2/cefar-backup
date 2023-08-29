@@ -3688,6 +3688,7 @@ li.form-line:not(.form-line-column) .form-input-wide[data-layout=half]{
 }
 #collection-page .border-b{
 border-top: 1px solid;
+border-bottom: 1px solid;
 }
 #collection-page button.btn.mt-8.w-full.lg\:hidden {
     display: none !important;

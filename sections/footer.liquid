@@ -129,9 +129,9 @@
   {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}{%- assign showing_localization = true -%}{%- endif -%}
   <div class="container  section-footer__row-container {% if showing_localization %}section-footer__row-container--with-localization{% endif %}">
     <div class="section-footer__row section-footer__row-lower">
-      <div class="section-footer__row__col">
+      <div class="section-footer__row__col payicon">
         {% if section.settings.show_payment_icons %}
-          <div class="section-footer__payment-icons payicon">
+          <div class="section-footer__payment-icons ">
             {% for type in shop.enabled_payment_types %}
               {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
             {% endfor %}

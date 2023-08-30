@@ -620,7 +620,7 @@
         "template--15958787195055__29e6a0de-6b1b-4d10-ad05-588f773a2094-product-1": {
           "type": "product",
           "settings": {
-            "product": "no-needles-dermal-filler-15-pods"
+            "product": "no-needles-dermal-filler"
           }
         },
         "template--15958787195055__29e6a0de-6b1b-4d10-ad05-588f773a2094-product-3": {
@@ -788,11 +788,12 @@
         "template--15958787195055__5b0be02c-d7de-42f4-903b-2ed989626f27-product-1": {
           "type": "product",
           "settings": {
-            "product": "volumising-x-hyaluronic-bundle"
+            "product": "ultimate-lip-bundle"
           }
         },
         "template--15958787195055__5b0be02c-d7de-42f4-903b-2ed989626f27-product-2": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "hyaluronic-acid-hydration-bundle"
           }
@@ -804,6 +805,12 @@
           }
         },
         "d35feb53-8276-4f83-a926-f9d56746b315": {
+          "type": "product",
+          "settings": {
+            "product": "hyaluronic-acid-hydration-bundle"
+          }
+        },
+        "07b66b45-1c2d-4dab-941a-a4e7d4ef199d": {
           "type": "product",
           "settings": {
             "product": "hyaluronic-lip-plumper-twin-pack"
@@ -839,6 +846,7 @@
         "template--15958787195055__5b0be02c-d7de-42f4-903b-2ed989626f27-product-2",
         "template--15958787195055__5b0be02c-d7de-42f4-903b-2ed989626f27-product-3",
         "d35feb53-8276-4f83-a926-f9d56746b315",
+        "07b66b45-1c2d-4dab-941a-a4e7d4ef199d",
         "60ca578a-546b-4960-8eff-56c590dbb2ef",
         "d4593f10-200f-43a0-865b-3710e2324975",
         "4e8e8e8a-41d1-435a-88dd-252bdfc63ee2",

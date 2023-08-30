@@ -3498,17 +3498,17 @@ div#pagefooter {
      padding:0; */
    font-size: .75rem;
   line-height: 1.5rem;
-   outline: 2px solid transparent;
-    outline-offset: 2px;
+   outline: 2px solid transparent !important;
+    outline-offset: 2px !important;
  }
 input[type=text] {
-  border: none;
-  outline: 0;
+  border: none !important;
+  outline: 0 !important;
 }
 
 input[type=text]:focus {
-  border: none;
-  outline: 0;
+  border: none !important;
+  outline: 0 !important;
 }
 
  .input-wrapper .btn{

@@ -3709,3 +3709,6 @@ border-top: 1px solid;
 .cf:before, .cf:after{
   content:unset !important;
 }
+.selector-wrapper.cf.product-variant .input-row select{
+border:none !important;
+}

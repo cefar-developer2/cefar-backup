@@ -3498,10 +3498,10 @@ div#pagefooter {
      padding:0; */
    font-size: .75rem;
   line-height: 1.5rem;
-   outline: 2px solid transparent !important;
-    outline-offset: 2px !important;
+   /* outline: 2px solid transparent !important;
+    outline-offset: 2px !important; */
  }
-input[type=text] {
+/* input[type=text] {
   border: none !important;
   outline: 0 !important;
 }
@@ -3509,7 +3509,7 @@ input[type=text] {
 input[type=text]:focus {
   border: none !important;
   outline: 0 !important;
-}
+} */
 
  .input-wrapper .btn{
     padding-bottom: initial!important;

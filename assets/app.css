@@ -3716,3 +3716,6 @@ border-top: 1px solid;
     border: none;
     background: transparent;
 }
+.section-footer__row__col.payicon {
+    order: 2;
+}

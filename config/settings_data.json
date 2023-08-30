@@ -998,7 +998,7 @@
     "prod_thumb_hover_image": true,
     "quickbuy_style": "button",
     "prod_block_label_loc": "top left",
-    "prod_stock_warn_show": true,
+    "prod_stock_warn_show": false,
     "prod_stock_warn_limit_int": 5,
     "prod_sale_show": true,
     "prod_sold_out_show": true,

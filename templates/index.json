@@ -11,7 +11,7 @@
             "button_link": "shopify:\/\/collections\/sale",
             "desktop_image": "shopify:\/\/shop_images\/Bank_Hol_-_25_OFF.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Bank_Hol_-_25_OFF_-_MOBILE_1.jpg",
-            "hero_background": "bg-palepink",
+            "hero_background": "bg-grey",
             "hero_opacity": 80,
             "heading_color": "text-black",
             "button_color": "btn--white"

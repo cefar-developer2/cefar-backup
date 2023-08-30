@@ -3706,3 +3706,6 @@ border-top: 1px solid;
 #collection-page button.btn.mt-8.w-full.lg\:hidden {
     display: none !important;
 }
+.cf:before, .cf:after{
+  content:unset !important;
+}

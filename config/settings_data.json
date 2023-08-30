@@ -965,7 +965,7 @@
     "prod_over_redu_bg": "#c20000",
     "prod_over_low_bg": "#09728c",
     "prod_over_new_text": "#ffffff",
-    "prod_over_new_bg": "#c16452",
+    "prod_over_new_bg": "#000000",
     "prod_over_meta_text": "#ffffff",
     "prod_over_meta_bg": "#bd2585",
     "prod_label_sale_text": "#c20000",

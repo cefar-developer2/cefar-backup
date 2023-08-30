@@ -3501,6 +3501,22 @@ div#pagefooter {
    outline: 2px solid transparent;
     outline-offset: 2px;
  }
+input[type=text] {
+  border: none;
+  background-color: none;
+  outline: 0;
+  font-size: 25px;
+  width: 300px;
+  height: 30px;
+}
+
+input[type=text]:focus {
+  border: none;
+  background-color: none;
+  outline: 0;
+  width: 300px;
+  height: 30px;
+}
 
  .input-wrapper .btn{
     padding-bottom: initial!important;

@@ -3720,3 +3720,7 @@ border-top: 1px solid;
 .section-footer__row__col.payicon {
     order: 2;
 }
+.section-footer__row__col.copyright {
+    display: flex;
+    align-items: end;
+}

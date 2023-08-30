@@ -3494,8 +3494,12 @@ div#pagefooter {
     padding-top: unset;
   }
  .header-icons input[type=text]{
-     font-size:0;
-     padding:0;
+     /* font-size:0;
+     padding:0; */
+   font-size: .75rem;
+  line-height: 1.5rem;
+   outline: 2px solid transparent;
+    outline-offset: 2px;
  }
 
  .input-wrapper .btn{

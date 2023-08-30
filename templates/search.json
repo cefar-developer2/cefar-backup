@@ -2,6 +2,9 @@
   "sections": {
     "main": {
       "type": "main-search",
+      "custom_css": [
+        "a.btn.btn--secondary.quickbuy-toggle{display:none;}"
+      ],
       "settings": {
         "show_vendor": false,
         "coll_num_per_page_int": 24,

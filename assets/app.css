@@ -1634,7 +1634,7 @@ input[type=text], input[type=search] {
   align-items: center!important;
   justify-content: center !important;
   background: transparent!important;
-  border-radius: 0px;
+  border-radius: 6px !important;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgba(29, 29, 27, var(--tw-border-opacity))!important;
@@ -1761,12 +1761,12 @@ input[type=text], input[type=search] {
     padding-right: 1rem;
   }
   .btn{
-    font-size: 0.875rem;
-    line-height: 1.625rem;
-    letter-spacing: 1.4px;
+    font-size: 0.875rem !important;
+    line-height: 1.625rem !important;;
+    letter-spacing: 1.4px !important;;
   }
   .btn--sm{
-    height: 1.25rem;
+    height: 1.25rem !important;;
   }
   .btn--sm{
     font-size: 0.75rem;

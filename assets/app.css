@@ -3474,6 +3474,7 @@ copydis p {
     display: flex;
     flex-wrap: wrap;
     max-width: 330px;
+      margin: 0 auto;
     justify-content: center;
 }
 div#pagefooter {

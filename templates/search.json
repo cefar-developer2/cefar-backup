@@ -15,7 +15,7 @@
         "auto_apply_hide_unavailable": false,
         "enable_sticky_filter": true,
         "filter_two_columns": false,
-        "coll_show_sort": true
+        "coll_show_sort": false
       }
     }
   },

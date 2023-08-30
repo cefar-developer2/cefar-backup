@@ -103,7 +103,7 @@
       ],
       "disabled": true,
       "settings": {
-        "height": "fixed",
+        "height": "adapt",
         "height_desktop": 600,
         "height_mobile": 460,
         "full_width": true,

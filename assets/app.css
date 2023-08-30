@@ -1694,11 +1694,11 @@ input[type=text], input[type=search] {
 }
 .btn--palepink{
   --tw-border-opacity: 1;
-  border-color: rgba(255, 236, 243, var(--tw-border-opacity));
+  border-color: rgba(255, 236, 243, var(--tw-border-opacity)) !important;
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 236, 243, var(--tw-bg-opacity));
+  background-color: rgba(255, 236, 243, var(--tw-bg-opacity)) !important;
   --tw-text-opacity: 1;
-  color: rgba(0, 0, 0, var(--tw-text-opacity));
+  color: rgba(0, 0, 0, var(--tw-text-opacity)) !important;
 }
 .btn--palepink:hover{
   --tw-border-opacity: 1;

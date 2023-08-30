@@ -1638,12 +1638,12 @@ input[type=text], input[type=search] {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgba(29, 29, 27, var(--tw-border-opacity))!important;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-family: roc-grotesk, sans-serif;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  font-family: roc-grotesk, sans-serif !important;
   font-size: 0.875rem!important;
-  line-height: 1.625rem;
-  letter-spacing: 1.4px;
+  line-height: 1.625rem !important;
+  letter-spacing: 1.4px !important;
   text-transform: uppercase;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;

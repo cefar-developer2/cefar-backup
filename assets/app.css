@@ -1913,7 +1913,7 @@ input[type=text], input[type=search] {
 
 .footer-form__label {
   margin-bottom: 0.5rem !important;
-  text-align: left !important;
+  /* text-align: left !important; */
   font-family: roc-grotesk, sans-serif !important;
   font-size: 1.125rem !important;
   line-height: 1.875rem !important;
@@ -3711,4 +3711,8 @@ border-top: 1px solid;
 }
 .selector-wrapper.cf.product-variant select#option-value {
     border: none !important;
+}
+.modal-content button#upsell-decline {
+    border: none;
+    background: transparent;
 }

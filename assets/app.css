@@ -3747,3 +3747,7 @@ a.btn.btn--palepink {
 .product-block .product-link .product-block__title{
     text-align:center;
 }
+.product-block .product-link .product-price{
+    display: flex;
+    justify-content: center;
+}

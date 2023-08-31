@@ -2005,7 +2005,7 @@ input[type=text], input[type=search] {
   left: 0rem;
 }
 .product-carousel .slick-dots{
-  bottom: 0rem;
+  bottom: 1rem;
 }
 .product-carousel .slick-dots button {
   background: #1d1d1B !important;

@@ -20,21 +20,18 @@
         },
         "0e558a56-75c6-4b18-96fb-cd913abfcb03": {
           "type": "block",
-          "disabled": true,
           "settings": {
             "icon": "shopify:\/\/shop_images\/icon-vegan.png"
           }
         },
         "12d20a48-2e1a-4538-9fb2-a12639cd0d6d": {
           "type": "block",
-          "disabled": true,
           "settings": {
             "icon": "shopify:\/\/shop_images\/icon-cruelty-free.png"
           }
         },
         "43a2c5e3-e2f7-44d5-bd90-092c7e06e609": {
           "type": "block",
-          "disabled": true,
           "settings": {
             "icon": "shopify:\/\/shop_images\/icon-fragrance-free.png"
           }

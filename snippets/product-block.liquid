@@ -106,7 +106,7 @@
                 <div class="vendor">{{ product.vendor | escape }}</div>
               {%- endif -%}
 
-              <div class="product-block__title">{{ product.title | escape }}</div>
+              <div class="product-block__title min-h-[3.5rem] lg:min-h-[0px] mt-0 mb-1 text-base font-bold">{{ product.title | escape }}</div>
 
               {%- if settings.prod_thumb_show_subtitle and product.metafields.descriptors.subtitle != blank -%}
                 <div class="product-block__subtitle">{{ product.metafields.descriptors.subtitle }}</div>

@@ -3,7 +3,7 @@
     "main": {
       "type": "main-search",
       "custom_css": [
-        "a.btn.btn--secondary.quickbuy-toggle{display:none;}"
+
       ],
       "settings": {
         "show_vendor": false,

@@ -3,7 +3,8 @@
     "main": {
       "type": "main-search",
       "custom_css": [
-        "@media (min-width: 768px){.product-block .image-cont:hover .btn.quickbuy-toggle{display:none !important;}}"
+        "@media (min-width: 768px) {.product-block .image-cont:hover .btn.quickbuy-toggle {display: none !important; }}",
+        ".product-block .image-cont .btn.quickbuy-toggle {display: none !important;}"
       ],
       "settings": {
         "show_vendor": false,

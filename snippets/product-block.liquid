@@ -149,7 +149,14 @@
                 {% endif %}
               </div>
 
-              
+                {% if product.available and product.metafields.custom.out_of_stock != true %}
+                              <form action="/cart/add" method="post" class="flex justify-center {% unless template.name == 'cart' %}js-add-to-cart{% endunless %}">
+                                  <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
+                                  <button class="btn">Add to Cart</button>
+                              </form>
+                          {% else %}
+                              <button class="btn btn--disabled">Sold Out</button>
+                          {% endif %}
               {% render 'unit-price', variant: cheapest_variant %}
             </a>
 

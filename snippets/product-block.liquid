@@ -111,7 +111,20 @@
               {%- if settings.prod_thumb_show_subtitle and product.metafields.descriptors.subtitle != blank -%}
                 <div class="product-block__subtitle">{{ product.metafields.descriptors.subtitle }}</div>
               {%- endif -%}
-
+                <div class="flex items-center justify-center mb-2 {% unless product.metafields.my_fields.rating_override %}opacity-0{% endunless %}">
+                              {% assign stars = product.metafields.my_fields.rating_override | times: 1 %}
+                              {% for i in (1..5) %}
+                                  {% assign half = i | minus: 0.5 %}
+                                  {% if stars >= i %}
+                                      <i class="text-pink mx-0.5 fas fa-star"></i>
+                                  {% elsif stars >= half %}
+                                      <i class="text-pink mx-0.5 fas fa-star-half-alt"></i>
+                                  {% else %}
+                                      <i class="text-pink mx-0.5 far fa-star"></i>
+                                  {% endif %}
+                              {% endfor %}
+                              <span class="font-bold text-pink ml-2">{{ product.metafields.my_fields.rating_override }}</span>
+                          </div>
               <div class="product-price text-pink mb-6 text-lg" style=" font-weight: 600;">
                 {% if product.price_varies %}
                   <span class="product-price__item product-price__from">{{ 'products.listing.from' | t }}</span>
@@ -136,20 +149,7 @@
                 {% endif %}
               </div>
 
-              <div class="flex items-center justify-center mb-2 {% unless product.metafields.my_fields.rating_override %}opacity-0{% endunless %}">
-                              {% assign stars = product.metafields.my_fields.rating_override | times: 1 %}
-                              {% for i in (1..5) %}
-                                  {% assign half = i | minus: 0.5 %}
-                                  {% if stars >= i %}
-                                      <i class="text-pink mx-0.5 fas fa-star"></i>
-                                  {% elsif stars >= half %}
-                                      <i class="text-pink mx-0.5 fas fa-star-half-alt"></i>
-                                  {% else %}
-                                      <i class="text-pink mx-0.5 far fa-star"></i>
-                                  {% endif %}
-                              {% endfor %}
-                              <span class="font-bold text-pink ml-2">{{ product.metafields.my_fields.rating_override }}</span>
-                          </div>
+              
               {% render 'unit-price', variant: cheapest_variant %}
             </a>
 

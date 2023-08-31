@@ -3744,3 +3744,8 @@ a.btn.btn--palepink {
     font-weight: 300;
     font-size: 14.5px;
 }
+.product-block .product-link{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

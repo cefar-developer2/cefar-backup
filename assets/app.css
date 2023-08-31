@@ -3734,4 +3734,7 @@ a.btn.btn--palepink {
    .copydis p{
      text-align:center;
    }
+   a.hover\:text-pink.flex-1.text-center.transition.duration-300{
+     border-left:none;
+   }
  }

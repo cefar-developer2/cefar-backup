@@ -1940,19 +1940,19 @@ input[type=text], input[type=search] {
   justify-content: center;
 }
 .slick-dots button {
-  width: 8px!important;
-  height: 8px!important;
-  margin: 0 10px;
-  font-size: 1px;
-  border-radius: 100px;
-  padding: 4px;
-  opacity: 0.25;
-  background: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: transparent;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+  width: 8px !important;
+  height: 8px !important;
+  margin: 0 10px !important;
+  font-size: 1px !important;
+  border-radius: 100px !important;
+  padding: 4px !important;
+  opacity: 0.25 !important;
+  background: white !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  color: transparent !important;
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
 }
 .slick-dots li.slick-active button {
   opacity: 1;

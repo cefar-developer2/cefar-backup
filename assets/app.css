@@ -1955,7 +1955,7 @@ input[type=text], input[type=search] {
   outline-offset: 2px !important;
 }
 .slick-dots li.slick-active button {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .js-wide-row-carousel.slick-slider {

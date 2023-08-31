@@ -4,7 +4,8 @@
       "type": "main-search",
       "custom_css": [
         "@media (min-width: 768px) {.product-block .image-cont:hover .btn.quickbuy-toggle {display: none !important; }}",
-        ".product-block .image-cont .btn.quickbuy-toggle {display: none !important;}"
+        ".product-block .image-cont .btn.quickbuy-toggle {display: none !important;}",
+        "span.product-price__item.product-price__compare.theme-money {display: none;}"
       ],
       "settings": {
         "show_vendor": false,

@@ -999,6 +999,7 @@
     "prod_thumb_show_subtitle": true,
     "quickbuy_style": "button",
     "prod_block_label_loc": "top left",
+    "prod_reduction_show": true,
     "prod_reduction_type": "percent",
     "prod_stock_warn_show": false,
     "prod_stock_warn_limit_int": 5,

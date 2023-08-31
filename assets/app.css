@@ -3739,3 +3739,8 @@ a.btn.btn--palepink {
      border-left:none;
    }
  }
+.product-description-highlights.mt-10{
+  font-family: 'roc-grotesk';
+    font-weight: 300;
+    font-size: 14.5px;
+}

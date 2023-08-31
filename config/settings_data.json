@@ -1004,7 +1004,7 @@
     "prod_stock_warn_show": false,
     "prod_stock_warn_limit_int": 5,
     "prod_new_show": false,
-    "prod_sale_show": true,
+    "prod_sale_show": false,
     "prod_sold_out_show": true,
     "prod_pre_order_label_show": true,
     "enable_product_reviews_collection": false,

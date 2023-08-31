@@ -2008,7 +2008,7 @@ input[type=text], input[type=search] {
   bottom: 0rem;
 }
 .product-carousel .slick-dots button {
-  background: #1d1d1B;
+  background: #1d1d1B !important;
 }
 
 @media (max-width: 1024px) {

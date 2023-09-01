@@ -3763,3 +3763,6 @@ margin-bottom: 1.25rem !important;
 .js-cart-popup-cover  .cart-popup .pb-12.px-8.border-t.border-opacity-10.border-black{
     border-top-style: solid;
 }
+.header-icons .lg\:block.group.js-search.focus-within\:border-b.hidden.py-2.border-0.border-black.outline-none{
+padding-bottom:0;
+}

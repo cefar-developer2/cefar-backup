@@ -3500,7 +3500,7 @@ div#pagefooter {
        font-family: roc-grotesk,sans-serif;
     font-size: 1rem;
     line-height: 1.75rem;
-    font-weight: unset;
+    font-weight: 500;
 
 }
 #collection-page .container .btn.flex-shrink-0 {

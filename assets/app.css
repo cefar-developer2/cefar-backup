@@ -3766,3 +3766,6 @@ margin-bottom: 1.25rem !important;
 .header-icons .lg\:block.group.js-search.focus-within\:border-b.hidden.py-2.border-0.border-black.outline-none{
 padding-bottom:0rem;
 }
+.header-navigation-wrapper.container.flex.mt-2{
+margin-top:0rem;
+}

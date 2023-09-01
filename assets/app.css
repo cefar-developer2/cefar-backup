@@ -3769,3 +3769,6 @@ padding-bottom:0rem;
 .header-navigation-wrapper.container.flex.mt-2{
 margin-top:0rem;
 }
+.slick-track .flex.flex-col.items-center.text-center.px-4 {
+    padding-left: 1rem;
+}

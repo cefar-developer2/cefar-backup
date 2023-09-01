@@ -3494,8 +3494,11 @@ div#pagefooter {
     row-gap: 0.5rem;
 }
 .announcement__text p{
-    font-size: 16px;
+       font-family: roc-grotesk,sans-serif;
+    font-size: 1rem;
     line-height: 1.75rem;
+    font-weight: unset;
+
 }
 #collection-page .container .btn.flex-shrink-0 {
     padding-top: unset;

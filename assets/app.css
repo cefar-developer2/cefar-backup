@@ -2464,6 +2464,7 @@ label.rc_label__deliver_every {
 @media (max-width: 1024px) {
   .footlogo {
     display: flex;
+    align-items: baseline;
   }
 
   .footlogos {

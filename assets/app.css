@@ -3650,6 +3650,9 @@ input[type=text]:focus {
 .section-footer__newsletter-block {
     flex: 0 1 450px;
 }
+  .header-navigation-wrapper.container.flex.mt-2{
+margin-top:0rem;
+}
 }
 .section-footer__payment-icons{
   max-width:380px;
@@ -3772,9 +3775,9 @@ margin-bottom: 1.25rem !important;
 .header-icons .lg\:block.group.js-search.focus-within\:border-b.hidden.py-2.border-0.border-black.outline-none{
 padding-bottom:0rem;
 }
-.header-navigation-wrapper.container.flex.mt-2{
+/* .header-navigation-wrapper.container.flex.mt-2{
 margin-top:0rem;
-}
+} */
 .slick-track .flex.flex-col.items-center.text-center.px-4 {
     padding-left: 1rem;
 }

@@ -1317,7 +1317,7 @@ video {
   padding-bottom: 0.75rem;
 }
 .px-4{
-  /* padding-left: 1rem; */
+  padding-left: 1rem;
   padding-right: 1rem;
 }
 .filters-modal__wrapper.py-8{

@@ -3755,3 +3755,6 @@ a.btn.btn--palepink {
 font-weight:700 !important;
 margin-bottom: 1.25rem !important;
 }
+.js-cart-popup-cover  .cart-popup .pb-12.px-8.border-t.border-opacity-10.border-black{
+    border-top-style: solid;
+}

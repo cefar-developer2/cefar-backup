@@ -3472,6 +3472,9 @@ padding-bottom:0;
 copydis p {
  text-align: center;
 }
+  .hero-slider-section {
+    margin-top: 8%;
+}
 }
 .section-footer__row__col.section-footer__newsletter-block{
   width: 40%;

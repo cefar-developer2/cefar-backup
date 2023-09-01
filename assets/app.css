@@ -3414,9 +3414,9 @@ ul.section-footer__menu-block__menu {
   display: flex;
   justify-content: center;
 }
- #main-product-detail{
+ /* #main-product-detail{
    margin-top:30px;
- }
+ } */
 }
 .copydis {
   padding-bottom: 20px;

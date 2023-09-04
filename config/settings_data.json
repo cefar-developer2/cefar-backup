@@ -1073,7 +1073,8 @@
       "header": {
         "type": "header",
         "custom_css": [
-          ".bg-pink li {list-style-type: none;}"
+          ".bg-pink li {list-style-type: none;}",
+          ".cart-summary{margin-top: 2%;}"
         ],
         "settings": {
           "menu": "main-menu-v2"

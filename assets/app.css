@@ -3781,3 +3781,7 @@ margin-top:0rem;
 .slick-track .flex.flex-col.items-center.text-center.px-4 {
     padding-left: 1rem;
 }
+.wysiwyg-content--small{
+font-family: roc-grotesk, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.5rem;}

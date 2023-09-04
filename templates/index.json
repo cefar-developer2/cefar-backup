@@ -44,12 +44,27 @@
             "heading_color": "text-black",
             "button_color": "btn--black"
           }
+        },
+        "e9a6a689-0738-433c-a878-1946434e7963": {
+          "type": "slide",
+          "settings": {
+            "title": "NO NEEDLES BEAUTY STARTS HERE",
+            "button_text": "SHOP THE ALTERNATIVES",
+            "button_link": "shopify:\/\/collections\/transformative",
+            "desktop_image": "shopify:\/\/shop_images\/Products_with_swatches_-_Brand_Slogan_-_Website_-_Desktop_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Products_with_swatches_-_Brand_Slogan_-_Website_-_Mobile_1.png",
+            "hero_background": "bg-palepink",
+            "hero_opacity": 80,
+            "heading_color": "text-black",
+            "button_color": "btn--black"
+          }
         }
       },
       "block_order": [
         "template--15954076729519__7ba7594a-c67f-4f91-8ceb-4ed81df47fae-slide-2",
         "template--15954076729519__7ba7594a-c67f-4f91-8ceb-4ed81df47fae-slide-1",
-        "template--15954076729519__7ba7594a-c67f-4f91-8ceb-4ed81df47fae-slide-3"
+        "template--15954076729519__7ba7594a-c67f-4f91-8ceb-4ed81df47fae-slide-3",
+        "e9a6a689-0738-433c-a878-1946434e7963"
       ],
       "settings": {
         "speed": 5
